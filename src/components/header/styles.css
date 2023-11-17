@@ -11,7 +11,7 @@ header {
     padding: 0;
 }
 
-ul {
+header ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
