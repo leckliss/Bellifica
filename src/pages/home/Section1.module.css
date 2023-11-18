@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.sessão1{
+    width: 100%;
+    height: 800px;
+}
+
+.slide{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/imgs/home/img1.png);
+    animation: slide 15s infinite;
+    background-size: cover;
+    
+}
+
+@keyframes slide{
+    25%{
+        background: url(../../assets/imgs/home/img1.png);
+        background-size: cover;
+    }
+    50%{
+        background: url(../../assets/imgs/home/img2.png);
+        background-size: cover;
+    }
+    100%{
+        background: url(../../assets/imgs/home/img3.jpeg);
+        background-size: cover;
+    }
+}
+
+h1{
+    width: 500px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    text-align: left;
+    font-size: 80px;
+    color: black;
+}
