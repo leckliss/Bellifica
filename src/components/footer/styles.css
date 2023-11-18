@@ -6,10 +6,55 @@
   color: #f9f9f9;
 }
 
+/* styles.css */
 footer {
+  background-color: #8C52FF; /* Cor de fundo semelhante ao da imagem */
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
   height: 20vh;
-  width: 100%;
-  margin: 0;
+}
+
+.redes {
+  max-width: 30px;
+  margin: 0 10px;
+}
+
+.footerlogo {
+  width: 20vw;
+  height: 15vh;
+}
+
+footer div {
+  display: flex;
+}
+
+footer ul {
+  list-style: none;
   padding: 0;
+  margin: 0 20px;
+}
+
+footer ul li {
+  margin: 5px 0;
+  cursor: pointer;
+}
+.copyri{
+  width: 100%;
+  height: 5vh;
+  background-color: #fb9cb2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copyri p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: x-large;
+  color: #f9f9f9;
+  width: auto;
 }
 

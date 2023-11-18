@@ -1,11 +1,13 @@
-import Styles from './Sobre.module.css';
+import Styles from './sobre.module.css';
 import logo from '../../assets/imgs/sobre/Bellifica-logo.png';
 import make from '../../assets/imgs/sobre/moca-make.png';
 import cuidos from '../../assets/imgs/sobre/estetica.png';
+import Header from '../../components/header';
 
 function Sobre() {
     return (
         <main className={Styles.fundo}>
+            <Header/>
             <section className={Styles.quemsomos}>
                 <div className={Styles.img - logo}>
                     <img src={logo} alt='logo' className={Styles.logo} />

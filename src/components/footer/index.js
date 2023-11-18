@@ -4,11 +4,12 @@ import Logo from '../../assets/imgs/footer/footerlogo.png';
 import Insta from '../../assets/imgs/footer/insta.png';
 import Linke from '../../assets/imgs/footer/linke.png';
 
-const Footer = () => {
+function Footer() {
 
   return (
+    <>
     <footer>
-      <img src={Logo} alt="Logo" className='logo' />
+      <img src={Logo} alt="Logo" className='footerlogo' />
       <div>
         <ul>
           <li >Institucional</li>
@@ -19,9 +20,13 @@ const Footer = () => {
           <li >Fale Conosco</li>
         </ul>
       </div>
-      <img src={Insta} alt="Instagram Logo" />
-      <img src={Linke} alt="Linkedin Logo" />
+      <img src={Insta} className='redes' alt="Instagram Logo" />
+      <img src={Linke} className='redes' alt="Linkedin Logo" />
     </footer>
+    <div className='copyri'>
+        <p>Copyright © Bellifica - 2023 - Todos os direitos reservados</p>
+      </div>
+    </>
   );
 }
 
