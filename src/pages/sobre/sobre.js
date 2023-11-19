@@ -12,7 +12,7 @@ function Sobre() {
             <main className={Styles.fundo}>
 
                 <section className={Styles.quemsomos}>
-                    <div className={Styles.img-logo}>
+                    <div className={Styles.img - logo}>
                         <img src={logo} alt='logo' className={Styles.logo} />
                     </div>
 
@@ -29,21 +29,26 @@ function Sobre() {
                         <div className={Styles.grupo2}>
 
                             <div className={Styles.texto2}>
-                                <h1>Nosso objetivo</h1>
+                                <h2>Nosso objetivo</h2>
                                 <p>Auxiliar trabalhadores(as) autônomos simplificando a gestão de negócios para profissionais da beleza.<br /> Buscamos proporcionar ferramentas eficientes para agendamento e marketing, permitindo o crescimento e a excelência desses empreendedores.</p>
+                                <h1>Nossos Princípios</h1>
                             </div>
 
                             <img src={cuidos} alt='mulher se olhando no espelho' className={Styles.imagem2} />
                         </div>
+                    </div>
+                </section>
+
+                <section className={Styles.princi}>
+                    <div className={Styles.enfoque}>
 
                     </div>
 
-                    <Footer/>
                 </section>
 
-               
             </main>
-            
+
+
         </>
     )
 }

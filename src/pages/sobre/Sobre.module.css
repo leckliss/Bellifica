@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
+.fundo{
+    margin: 0;
+    padding: 0;
+}
 
-.quemsomos{
+.quemsomos {
     width: 100%;
     height: 100vh;
     font-family: 'Raleway', sans-serif;
 
 }
 
-.logo{
+.logo {
     width: 400px;
     height: 200px;
     margin-left: 500px;
     margin-top: 40px;
 }
 
-.fundao{
+.fundao {
     width: 100%;
     height: 1500px;
     background-image: url(../../assets/imgs/sobre/fundo-sobre.png);
@@ -24,50 +28,53 @@
 
 }
 
-.imagem1{
+.imagem1 {
     width: 500px;
     height: 520px;
     margin-top: 150px;
 
 }
 
-.grupo1{
+.grupo1 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 
 }
 
-.texto1{
+.texto1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.texto1 h1{
+.texto1 h1 {
     font-size: 60px;
     color: #000;
     font-weight: bold;
-    
+    margin-top: -100px;
+
+
 }
 
-.texto1 p{
+.texto1 p {
     width: 300px;
     color: #000;
     font-size: 30px;
-   
+    font-weight: bold;
+    margin-top: -200px;
 
 }
 
-.grupo2{
+.grupo2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}       
+}
 
-.imagem2{
+.imagem2 {
     width: 500px;
     height: 620px;
     margin-right: 100px;
@@ -75,6 +82,42 @@
 
 }
 
-.texto2 p{
+.texto2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.texto2 h2 {
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.texto2 p {
     width: 600px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.texto2 h1{
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.princi{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.enfoque{
+    width: 300px;
+    height: 500px;
+    background-color: #DCCBED;
 }
