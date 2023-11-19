@@ -12,7 +12,7 @@ function Sobre() {
             <main className={Styles.fundo}>
 
                 <section className={Styles.quemsomos}>
-                    <div className={Styles.img - logo}>
+                    <div className={Styles.img-logo}>
                         <img src={logo} alt='logo' className={Styles.logo} />
                     </div>
 
@@ -37,9 +37,11 @@ function Sobre() {
                         </div>
 
                     </div>
+
+                    <Footer/>
                 </section>
 
-                <Footer/>
+               
             </main>
             
         </>

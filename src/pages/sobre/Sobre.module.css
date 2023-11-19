@@ -9,8 +9,10 @@
 }
 
 .logo{
-    width: 300px;
+    width: 400px;
     height: 200px;
+    margin-left: 500px;
+    margin-top: 40px;
 }
 
 .fundao{
@@ -36,18 +38,26 @@
 
 }
 
-h1{
+.texto1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.texto1 h1{
     font-size: 60px;
     color: #000;
     font-weight: bold;
-    margin-top: 200px;
-
+    
 }
 
-p{
+.texto1 p{
     width: 300px;
     color: #000;
     font-size: 30px;
+   
 
 }
 
