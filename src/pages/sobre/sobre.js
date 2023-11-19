@@ -1,10 +1,9 @@
 import Styles from './sobre.module.css';
-import Header from '../../components/header';
+import Header from '../../components/header/index'
 import logo from '../../assets/imgs/sobre/Bellifica-logo.png';
 import make from '../../assets/imgs/sobre/moca-make.png';
 import cuidos from '../../assets/imgs/sobre/estetica.png';
-import Header from '../../components/header';
-import Footer from '../../components/footer';
+import Footer from '../../components/footer/index';
 
 function Sobre() {
     return (
