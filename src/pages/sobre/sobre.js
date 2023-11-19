@@ -1,4 +1,5 @@
 import Styles from './sobre.module.css';
+import Header from '../../components/header';
 import logo from '../../assets/imgs/sobre/Bellifica-logo.png';
 import make from '../../assets/imgs/sobre/moca-make.png';
 import cuidos from '../../assets/imgs/sobre/estetica.png';
@@ -39,7 +40,7 @@ function Sobre() {
                     </div>
                 </section>
 
-
+                <Footer/>
             </main>
             
         </>
