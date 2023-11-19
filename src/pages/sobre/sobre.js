@@ -1,4 +1,4 @@
-import Styles from './sobre.module.css';
+import Styles from './Sobre.module.css';
 import Header from '../../components/header/index'
 import logo from '../../assets/imgs/sobre/Bellifica-logo.png';
 import make from '../../assets/imgs/sobre/moca-make.png';
