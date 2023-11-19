@@ -18,6 +18,10 @@ import imgcurso6 from '../../assets/imgs/home/imgcurso6.png';
 import { motion } from 'framer-motion';
 import {useState, useEffect, useRef} from 'react';
 
+import img1coment from '../../assets/imgs/home/Ellipse 46.png';
+
+
+
 
 function Home () {
     const carrossel = useRef();
@@ -135,7 +139,7 @@ function Home () {
             </section>
 
 
-             {/* Sessão4 ==================================================================== */}
+             {/* Sessão5 ==================================================================== */}
 
             <section className={Styles.sessão5}>
                 <div className={Styles.comentarios}>
@@ -148,15 +152,73 @@ function Home () {
                         dragConstraints = {{right:1, left: -width}}>
 
                         
-                                    <div className={Styles.Caixacoment}></div>
-                                    <div className={Styles.Caixacoment}></div>
-                                    <div className={Styles.Caixacoment}></div>                
+                                    <div className={Styles.Caixacoment}>
+                                        <div className={Styles.foto}></div>
+                                        <h1>ANA</h1>
+                                        <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
+
+                                    </div>
+                                    
+                                    <div className={Styles.Caixacoment}>
+                                    <div className={Styles.foto}></div>
+                                        <h1>ANA</h1>
+                                        <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
+                                    </div>
+
+                                    <div className={Styles.Caixacoment}>
+                                    <div className={Styles.foto}></div>
+                                        <h1>ANA</h1>
+                                        <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
+                                        
+                                    </div>                
 
                         </motion.div>
                     
                     </motion.div>
                 </div>
 
+
+            </section>
+
+
+            {/* Sessão6 ==================================================================== */}
+
+            <section className={Styles.sessão6}>
+
+                <div className={Styles.titulo}><h1>Nossos Planos</h1></div>
+                <div className={Styles.caixaplanos}>
+
+                    <div className={Styles.caixagratuito}>
+                        <h3>Gratuito</h3>
+                        <p>-Lorem Ipsum been induLorem</p>
+                        <p>-Lorem Ipsum been induLorem</p>
+                        <p>-Lorem Ipsum been induLorem</p>
+                        <p>-Lorem Ipsum been induLorem</p>
+                        <p>-Lorem Ipsum been induLorem</p>
+
+                        <h2>R$ 0,00</h2>
+                        
+                    </div>
+                    <div className={Styles.caixapremium}>
+                        <h3>Premium</h3>
+                        
+                        <p>-Lorem Ipsum been induLorem</p>
+                        <p>-Lorem Ipsum been induLorem</p>
+                        <p>-Lorem Ipsum been induLorem</p>
+                        <p>-Lorem Ipsum been induLorem</p>
+                        <p>-Lorem Ipsum been induLorem</p>
+                        <p>-Lorem Ipsum been induLorem</p>
+                        <p>-Lorem Ipsum been induLorem</p>
+                        <p>-Lorem Ipsum been induLorem</p>
+
+
+                        <h2>R$ 49,99</h2>
+                        
+                    </div>
+
+
+
+                </div>
 
             </section>
 
