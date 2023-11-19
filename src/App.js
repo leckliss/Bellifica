@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import './App.css';
 
 import Home from './pages/home/home';
@@ -20,6 +21,7 @@ import Cursos from './pages/cursos/cursos';
 function App() {
   return (
     <div className="App">
+
       <Router>
 
         <Routes>
@@ -39,7 +41,10 @@ function App() {
           <Route path='/cursos' element={<Cursos />}></Route>
         </Routes>
       </Router>
+
+
     </div>
+
   );
 }
 

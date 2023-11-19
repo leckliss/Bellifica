@@ -4,9 +4,10 @@
     padding: 0;
 }
 
+/* SESSÃO 1 ============================================================================*/
 .sessão1{
     width: 100%;
-    height: 800px;
+    height: auto;
 }
 
 .slide{
@@ -43,3 +44,275 @@ h1{
     font-size: 80px;
     color: black;
 }
+
+/* SESSÃO 2 ============================================================================*/
+.sessão2{
+    width: 100%;
+    height: auto;
+}
+
+.imagensprof{
+    margin-top: 20px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.imgles{
+
+    width: 40%;
+    height: 569px;
+    background-image: url(../../assets/imgs/home/ladoesquerdo.png);
+    background-size: cover;
+    margin-right: 350px;
+}
+
+.imgldr{
+    width: 35%;
+    height: 550px;
+    background-image: url(../../assets/imgs/home/ladodireto.png);
+    background-size: cover;
+}
+
+/* SESSÃO 3 ============================================================================*/
+.sessão3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seH1 h1{
+    width: 100%;
+    height: 100px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.Caixas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.Caixas .caixona1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.caixaideia{
+    width: 30%;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 5px  5px;
+    border-radius: 15px;
+    background: linear-gradient(180deg, rgba(171, 81, 225, 0.60) 44.81%, rgba(94, 79, 206, 0.60) 97.43%);
+}
+
+.caixaideia p{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.caixagestao{
+    width: 30%;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 15px;
+    background: linear-gradient(180deg, rgba(171, 81, 225, 0.60) 44.81%, rgba(94, 79, 206, 0.60) 97.43%);
+}
+
+.caixagestao p{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+
+
+.Caixas .caixona2{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.caixacurso{
+    width: 30%;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 15px;
+    background: linear-gradient(180deg, rgba(171, 81, 225, 0.60) 44.81%, rgba(94, 79, 206, 0.60) 97.43%);
+}
+
+.caixacurso p{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.caixaauxilio{
+    width: 30%;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 15px;
+    background: linear-gradient(180deg, rgba(171, 81, 225, 0.60) 44.81%, rgba(94, 79, 206, 0.60) 97.43%);
+}
+
+.caixaauxilio p{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+/* SESSÃO 4 ============================================================================*/
+
+.sessão4{
+    width: 99%;
+    height: auto;
+    background-image: url(../../assets/imgs/home/Rectangle\ 288.png) ;
+    background-size: cover;
+    margin-top: 150px;
+}
+
+.quadro{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.quadrocursos{
+    width: 60%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(149, 21, 170, 0.36) -13.61%, rgba(103, 137, 224, 0.42) 76.3%);    
+}
+
+.quadrocursos h3{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.quadrocursos p {
+    font-size: 20px;
+}
+
+.carrosselcurso{
+    margin-top: 60px;
+}
+
+.inner{
+    display: flex;
+    
+}
+.inner img{
+    width: 350px;
+    height: 400px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+.carrossel{
+    cursor: grab;
+    overflow: hidden;
+}
+
+/* SESSÃO 5 ============================================================================*/
+
+
+.sessão5{
+    width: 99%;
+    height: 800px;
+    
+}
+
+.comentarios{
+    margin-top: 50px;
+}
+
+.comentarios h1{
+    font-size: 70px;
+}
+
+.blabla{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.blabla h1{
+    margin-top: 100px;
+    height: 50px;
+}
+
+.campocoment{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.blug{
+    
+    display: flex;
+}
+
+.blug .Caixacoment{
+    margin-top: 20px;
+    width: 850px;
+    height: 300px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: blue;
+    
+}
+
+.coment{
+
+    cursor: grab;
+    overflow: hidden;
+}
+
