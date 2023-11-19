@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
-.fundo{
+*{
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
-.quemsomos {
+.pagsobre{
     width: 100%;
     height: 100vh;
-    font-family: 'Raleway', sans-serif;
+    
+}
+/*quem somos*/
 
+.quemsomos {
+    font-family: 'Raleway', sans-serif;
 }
 
 .logo {
@@ -110,14 +115,148 @@
     font-weight: bold;
 }
 
+/* principios */
+
 .princi{
-    width: 100%;
-    height: 100vh;
-    background-color: aqua;
+   
+    margin-top: 100px;
 }
 
 .enfoque{
-    width: 300px;
-    height: 500px;
+    width: 650px;
+    height: 300px;
     background-color: #DCCBED;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.iconeenf{
+    width: 200px;
+    height: 100px;
+}
+
+.conteuenfo, .enfo, .textenfo{
+    color: #000;
+    padding-bottom: 10px;
+}
+
+.conteuenfo .enfo{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 35px;
+}
+
+.conteuenfo .textenfo{
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+/*ética*/
+
+.campetica{
+    display: flex;
+    justify-content: end;
+}
+
+.etica{
+    width: 650px;
+    height: 300px;
+    background-color: #FDD3E4;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 10px;
+   
+}
+
+.iconeetic{
+    width: 200px;
+    height: 100px;
+   
+}
+
+.conteuetica{
+    margin-left: 50px;
+   
+}
+ .conteuetica .etic, .textetic{
+    color: #000;
+ }
+
+ .conteuetica .etic{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+ }
+
+ .conteuetica .textetic{
+    font-size: 25px;
+    margin-bottom: 15px;
+ }
+
+ /*meta*/
+
+ .meta{
+    width: 650px;
+    height: 300px;
+    background-color: #FA93BC;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 10px;
+   
+}
+
+.iconemeta{
+    width: 150px;
+    height: 150px; 
+}
+
+.conteumeta{
+    padding: 10px;
+}
+
+.conteumeta, .met, .textmet{
+    color: #000;
+    padding-bottom: 10px;
+}
+
+.conteumeta .met{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 35px;
+}
+
+.conteumeta .textmet{
+    font-size: 25px;
+    margin-bottom: 50px;
+    
+}
+
+/*logo bellifica e seus significados*/
+
+.siglogo{
+    width: 900px;
+    margin-top: 100px;
+    margin-left: 250px;
+
 }
