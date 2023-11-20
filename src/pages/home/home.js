@@ -40,8 +40,7 @@ function Home () {
     },[])
 
     return (
-
-        <>
+        <div className={Styles.paghome}>
           <Header/>
 
 
@@ -50,7 +49,7 @@ function Home () {
 
                 <div className={Styles.slide}>
                     <h1>
-                    Embelezando Sonhos, Estruturando Realidades.
+                    Embelezando sonhos, estruturando realidades.
                     </h1>
                 </div>
             
@@ -223,7 +222,7 @@ function Home () {
             </section>
 
             <Footer/>
-        </>
+        </div>
     )
 
 

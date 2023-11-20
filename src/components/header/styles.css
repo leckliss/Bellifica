@@ -1,30 +1,42 @@
+/* styles.css */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 * {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    color: #f9f9f9;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-    margin: 0;
-    padding: 0;
+  position: fixed;
+  width: 100%;
+  font-size: x-large;
+  transition: background-color 0.5s ease-in-out;
 }
 
 header ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-    background-color: #FB9CB2;
-    margin: 0;
-    padding: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent; /* Inicialmente transparente */
+  transition: background-color 0.5s ease;
+}
+header Link, header li{
+  text-decoration: none;
+}
+
+header.scrolled ul {
+  background-color: #FB9CB2; /* Altera para rosa ao rolar */
 }
 
 .logo {
-    width: 50px;
-    height: 55px;
+  width: 50px;
+  height: 55px;
 }
 
 .header-login {
@@ -41,35 +53,65 @@ header ul {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
-.header-login:hover .dropdown-content {
-  display: block;
-}
-
-.header-login .dropdown-content {
+.dropdown-content2 {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #f9f9f9;
+  background-color: #fb9cb2;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
+.header-login:hover .dropdown-content,
 .header-login.active .dropdown-content {
   display: block;
+  text-decoration: none;
+}
+.header-login:hover .dropdown-content2,
+.header-login.active .dropdown-content2 {
+  display: block;
+  text-decoration: none;
 }
 
 .menu-img {
-    width: 35px;
+  width: 35px;
 }
 
 .menu-button {
-    background-color: transparent;
-    border-width: 0px;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
 }
 
-.menu-option {
-    color: black;
+.menu-option-white {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-option-pink {
+  color: #FB9CB2; /* ou a cor rosa desejada */
+  text-decoration: none;
+}
+
+.menu-option2-white {
+  color: white;
+  text-decoration: none;
+  display: none;
+}
+
+.menu-option2-pink {
+  color: #FB9CB2; /* ou a cor rosa desejada */
+  text-decoration: none;
+  display: none;
+}
+.text-white {
+  color: white !important;
+  text-decoration: none;
+}
+
+.text-pink {
+  color: #FB9CB2 !important;
+  text-decoration: none;
 }

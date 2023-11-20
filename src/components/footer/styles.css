@@ -7,6 +7,10 @@
 }
 
 /* styles.css */
+.footerdiv{
+  width: 100%;
+  height: auto;
+}
 footer {
   background-color: #8C52FF; /* Cor de fundo semelhante ao da imagem */
   color: white;
