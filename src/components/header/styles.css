@@ -23,20 +23,27 @@ header ul {
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  background-color: transparent; /* Inicialmente transparente */
-  transition: background-color 0.5s ease;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Inicialmente transparente */
+  height: 20vh;
+  transition: all 0.8s ease;
 }
 header Link, header li{
   text-decoration: none;
 }
 
 header.scrolled ul {
+  height: 7vh;
+  background-image: none;
   background-color: #FB9CB2; /* Altera para rosa ao rolar */
 }
 
 .logo {
+  width: 100px;
+  height: 100px;
+}
+.logo2{
   width: 50px;
-  height: 55px;
+  height: 50px;
 }
 
 .header-login {
@@ -114,4 +121,5 @@ header.scrolled ul {
 .text-pink {
   color: #FB9CB2 !important;
   text-decoration: none;
+  font-size: 5vh;
 }

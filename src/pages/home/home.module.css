@@ -12,9 +12,12 @@
 .sessão1{
     width: 100%;
     height: auto;
-    
 }
-
+.cobertura{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
+}
 .slide{
     width: 100%;
     height: 100vh;

@@ -52,7 +52,7 @@ function Header() {
         {/* Links para diferentes seções, a classe muda conforme o estado de scroll */}
         <li><Link to={'/#planos'} className={scrolled ? 'text-white' : 'text-pink'}>Planos</Link></li>
         <li><Link to={'/produtos'} className={scrolled ? 'text-white' : 'text-pink'}>Produtos</Link></li>
-        <li><Link to={'/'}><img src={logoSrc} alt="Logo" className='logo' /></Link></li>
+        <li><Link to={'/'}><img src={logoSrc} alt="Logo" className={scrolled ? 'logo2' : 'logo'} /></Link></li>
         <li><Link to={'/sobre'} className={scrolled ? 'text-white' : 'text-pink'}>Quem Somos</Link></li>
         <li className='header-login'>
           {/* Botão do menu, muda a imagem conforme o estado de scroll */}

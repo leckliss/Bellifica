@@ -47,12 +47,13 @@ function Home () {
             {/* Sessão1 ==================================================================== */}
             <section className= {Styles.sessão1}>
 
+                <div className={Styles.cobertura}>
                 <div className={Styles.slide}>
                     <h1>
                     Embelezando sonhos, estruturando realidades.
                     </h1>
                 </div>
-            
+                </div>
             </section>
             
              {/* Sessão2 ==================================================================== */}
