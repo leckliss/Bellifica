@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-.pagsobre{
+.pagsobre {
     width: 100%;
     height: 100vh;
-    
+
 }
+
 /*quem somos*/
 
 .quemsomos {
@@ -53,23 +54,23 @@
     justify-content: center;
     align-items: center;
 
+    margin-top: 100px;
+
 }
 
-.texto1 h1 {
+.texto1 .qmsomos {
     font-size: 60px;
     color: #000;
     font-weight: bold;
-    margin-top: -100px;
-
+    padding-bottom: 10px;
 
 }
 
-.texto1 p {
+.texto1 .textsomos {
     width: 300px;
     color: #000;
     font-size: 30px;
     font-weight: bold;
-    margin-top: -200px;
 
 }
 
@@ -95,13 +96,13 @@
     margin-top: 200px;
 }
 
-.texto2 h2 {
+.texto2 .objetivo {
     color: #000;
     font-size: 50px;
     font-weight: bold;
 }
 
-.texto2 p {
+.texto2 .textobjetivo {
     width: 600px;
     font-size: 30px;
     font-weight: bold;
@@ -110,19 +111,21 @@
     margin-left: 20px;
 }
 
-.texto2 h1{
+.texto2 .titprinci {
+    padding-top: 160px;
+    color: #000;
     font-size: 55px;
     font-weight: bold;
 }
 
 /* principios */
 
-.princi{
-   
+.princi {
+
     margin-top: 100px;
 }
 
-.enfoque{
+.enfoque {
     width: 650px;
     height: 300px;
     background-color: #DCCBED;
@@ -136,17 +139,19 @@
     padding: 10px;
 }
 
-.iconeenf{
+.iconeenf {
     width: 200px;
     height: 100px;
 }
 
-.conteuenfo, .enfo, .textenfo{
+.conteuenfo,
+.enfo,
+.textenfo {
     color: #000;
     padding-bottom: 10px;
 }
 
-.conteuenfo .enfo{
+.conteuenfo .enfo {
     font-weight: bold;
     font-size: 50px;
     text-align: center;
@@ -154,19 +159,19 @@
     padding-bottom: 35px;
 }
 
-.conteuenfo .textenfo{
+.conteuenfo .textenfo {
     font-size: 25px;
     margin-bottom: 50px;
 }
 
 /*ética*/
 
-.campetica{
+.campetica {
     display: flex;
     justify-content: end;
 }
 
-.etica{
+.etica {
     width: 650px;
     height: 300px;
     background-color: #FDD3E4;
@@ -178,38 +183,40 @@
     align-items: center;
 
     padding: 10px;
-   
+
 }
 
-.iconeetic{
+.iconeetic {
     width: 200px;
     height: 100px;
-   
+
 }
 
-.conteuetica{
+.conteuetica {
     margin-left: 50px;
-   
-}
- .conteuetica .etic, .textetic{
-    color: #000;
- }
 
- .conteuetica .etic{
+}
+
+.conteuetica .etic,
+.textetic {
+    color: #000;
+}
+
+.conteuetica .etic {
     font-weight: bold;
     font-size: 50px;
     text-align: center;
     padding-bottom: 20px;
- }
+}
 
- .conteuetica .textetic{
+.conteuetica .textetic {
     font-size: 25px;
     margin-bottom: 15px;
- }
+}
 
- /*meta*/
+/*meta*/
 
- .meta{
+.meta {
     width: 650px;
     height: 300px;
     background-color: #FA93BC;
@@ -221,24 +228,26 @@
     align-items: center;
 
     padding: 10px;
-   
+
 }
 
-.iconemeta{
+.iconemeta {
     width: 150px;
-    height: 150px; 
+    height: 150px;
 }
 
-.conteumeta{
+.conteumeta {
     padding: 10px;
 }
 
-.conteumeta, .met, .textmet{
+.conteumeta,
+.met,
+.textmet {
     color: #000;
     padding-bottom: 10px;
 }
 
-.conteumeta .met{
+.conteumeta .met {
     font-weight: bold;
     font-size: 50px;
     text-align: center;
@@ -246,15 +255,15 @@
     padding-bottom: 35px;
 }
 
-.conteumeta .textmet{
+.conteumeta .textmet {
     font-size: 25px;
     margin-bottom: 50px;
-    
+
 }
 
 /*logo bellifica e seus significados*/
 
-.siglogo{
+.siglogo {
     width: 900px;
     margin-top: 100px;
     margin-left: 250px;

@@ -28,17 +28,17 @@ function Sobre() {
                         <img src={make} alt='uma mulher sendo maquiada' className={Styles.imagem1} />
 
                         <div className={Styles.texto1}>
-                            <h1>Quem somos</h1>
-                            <p>Somos um grupo de estudantes de programação que se reuniu em Agosto de 2023, com o objetivo de desenvolver uma ferramenta capaz de auxiliar profissionais autônomos.</p>
+                            <h1 className={Styles.qmsomos}>Quem somos</h1>
+                            <p className={Styles.textsomos}>Somos um grupo de estudantes de programação que se reuniu em Agosto de 2023, com o objetivo de desenvolver uma ferramenta capaz de auxiliar profissionais autônomos.</p>
                         </div>
                     </div>
 
                     <div className={Styles.grupo2}>
 
                         <div className={Styles.texto2}>
-                            <h2>Nosso objetivo</h2>
-                            <p>Auxiliar trabalhadores(as) autônomos simplificando a gestão de negócios para profissionais da beleza.<br /> Buscamos proporcionar ferramentas eficientes para agendamento e marketing, permitindo o crescimento e a excelência desses empreendedores.</p>
-                            <h1>Nossos Princípios</h1>
+                            <h2 className={Styles.objetivo}>Nosso objetivo</h2>
+                            <p className={Styles.textobjetivo}>Auxiliar trabalhadores(as) autônomos simplificando a gestão de negócios para profissionais da beleza.<br /> Buscamos proporcionar ferramentas eficientes para agendamento e marketing, permitindo o crescimento e a excelência desses empreendedores.</p>
+                            <h1 className={Styles.titprinci}>Nossos Princípios</h1>
                         </div>
 
                         <img src={cuidos} alt='mulher se olhando no espelho' className={Styles.imagem2} />
