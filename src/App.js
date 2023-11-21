@@ -14,9 +14,10 @@ import Login from './pages/login/login';
 
 //Rotas Protegidas necessarias login:
 import Dashboard from './pages/dashboard/dashboard';
-import Agenda from './pages/agenda/agenda';
-import Configuracoes from './pages/configuracoes/configuracoes';
-import Cursos from './pages/cursos/cursos';
+import Painel from './components/painel/painel';
+import Agenda from './components/agenda/agenda';
+import Configuracoes from './components/configuracoes/configuracoes';
+import Cursos from './components/cursos/cursos';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
 
 
           <Route path='/dashboard' element={<Dashboard />}></Route>
+          <Route path='/painel' element={<Painel />}></Route>
           <Route path='/agenda' element={<Agenda />}></Route>
           <Route path='/configuracoes' element={<Configuracoes />}></Route>
           <Route path='/cursos' element={<Cursos />}></Route>
