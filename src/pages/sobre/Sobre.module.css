@@ -19,15 +19,15 @@
 }
 
 .logo {
-    width: 400px;
-    height: 200px;
-    margin-left: 500px;
-    margin-top: 40px;
+    width: 500px;
+    height: 300px;
+    margin-left: 450px;
+    margin-top: 320px;
 }
 
 .fundao {
     width: 100%;
-    height: 1500px;
+    height: 265vh;
     background-image: url(../../assets/imgs/sobre/fundo-sobre.png);
     background-repeat: no-repeat;
     margin-top: 70px;
@@ -62,7 +62,7 @@
     font-size: 60px;
     color: #000;
     font-weight: bold;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 
 }
 
@@ -83,8 +83,8 @@
 .imagem2 {
     width: 500px;
     height: 620px;
-    margin-right: 100px;
-    margin-top: 60px;
+    margin-right: 80px;
+    margin-top: 150px;
 
 }
 
@@ -93,13 +93,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 300px;
 }
 
 .texto2 .objetivo {
     color: #000;
     font-size: 50px;
     font-weight: bold;
+    padding-bottom: 20px;
 }
 
 .texto2 .textobjetivo {
@@ -112,7 +113,7 @@
 }
 
 .texto2 .titprinci {
-    padding-top: 160px;
+    padding-top: 250px;
     color: #000;
     font-size: 55px;
     font-weight: bold;
@@ -268,4 +269,23 @@
     margin-top: 100px;
     margin-left: 250px;
 
+}
+
+/*RESPONSIVIDADE*/
+
+@media screen and (min-width: 1920px) {
+    .fundao {
+        width: 100%;
+        height: 240vh;
+        background-image: url(../../assets/imgs/sobre/fundo-bubble.png);
+    }
+
+    .logo {
+        width: 800px;
+        height: 400px;
+        margin-left: 300px;
+        margin-top: 350px;
+    }
+
+ 
 }
