@@ -2,7 +2,6 @@ import Header from '../../components/header/index';
 import Footer from '../../components/footer/index';
 import Styles from './home.module.css';
 
-
 import imgideia from '../../assets/imgs/home/caixaideia.png';
 import imggestao from '../../assets/imgs/home/caixagestao.png';
 import imgcurso from '../../assets/imgs/home/caixacurso.png';
@@ -24,6 +23,8 @@ import img1coment from '../../assets/imgs/home/Ellipse 46.png';
 
 
 function Home () {
+
+
     const carrossel = useRef();
     const [width,setWidth] = useState(0)
 
@@ -48,12 +49,15 @@ function Home () {
             <section className= {Styles.sessão1}>
 
                 <div className={Styles.cobertura}>
+
                 <div className={Styles.slide}>
                     <h1>
-                    Embelezando sonhos, estruturando realidades.
+                    Embelezando Sonhos, Estruturando Realidades.
                     </h1>
                 </div>
+                
                 </div>
+                
             </section>
             
              {/* Sessão2 ==================================================================== */}
@@ -62,7 +66,10 @@ function Home () {
 
                 <div  className={Styles.imagensprof}>
                     <div data-aos="fade-right" className={Styles.imgles}></div>
-                    <div data-aos="fade-left"className={Styles.imgldr}></div>
+                    <div data-aos="fade-left"className={Styles.imgldr}>
+                        <h1>Oque é a Bellifica?</h1>
+                        <p>Somos uma start-up focada em ajudar profissionais do ramo da beleza que são microempreendedores e  sempre sonharam em montar seu negocio próprio ou almejam crescer como sua microempresa.</p>
+                    </div>
                 </div>
             
             </section>
@@ -170,7 +177,19 @@ function Home () {
                                         <h1>ANA</h1>
                                         <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
                                         
-                                    </div>                
+                                    </div>       
+
+                                    <div className={Styles.Caixacoment}>
+                                    <div className={Styles.foto}></div>
+                                        <h1>ANA</h1>
+                                        <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
+                                    </div>
+
+                                    <div className={Styles.Caixacoment}>
+                                    <div className={Styles.foto}></div>
+                                        <h1>ANA</h1>
+                                        <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
+                                    </div>         
 
                         </motion.div>
                     
@@ -190,11 +209,11 @@ function Home () {
 
                     <div className={Styles.caixagratuito}>
                         <h3>Gratuito</h3>
-                        <p>-Lorem Ipsum been induLorem</p>
-                        <p>-Lorem Ipsum been induLorem</p>
-                        <p>-Lorem Ipsum been induLorem</p>
-                        <p>-Lorem Ipsum been induLorem</p>
-                        <p>-Lorem Ipsum been induLorem</p>
+
+                        <p>Para ajudar os profissionais que estão começando ou os que querem testar nossos serviços, oferecemos alguns recursos gratuitos:</p>
+                        <p>-Cursos</p>
+                        <p>-Guia de cursos presenciais</p>
+                        <p>-Consultoria para ajudar você a entrar nos trilhos e retirar todas suas duvidas para você crescer.</p>
 
                         <h2>R$ 0,00</h2>
                         
@@ -202,16 +221,12 @@ function Home () {
                     <div className={Styles.caixapremium}>
                         <h3>Premium</h3>
                         
-                        <p>-Lorem Ipsum been induLorem</p>
-                        <p>-Lorem Ipsum been induLorem</p>
-                        <p>-Lorem Ipsum been induLorem</p>
-                        <p>-Lorem Ipsum been induLorem</p>
-                        <p>-Lorem Ipsum been induLorem</p>
-                        <p>-Lorem Ipsum been induLorem</p>
-                        <p>-Lorem Ipsum been induLorem</p>
-                        <p>-Lorem Ipsum been induLorem</p>
-
-
+                        <p>-E para os profissionais que já estão na area ou querem mais ajuda para se organizar oferecemos melhores recursos, dentre eles:</p>
+                        <p>-Serviço de agendamento automatizado</p>
+                        <p>-Cursos premium</p>
+                        <p>-Consultoria premium</p>
+                        <p>-Recursos extra</p>
+                     
                         <h2>R$ 49,99</h2>
                         
                     </div>
@@ -227,7 +242,8 @@ function Home () {
     )
 
 
-
 }
+
+
 
 export default Home;

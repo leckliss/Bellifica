@@ -43,7 +43,7 @@
 }
 
 .slide h1{
-    width: 500px;
+    width: 50%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -62,28 +62,60 @@
 .imagensprof{
     margin-top: 20px;
     width: 100%;
-    height: 600px;
+    height: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin-top: 100px;
 }
 
 .imgles{
 
-    width: 40%;
-    height: 569px;
-    background-image: url(../../assets/imgs/home/ladoesquerdo.png);
+    width: 50%;
+    height: 118vh;
+    background-image: url(../../assets/imgs/home/imgprofs1.png);
+    animation: imgles 15s infinite;
     background-size: cover;
-    margin-right: 350px;
+    margin-right: 120px;
+    margin-left: -50px;
+}
+
+@keyframes imgles{
+    25%{
+        background: url(../../assets/imgs/home/imgprofs2.png);
+        background-size: cover;
+    }
+    50%{
+        background: url(../../assets/imgs/home/imgprofs3.png);
+        background-size: cover;
+    }
+    100%{
+        background: url(../../assets/imgs/home/imgprofs1.png);
+        background-size: cover;
+    }
 }
 
 .imgldr{
-    width: 35%;
-    height: 550px;
-    background-image: url(../../assets/imgs/home/ladodireto.png);
-    background-size: cover;
+    width: 40%;
+    height: 91vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
+
+.imgldr h1 {
+    font-size: 60px;
+    color: black;
+
+}
+.imgldr p {
+    font-size: 30px;
+    color: black;
+    margin-top: 30px;
+}
+
+
 
 /* SESSÃO 3 ============================================================================*/
 .sessão3{
@@ -97,7 +129,7 @@
 
 .seH1 h1{
     width: 100%;
-    height: 100px;
+    height: 15vh;
     font-size: 60px;
     display: flex;
     align-items: center;
@@ -125,7 +157,7 @@
 
 .caixaideia{
     width: 30%;
-    height: 320px;
+    height: 50vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -146,7 +178,7 @@
 
 .caixagestao{
     width: 30%;
-    height: 320px;
+    height: 50vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -176,7 +208,7 @@
 
 .caixacurso{
     width: 30%;
-    height: 320px;
+    height: 50vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -196,7 +228,7 @@
 
 .caixaauxilio{
     width: 30%;
-    height: 320px;
+    height: 50vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -234,7 +266,7 @@
 
 .quadrocursos{
     width: 60%;
-    height: 350px;
+    height: 50vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -264,8 +296,8 @@
     
 }
 .inner img{
-    width: 350px;
-    height: 400px;
+    width: 50%;
+    height: 70vh;
     margin-left: 20px;
     border-radius: 10px;
 }
@@ -299,7 +331,7 @@
 
 .blabla h1{
     margin-top: 100px;
-    height: 50px;
+    height: 50vh;
     color: black;
 }
 
@@ -307,11 +339,12 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+    
 }
 
 .Caixacoment .foto{
-    width: 80px;
-    height: 80px;
+    width: 17%;
+    height: 10vh;
     background-image: url(../../assets/imgs/home/Ellipse\ 46.png);
     background-size: cover;
     margin-top: 10px;
@@ -335,14 +368,14 @@
 
 
 .blug{
-    
+    width: 150%;
     display: flex;
 }
 
 .blug .Caixacoment{
     margin-top: 20px;
-    width: 850px;
-    height: 300px;
+    width: 20%;
+    height: 50vh;
     margin-left: 20px;
     border-radius: 10px;
     display: flex;
@@ -350,9 +383,8 @@
     align-items: center;
     flex-direction: column;
     background-color: bisque;
-    
-    
-    
+    z-index: -1;
+
 }
 
 .coment{
@@ -366,7 +398,7 @@
 
 .sessão6{
     width: 100%;
-    height: 1000px;
+    height: 170vh;
     background-image: url(../../assets/imgs/home/fundoplanos.png) ;
     background-size: cover;
     margin-top: 100px;
@@ -375,7 +407,7 @@
 .titulo h1{
     font-size: 80px;
     width: 100%;
-    height: 60px;
+    height: 10vh;
     display: flex;
     justify-content: center;
     color: black;
@@ -384,17 +416,18 @@
 
 .caixaplanos{
     width: 100%;
-    height: 800px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
     gap: 50px;
+    margin-top: 150px;
 }
 
 .caixagratuito{
     width: 30%;
-    height: 500px;
+    height: 90vh;
     background-color: rgba(240, 229, 243, 1);
     border-radius: 10px;
     display: flex;
@@ -404,8 +437,11 @@
 }
 
 .caixagratuito p {
+    width: 80%;
     color: black;
     font-size: 20px;
+    text-align: left;
+    margin-top: 10px;
     
 }
 
@@ -423,18 +459,22 @@
 
 .caixapremium{
     width: 30%;
-    height: 500px;
+    height: 90vh;
     background-color:rgba(242, 159, 184, 1);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    box-shadow: bottom 1px rgba(0, 0, 0, 0.644);
 }
 
 .caixapremium p {
+    width: 80%;
     color: black;
     font-size: 20px;
+    margin-top: 10px;
+
 }
 
 .caixapremium h2{
