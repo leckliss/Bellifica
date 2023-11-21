@@ -283,9 +283,55 @@
     .logo {
         width: 800px;
         height: 400px;
-        margin-left: 300px;
+        margin-left: 600px;
         margin-top: 350px;
     }
 
- 
+    .imagem1 {
+        width: 700px;
+        height: 720px;
+        margin-top: 250px;
+
+    }
+
+    .texto1 {
+        margin-right: 200px;
+
+    }
+
+    .texto1 .qmsomos {
+        font-size: 110px;
+    }
+
+    .texto1 .textsomos {
+        width: 600px;
+        font-size: 50px;
+
+    }
+
+    .imagem2 {
+        width: 800px;
+        height: 920px;
+        margin-right: 150px;
+        margin-top: 150px;
+    }
+
+    .texto2 .objetivo {
+        font-size: 80px;
+        padding-bottom: 20px;
+    }
+    
+    .texto2 .textobjetivo {
+        width: 600px;
+        font-size: 35px;
+
+    }
+    
+    .texto2 .titprinci {
+        padding-top: 250px;
+        font-size: 80px;
+        font-weight: bold;
+    }
+
+
 }
