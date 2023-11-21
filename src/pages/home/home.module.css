@@ -71,14 +71,13 @@
 }
 
 .imgles{
-
-    width: 50%;
-    height: 118vh;
+    width: 40%;
+    height: 94vh;
     background-image: url(../../assets/imgs/home/imgprofs1.png);
     animation: imgles 15s infinite;
     background-size: cover;
-    margin-right: 120px;
-    margin-left: -50px;
+    margin-right: 180px;
+    margin-left: -30px;
 }
 
 @keyframes imgles{
@@ -97,7 +96,7 @@
 }
 
 .imgldr{
-    width: 40%;
+    width: 45%;
     height: 91vh;
     display: flex;
     justify-content: center;
