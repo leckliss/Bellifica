@@ -1,0 +1,76 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    width: 75%;
+    height: 70vh;
+    background-color: #aa8bc7;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 100px;
+}
+
+.cads {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: justify;
+    gap: 50px;
+}
+
+.cad1 {
+    width: auto;
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.cad2 {
+    width: auto;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.input-box input::placeholder {
+    color: #FFF;
+}
+
+.buttonRegister {
+    color: #000;
+    font-family: Raleway;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 211.497px;
+    height: 66px;
+    border-radius: 30px;
+    background: #F29FB8;
+}

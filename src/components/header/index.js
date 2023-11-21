@@ -63,7 +63,7 @@ function Header() {
           {isDropdownVisible && (
            <div className={scrolled ? 'dropdown-content2' : 'dropdown-content'}>
               {/* Links dentro do dropdown, as classes mudam conforme o estado de scroll */}
-              <Link to={'/cadastrar'} style={{textDecoration: 'none'}}><p className={scrolled ? 'menu-option-white' : 'menu-option-pink'}>Cadastrar-se</p></Link>
+              <Link to={'/cadastro'} style={{textDecoration: 'none'}}><p className={scrolled ? 'menu-option-white' : 'menu-option-pink'}>Cadastrar-se</p></Link>
               <Link to={'/login'} style={{textDecoration: 'none'}}><p className={scrolled ? 'menu-option-white' : 'menu-option-pink'}>Login</p></Link>
               <Link to={'/#planos'} style={{textDecoration: 'none'}}><p className={scrolled ? 'menu-option2-white' : 'menu-option2-pink'} >Planos</p></Link>
               <Link to={'/produtos'} style={{textDecoration: 'none'}}><p className={scrolled ? 'menu-option2-white' : 'menu-option2-pink'} >Produtos</p></Link>
