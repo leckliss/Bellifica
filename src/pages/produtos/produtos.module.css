@@ -1,18 +1,18 @@
-*{
+* {
     margin: 0;
     border: 0;
     padding: 0;
 }
 
 
-.sessãopdt{
+.sessãopdt {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
 }
 
-.caixaprodutos{
+.caixaprodutos {
     width: 100%;
     height: auto;
     background-color: #fdd3;
@@ -20,7 +20,7 @@
 }
 
 
-.Titulo_produtos{
+.Titulo_produtos {
     margin-bottom: 00px;
     width: 100%;
     height: 10vh;
@@ -31,43 +31,44 @@
     color: black;
     font-size: 80px;
     margin-top: 200px;
-    
+    font-weight: bold;
+
 
 }
 
-    
-
-.pdtcursodicas{
+.pdtcursodicas {
     width: 75%;
     height: 50vh;
     display: flex;
     flex-direction: row;
     background-color: #fdd3e4;
-    margin-top: 100px;   
+    margin-top: 100px;
 }
 
-.pdtdescrição{
+.pdtdescrição {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.pdtdescrição h2{
+.pdtdescrição h2 {
     color: black;
     font-size: 50px;
     margin-left: 40px;
+    font-weight: bold;
 }
 
-.pdtdescrição p{
+.pdtdescrição p {
     width: 70%;
     color: black;
     font-size: 30px;
     margin-left: 40px;
     margin-top: 20px;
+    
 }
 
-.pdtcursodicas img{
+.pdtcursodicas img {
     width: 25%;
     height: 57vh;
     position: absolute;
@@ -76,38 +77,40 @@
 }
 
 
-.pdtagendamento{
+.pdtagendamento {
     width: 75%;
     height: 50vh;
     display: flex;
     flex-direction: row;
     background-color: #ff8fb2;
     margin-top: 100px;
-    margin-bottom: 100px;   
+    margin-bottom: 100px;
 }
 
-.pdtdescrição{
+.pdtdescrição {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.pdtdescrição h2{
+.pdtdescrição h2 {
     color: black;
     font-size: 50px;
     margin-left: 40px;
+    font-weight: bold;
 }
 
-.pdtdescrição p{
+.pdtdescrição p {
     width: 70%;
     color: black;
     font-size: 30px;
     margin-left: 40px;
     margin-top: 20px;
+   
 }
 
-.pdtagendamento img{
+.pdtagendamento img {
     width: 25%;
     height: 57vh;
     position: absolute;
@@ -116,8 +119,21 @@
 }
 
 @media screen and (min-width: 1920px) {
-    .pdtdescrição p{
+    .pdtdescrição p {
         width: 60%;
         font-size: 35px;
     }
+
+    .pdtcursodicas img {
+        margin-left: 1200px;
+        height: 50vh;
+        
+    }
+
+    .pdtagendamento img {
+        height: 50vh;
+        margin-left: 1200px;
+
+    }
+    
 }
