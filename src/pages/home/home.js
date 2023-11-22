@@ -29,15 +29,15 @@ function Home () {
     const [width,setWidth] = useState(0)
 
     useEffect(() => {
-        console.log(carrossel.current?.scrollWhidth,carrossel.current?.offsetWidth)
-        setWidth (carrossel.current?.scrollWhidth - carrossel.current?.offsetWidth)
+        console.log(carrossel.current?.scrollWidth,carrossel.current?.offsetWidth)
+        setWidth (carrossel.current?.scrollWidth - carrossel.current?.offsetWidth)
     },[])
 
     const coment = useRef();
     
     useEffect(() => {
-        console.log(coment.current?.scrollWhidth,coment.current?.offsetWidth)
-        setWidth (coment.current?.scrollWhidth - coment.current?.offsetWidth)
+        console.log(coment.current?.scrollWidth,coment.current?.offsetWidth)
+        setWidth (coment.current?.scrollWidth - coment.current?.offsetWidth)
     },[])
 
     return (
@@ -46,7 +46,7 @@ function Home () {
 
 
             {/* Sessão1 ==================================================================== */}
-            <section className= {Styles.sessão1}>
+            <section className= {Styles.sessão1} id='inicio' name='inicio' >
 
                 <div className={Styles.cobertura}>
 
@@ -67,7 +67,7 @@ function Home () {
                 <div  className={Styles.imagensprof}>
                     <div data-aos="fade-right" className={Styles.imgles}></div>
                     <div data-aos="fade-left"className={Styles.imgldr}>
-                        <h1>Oque é a Bellifica?</h1>
+                        <h1>O que é a Bellifica?</h1>
                         <p>Somos uma start-up focada em ajudar profissionais do ramo da beleza que são microempreendedores e  sempre sonharam em montar seu negocio próprio ou almejam crescer como sua microempresa.</p>
                     </div>
                 </div>
@@ -202,7 +202,7 @@ function Home () {
 
             {/* Sessão6 ==================================================================== */}
 
-            <section className={Styles.sessão6}>
+            <section className={Styles.sessão6} id='planos' name='planos'>
 
                 <div className={Styles.titulo}><h1>Nossos Planos</h1></div>
                 <div className={Styles.caixaplanos}>

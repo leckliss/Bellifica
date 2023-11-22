@@ -15,6 +15,7 @@ header {
   width: 100%;
   font-size: x-large;
   transition: background-color 0.5s ease-in-out;
+  z-index: 100;
 }
 
 header ul {
