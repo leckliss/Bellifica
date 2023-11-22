@@ -320,17 +320,88 @@
         font-size: 80px;
         padding-bottom: 20px;
     }
-    
+
     .texto2 .textobjetivo {
         width: 600px;
         font-size: 35px;
 
     }
-    
+
     .texto2 .titprinci {
-        padding-top: 250px;
+        padding-top: 650px;
         font-size: 80px;
         font-weight: bold;
+    }
+
+    .enfoque {
+        width: 850px;
+        height: 400px;
+
+    }
+
+    .iconeenf {
+        width: 300px;
+        height: 120px;
+    }
+
+    .conteuenfo .enfo {
+        font-size: 70px;
+
+    }
+
+    .conteuenfo .textenfo {
+        font-size: 35px;
+
+    }
+
+    .etica {
+        width: 850px;
+        height: 400px;
+    
+    }
+    
+    .iconeetic {
+        width: 300px;
+        height: 120px;
+    
+    }
+    
+    .conteuetica .etic {
+        font-size: 70px;
+
+    }
+    
+    .conteuetica .textetic {
+        font-size: 35px;
+        margin-bottom: 25px;
+
+    }
+
+    .meta {
+        width: 850px;
+        height: 400px;
+    
+    }
+    
+    .iconemeta {
+        width: 170px;
+        height: 170px;
+    }
+    
+    .conteumeta .met {
+        font-size: 70px;
+    }
+    
+    .conteumeta .textmet {
+        font-size: 35px;
+    
+    }
+
+    .siglogo {
+        width: 70%;
+        margin-top: 100px;
+        margin-left: 300px;
+    
     }
 
 
