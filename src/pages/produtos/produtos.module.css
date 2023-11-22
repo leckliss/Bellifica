@@ -115,3 +115,9 @@
     margin-bottom: 50px;
 }
 
+@media screen and (min-width: 1920px) {
+    .pdtdescrição p{
+        width: 60%;
+        font-size: 35px;
+    }
+}
