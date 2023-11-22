@@ -75,6 +75,7 @@
     height: 94vh;
     background-image: url(../../assets/imgs/home/imgprofs1.png);
     animation: imgles 15s infinite;
+    transition: all 5s ease-in-out;
     background-size: cover;
     margin-right: 180px;
     margin-left: -30px;
@@ -488,6 +489,8 @@
     margin-bottom: 50px;
 }
 
+
+/*Responsividade ============================================================================*/
 
 
 
