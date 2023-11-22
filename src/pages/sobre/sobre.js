@@ -7,7 +7,7 @@ import Footer from '../../components/footer/index';
 import enfoque from '../../assets/imgs/sobre/enfoque.png'
 import etica from '../../assets/imgs/sobre/etica.png'
 import meta from '../../assets/imgs/sobre/meta.png'
-import bellogo from '../../assets/imgs/sobre/sig-logo.png'
+import bellogo from '../../assets/imgs/sobre/logo-sig.png'
 
 function Sobre() {
     return (
