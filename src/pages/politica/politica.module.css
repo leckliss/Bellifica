@@ -1,0 +1,40 @@
+.politica_corpo{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.politica_titulo{
+    color: black;
+    font-size: 5.3vh;
+    margin-top: -200px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.descricoes_text{
+    width: 90%;
+    height: 40vh;
+    margin-bottom: -150px;
+}
+
+.destaque_politica{
+    color: black;
+    font-weight: bold;
+    font-size: 3.5vh;
+}
+
+.coleta_info{
+    color: black;
+    font-size: 3.2vh;
+   
+}
+
+.agradecimento_politica{
+    color: black;
+    font-size: 3vh;
+}
