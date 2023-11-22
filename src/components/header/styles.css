@@ -3,7 +3,7 @@
 
 * {
   font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-weight: 900;
   color: #f9f9f9;
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@
 header {
   position: fixed;
   width: 100%;
-  font-size: x-large;
+  font-size: xx-large;
   transition: background-color 0.5s ease-in-out;
   z-index: 100;
 }
@@ -37,6 +37,16 @@ header.scrolled ul {
   background-image: none;
   background-color: #FB9CB2; /* Altera para rosa ao rolar */
 }
+header ul li:hover{
+  border-bottom: 5px solid #FB9CB2;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+header.scrolled ul li:hover{
+  border-bottom: 3px solid white;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
 
 .logo {
   width: 100px;
@@ -57,6 +67,7 @@ header.scrolled ul {
   top: 100%;
   left: 0;
   background-color: #f9f9f9;
+  font-size: x-large;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -67,6 +78,7 @@ header.scrolled ul {
   top: 100%;
   left: 0;
   background-color: #fb9cb2;
+  font-size: x-large;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;

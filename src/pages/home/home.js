@@ -15,69 +15,103 @@ import imgcurso5 from '../../assets/imgs/home/imgcurso5.png';
 import imgcurso6 from '../../assets/imgs/home/imgcurso6.png';
 
 import { motion } from 'framer-motion';
-import {useState, useEffect, useRef} from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 import img1coment from '../../assets/imgs/home/Ellipse 46.png';
 
 
 
 
-function Home () {
+function Home() {
+
+    const [backgroundIndex, setBackgroundIndex] = useState(0);
+
+    const backgrounds = [
+        { image: '../../assets/imgs/home/img1.png', color: '#0c301c' },
+        { image: '../../assets/imgs/home/img2.png', color: '#61342d' },
+        { image: '../../assets/imgs/home/img3.jpeg', color: '#2d1c20' },
+    ];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setBackgroundIndex((prevIndex) =>
+                prevIndex === backgrounds.length - 1 ? 0 : prevIndex + 1
+            );
+        }, 5000); // Muda a cada 5 segundos
+
+        return () => clearInterval(interval);
+    }, []);
+
+    const [text, setText] = useState('');
+    const fullText = ' Embelezando sonhos, estruturando realidades...';
+
+    useEffect(() => {
+        let charIndex = 0;
+        const typingEffect = setInterval(() => {
+            // Verifica se o próximo caractere é o ponto final
+            if (fullText[charIndex] === '.') {
+                setText((prev) => prev + fullText[charIndex]); // Adiciona o ponto final
+                clearInterval(typingEffect); // Interrompe o intervalo após adicionar o ponto final
+            } else if (charIndex < fullText.length) {
+                setText((prev) => prev + fullText[charIndex]);
+                charIndex++;
+            }
+        }, 150); // Velocidade de digitação
+
+        return () => clearInterval(typingEffect);
+    }, []);
+
 
 
     const carrossel = useRef();
-    const [width,setWidth] = useState(0)
+    const [width, setWidth] = useState(0)
 
     useEffect(() => {
-        console.log(carrossel.current?.scrollWidth,carrossel.current?.offsetWidth)
-        setWidth (carrossel.current?.scrollWidth - carrossel.current?.offsetWidth)
-    },[])
+        console.log(carrossel.current?.scrollWidth, carrossel.current?.offsetWidth)
+        setWidth(carrossel.current?.scrollWidth - carrossel.current?.offsetWidth)
+    }, [])
 
     const coment = useRef();
-    
+
     useEffect(() => {
-        console.log(coment.current?.scrollWidth,coment.current?.offsetWidth)
-        setWidth (coment.current?.scrollWidth - coment.current?.offsetWidth)
-    },[])
+        console.log(coment.current?.scrollWidth, coment.current?.offsetWidth)
+        setWidth(coment.current?.scrollWidth - coment.current?.offsetWidth)
+    }, [])
 
     return (
         <div className={Styles.paghome}>
-          <Header/>
+
+            <Header />
+
+            <div className={Styles.espaco}>
+                <section className={Styles.sessão1} id='inicio' name='inicio' style={{ backgroundImage: backgrounds[backgroundIndex].image, backgroundSize: 'cover' }}>
+                    <div className={Styles.cobertura}>
+                        <div className={`${Styles.slide} typing-effect`}>
+                            <h1 style={{ color: backgrounds[backgroundIndex].color, width: '20%', height:'20vh' }}>
+                                {text}
+                            </h1>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            {/* Sessão2 ==================================================================== */}
+            <section className={Styles.sessão2}>
 
 
-            {/* Sessão1 ==================================================================== */}
-            <section className= {Styles.sessão1} id='inicio' name='inicio' >
-
-                <div className={Styles.cobertura}>
-
-                <div className={Styles.slide}>
-                    <h1>
-                    Embelezando Sonhos, Estruturando Realidades.
-                    </h1>
-                </div>
-                
-                </div>
-                
-            </section>
-            
-             {/* Sessão2 ==================================================================== */}
-            <section className= {Styles.sessão2}>
-           
-
-                <div  className={Styles.imagensprof}>
+                <div className={Styles.imagensprof}>
                     <div data-aos="fade-right" className={Styles.imgles}></div>
-                    <div data-aos="fade-left"className={Styles.imgldr}>
+                    <div data-aos="fade-left" className={Styles.imgldr}>
                         <h1>O que é a Bellifica?</h1>
-                        <p>Somos uma start-up focada em ajudar profissionais do ramo da beleza que são microempreendedores e  sempre sonharam em montar seu negocio próprio ou almejam crescer como sua microempresa.</p>
+                        <p>Somos uma startup dedicada a auxiliar microempreendedores no ramo da beleza a realizar seus sonhos de gerenciar seu próprio negócio e alcançar o crescimento desejado.</p>
                     </div>
                 </div>
-            
+
             </section>
 
 
-             {/* Sessão3 ==================================================================== */}
-            <section className= {Styles.sessão3}>
-           
+            {/* Sessão3 ==================================================================== */}
+            <section className={Styles.sessão3}>
+
                 <div className={Styles.seH1}><h1>O que oferecemos?</h1></div>
 
 
@@ -109,7 +143,7 @@ function Home () {
             </section>
 
             {/* Sessão4 ==================================================================== */}
-            <section className= {Styles.sessão4}>
+            <section className={Styles.sessão4}>
 
                 <div className={Styles.sessãocurso}>
 
@@ -123,17 +157,17 @@ function Home () {
                     </div>
 
                     <div className={Styles.carrosselcurso}>
-                        <motion.div className={Styles.carrossel} whileTap={{cursor: "grabbing"}}>
-                            <motion.div className={Styles.inner} drag= "x"
-                            dragConstraints = {{right:0, left: - width}}>
-                                
+                        <motion.div className={Styles.carrossel} whileTap={{ cursor: "grabbing" }}>
+                            <motion.div className={Styles.inner} drag="x"
+                                dragConstraints={{ right: 0, left: - width }}>
+
                                 <img src={imgcurso1} alt="Curso 1"></img>
                                 <img src={imgcurso2} alt="Curso 2"></img>
                                 <img src={imgcurso3} alt="Curso 3"></img>
                                 <img src={imgcurso4} alt="Curso 4"></img>
                                 <img src={imgcurso5} alt="Curso 5"></img>
                                 <img src={imgcurso6} alt="Curso 6"></img>
-                              
+
 
                             </motion.div>
 
@@ -146,7 +180,7 @@ function Home () {
             </section>
 
 
-             {/* Sessão5 ==================================================================== */}
+            {/* Sessão5 ==================================================================== */}
 
             <section className={Styles.sessão5}>
                 <div className={Styles.comentarios}>
@@ -154,45 +188,45 @@ function Home () {
                 </div>
 
                 <div className={Styles.campocoment}>
-                    <motion.div className={Styles.coment} whileTap={{cursor: "grabbing"}}>
-                        <motion.div className={Styles.blug} drag= "x"
-                        dragConstraints = {{right:1, left: -width}}>
+                    <motion.div className={Styles.coment} whileTap={{ cursor: "grabbing" }}>
+                        <motion.div className={Styles.blug} drag="x"
+                            dragConstraints={{ right: 1, left: -width }}>
 
-                        
-                                    <div className={Styles.Caixacoment}>
-                                        <div className={Styles.foto}></div>
-                                        <h1>ANA</h1>
-                                        <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
 
-                                    </div>
-                                    
-                                    <div className={Styles.Caixacoment}>
-                                    <div className={Styles.foto}></div>
-                                        <h1>ANA</h1>
-                                        <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
-                                    </div>
+                            <div className={Styles.Caixacoment}>
+                                <div className={Styles.foto}></div>
+                                <h1>ANA</h1>
+                                <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
 
-                                    <div className={Styles.Caixacoment}>
-                                    <div className={Styles.foto}></div>
-                                        <h1>ANA</h1>
-                                        <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
-                                        
-                                    </div>       
+                            </div>
 
-                                    <div className={Styles.Caixacoment}>
-                                    <div className={Styles.foto}></div>
-                                        <h1>ANA</h1>
-                                        <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
-                                    </div>
+                            <div className={Styles.Caixacoment}>
+                                <div className={Styles.foto}></div>
+                                <h1>ANA</h1>
+                                <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
+                            </div>
 
-                                    <div className={Styles.Caixacoment}>
-                                    <div className={Styles.foto}></div>
-                                        <h1>ANA</h1>
-                                        <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
-                                    </div>         
+                            <div className={Styles.Caixacoment}>
+                                <div className={Styles.foto}></div>
+                                <h1>ANA</h1>
+                                <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
+
+                            </div>
+
+                            <div className={Styles.Caixacoment}>
+                                <div className={Styles.foto}></div>
+                                <h1>ANA</h1>
+                                <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
+                            </div>
+
+                            <div className={Styles.Caixacoment}>
+                                <div className={Styles.foto}></div>
+                                <h1>ANA</h1>
+                                <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
+                            </div>
 
                         </motion.div>
-                    
+
                     </motion.div>
                 </div>
 
@@ -216,19 +250,19 @@ function Home () {
                         <li>Consultoria para ajudar você a entrar nos trilhos e retirar todas suas duvidas para você crescer.</li>
 
                         <h2>R$ 0,00</h2>
-                        
+
                     </div>
                     <div className={Styles.caixapremium}>
                         <h3>Premium</h3>
-                        
+
                         <li>E para os profissionais que já estão na area ou querem mais ajuda para se organizar oferecemos melhores recursos, dentre eles:</li>
                         <li>Serviço de agendamento automatizado</li>
                         <li>Cursos premium</li>
                         <li>Consultoria premium</li>
                         <li>Recursos extra</li>
-                     
+
                         <h2>R$ 49,99</h2>
-                        
+
                     </div>
 
 
@@ -237,7 +271,7 @@ function Home () {
 
             </section>
 
-            <Footer/>
+            <Footer />
         </div>
     )
 

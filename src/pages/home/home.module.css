@@ -5,26 +5,35 @@
 }
 
 /* SESSÃO 1 ============================================================================*/
+
 .paghome{
     width: 100%;
     height: auto;
 }
+.espaco{
+    height: 100vh;
+    display: flex;
+    align-items: end;
+}
 .sessão1{
     width: 100%;
     height: auto;
+    margin-top: 10vh;
 }
 .cobertura{
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
 }
 .slide{
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     background-image: url(../../assets/imgs/home/img1.png);
     animation: slide 15s infinite;
     background-size: cover;
-    
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 
 @keyframes slide{
@@ -51,6 +60,18 @@
     text-align: left;
     font-size: 80px;
     color: black;
+}
+
+.typing-effect h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid; /* Simula o cursor de digitação */
+    width: 0;
+    animation: typing 5s steps(30, end) forwards;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
 }
 
 /* SESSÃO 2 ============================================================================*/
@@ -84,14 +105,17 @@
 @keyframes imgles{
     25%{
         background: url(../../assets/imgs/home/imgprofs2.png);
+        
         background-size: cover;
     }
     50%{
         background: url(../../assets/imgs/home/imgprofs3.png);
+        
         background-size: cover;
     }
     100%{
         background: url(../../assets/imgs/home/imgprofs1.png);
+        
         background-size: cover;
     }
 }
@@ -489,7 +513,6 @@
     font-size: 50px;
     margin-bottom: 50px;
 }
-
 
 /*Responsividade ============================================================================*/
 
