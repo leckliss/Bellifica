@@ -1,0 +1,38 @@
+.cursos-dicas-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #F3E8FF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .cursos-dicas-container h1 {
+    background-color: #EAD6FF;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .conteudo {
+    padding: 20px;
+  }
+  
+  /* Estilização dos itens de curso e dica */
+  .curso-item, .dica-item {
+    background-color: #FFFFFF;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .curso-item:hover, .dica-item:hover {
+    transform: translateY(-3px);
+  }
+  

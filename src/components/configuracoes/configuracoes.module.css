@@ -1,0 +1,44 @@
+.configuracoes-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #F3E8FF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .configuracoes-container h1 {
+    background-color: #EAD6FF;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .configuracoes-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  .configuracoes-lista li {
+    background-color: #F3E8FF;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: black;
+  }
+  
+  .configuracoes-lista li:hover {
+    background-color: #EAD6FF;
+  }
+  
+  /* O primeiro item da lista tem uma borda superior */
+  .configuracoes-lista li:first-child {
+    border-top: 1px solid #ccc;
+  }
+  
