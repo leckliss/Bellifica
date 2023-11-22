@@ -14,7 +14,7 @@ function Produtos() {
                 <section className={Styles.sessãopdt}>
 
                     <div className={Styles.caixaprodutos}>
-                        <div className={Styles.pdttexto}><h1 className={Styles.mova}>Nossos Serviços</h1></div>
+                        <div className={Styles.pdttexto}><h1 className={Styles.Titulo_produtos}>Nossos Serviços</h1></div>
                         <div className={Styles.pdtcursodicas}>
                             <div className={Styles.pdtdescrição}> <h2>Cursos e dicas</h2>
                                 <p>Auxiliamos você a entrar no caminho certo para o crescimento do seu negócio, indicamos cursos e dicas para ajudar no seu dia-a-dia.</p></div>
