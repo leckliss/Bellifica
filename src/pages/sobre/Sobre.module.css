@@ -121,10 +121,6 @@
 
 /* principios */
 
-.princi {
-
-    margin-top: 100px;
-}
 
 .enfoque {
     width: 650px;
@@ -328,7 +324,7 @@
     }
 
     .texto2 .titprinci {
-        padding-top: 450px;
+        margin-top: 340px;
         font-size: 80px;
         font-weight: bold;
     }
