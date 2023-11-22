@@ -210,10 +210,10 @@ function Home () {
                     <div className={Styles.caixagratuito}>
                         <h3>Gratuito</h3>
 
-                        <p>Para ajudar os profissionais que estão começando ou os que querem testar nossos serviços, oferecemos alguns recursos gratuitos:</p>
-                        <p>-Cursos</p>
-                        <p>-Guia de cursos presenciais</p>
-                        <p>-Consultoria para ajudar você a entrar nos trilhos e retirar todas suas duvidas para você crescer.</p>
+                        <li>Para ajudar os profissionais que estão começando ou os que querem testar nossos serviços, oferecemos alguns recursos gratuitos:</li>
+                        <li>Cursos</li>
+                        <li>Guia de cursos presenciais</li>
+                        <li>Consultoria para ajudar você a entrar nos trilhos e retirar todas suas duvidas para você crescer.</li>
 
                         <h2>R$ 0,00</h2>
                         
@@ -221,11 +221,11 @@ function Home () {
                     <div className={Styles.caixapremium}>
                         <h3>Premium</h3>
                         
-                        <p>-E para os profissionais que já estão na area ou querem mais ajuda para se organizar oferecemos melhores recursos, dentre eles:</p>
-                        <p>-Serviço de agendamento automatizado</p>
-                        <p>-Cursos premium</p>
-                        <p>-Consultoria premium</p>
-                        <p>-Recursos extra</p>
+                        <li>E para os profissionais que já estão na area ou querem mais ajuda para se organizar oferecemos melhores recursos, dentre eles:</li>
+                        <li>Serviço de agendamento automatizado</li>
+                        <li>Cursos premium</li>
+                        <li>Consultoria premium</li>
+                        <li>Recursos extra</li>
                      
                         <h2>R$ 49,99</h2>
                         

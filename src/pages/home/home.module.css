@@ -436,7 +436,7 @@
     align-items: center;
 }
 
-.caixagratuito p {
+.caixagratuito li {
     width: 80%;
     color: black;
     font-size: 20px;
@@ -469,7 +469,7 @@
     box-shadow: bottom 1px rgba(0, 0, 0, 0.644);
 }
 
-.caixapremium p {
+.caixapremium li {
     width: 80%;
     color: black;
     font-size: 20px;
@@ -492,6 +492,119 @@
 
 /*Responsividade ============================================================================*/
 
+@media screen and (min-width: 1920px){
+
+    .slide h1{
+        width: 45%;
+    }
+
+    .imgles{
+        width: 46%;
+        height: 100vh;
+        margin-left: -85px;
+    }
+
+    .imgldr{
+        width: 40%;
+        height: 91vh;
+    }
+
+    .caixaideia,.caixagestao,.caixacurso,.caixaauxilio{
+        width: 30%;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .caixaideia p{
+        font-size: 30px;
+    }
+
+    .caixagestao p{
+        font-size: 30px;
+    }
+
+    .caixacurso p{
+        font-size: 30px;
+    }
+
+    .caixaauxilio p{
+        font-size: 30px;
+    }
+
+    .imgldr h1 {
+        font-size: 70px;
+        color: black;
+    
+    }
+
+    .imgldr p {
+        font-size: 40px;
+        color: black;
+    
+    }
+
+    .seH1 h1{
+        width: 100%;
+        height: 15vh;
+        font-size: 80px;
+    }
+
+    .quadrocursos h3{
+        font-size: 70px;
+        font-weight: bold;
+    }
+
+    .quadrocursos p{
+        width: 80%;
+        font-size: 30px;
+    }
+
+    .Caixacoment .foto{
+        width: 26%;
+        height: 14vh;
+    }
+
+    .Caixacoment h1{
+        font-size: 30px;
+    }
+
+    .Caixacoment p{
+        width: 80%;
+        font-size: 25px;
+    }
+
+    .sessão6{
+        width: 100%;
+        height: 150vh;
+    }
+
+    .caixagratuito h2{
+        
+        font-size: 60px;
+        margin-top: 50px;
+    }
+    
+    .caixagratuito h3{
+        font-size: 70px;
+        margin-bottom: 50px;
+    }
+    .caixapremium h3{
+        font-size: 70px;
+        margin-bottom: 50px;
+    }
+
+    .caixapremium li {
+        font-size: 30px;
+    }
+
+    .caixagratuito li{
+        font-size: 30px;
+    }
+    
+
+}
 
 
 
