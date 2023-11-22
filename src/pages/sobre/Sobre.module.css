@@ -276,7 +276,7 @@
 @media screen and (min-width: 1920px) {
     .fundao {
         width: 100%;
-        height: 240vh;
+        height: 250vh;
         background-image: url(../../assets/imgs/sobre/fundo-bubble.png);
     }
 
