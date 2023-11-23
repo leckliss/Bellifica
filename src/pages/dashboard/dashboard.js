@@ -53,8 +53,8 @@ function Dashboard() {
         <img src={logoSrc} alt="Logo" className={clicked ? 'logo2' : 'logo'} />
         <ul>
           <li><a href="#" onClick={() => handleClick2('Painel', 'Painel de Controle')}><img src={require('../../assets/imgs/dashboard/Initial.png')} /> Pagina Inicial</a></li>
-          <li><a href="#" onClick={() => handleClick('Agenda', 'Agenda')}><img src={require('../../assets/imgs/dashboard/Calendar.png')} /> Calendario</a></li>
-          <li><a href="#" onClick={() => handleClick('Cursos', 'Cursos e Dicas')}><img src={require('../../assets/imgs/dashboard/People.png')} /> Cursos e Dicas</a></li>
+          <li><a href="#" onClick={() => handleClick('Agenda', 'Agenda')}><img src={require('../../assets/imgs/dashboard/Calendar.png')} /> Agendamentos</a></li>
+          <li><a href="#" onClick={() => handleClick('Cursos', 'Cursos')}><img src={require('../../assets/imgs/dashboard/People.png')} /> Cursos</a></li>
           <li><a href="#" onClick={() => handleClick('Configuracoes', 'Configurações')}><img src={require('../../assets/imgs/dashboard/Settings.png')} /> Configurações</a></li>
           <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
           <br /><br /><br /><br /><br />
@@ -62,7 +62,7 @@ function Dashboard() {
         </ul>
       </div>
       <div className="main-content">
-        <h2>{nomeComponent}</h2>
+        <h2 style={{color: 'black'}}>{nomeComponent}</h2>
         <div>
           {renderComponent()}
         </div>

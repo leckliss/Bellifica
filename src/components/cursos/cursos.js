@@ -7,14 +7,74 @@ function CursosDicas() {
   // const dicas = [...] // Suas dicas
 
   return (
-    <div className="cursos-dicas-container">
-      <h1>Cursos e Dicas</h1>
-      <div className="conteudo">
-        {/* Aqui você iteraria sobre seus cursos e dicas para exibi-los */}
-        {/* Exemplo: */}
-        {/* cursos.map(curso => <div className="curso-item">{curso.nome}</div>) */}
-        {/* dicas.map(dica => <div className="dica-item">{dica.titulo}</div>) */}
+    <div className="compainel" style={{ width: '100%', height: '90vh', display: 'flex', flexDirection: 'column', justifyContent: 'space-around' }}>
+      <h3 style={{ color: 'black' }}>Cursos Recomendados</h3>
+      <div style={{ width: '100%', height: '30vh', display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+        <div style={{ width: "23%", height: "100%", backgroundColor: 'pink', borderRadius: '30px',  display:'flex', alignItems:'center', justifyContent: 'center'  }}>
+          <h1> Curso 1</h1>
+        </div>
+        <div style={{ width: "23%", height: "100%", backgroundColor: 'pink', borderRadius: '30px',  display:'flex', alignItems:'center', justifyContent: 'center'  }}>
+          <h1> Curso 2</h1>
+        </div>
+        <div style={{ width: "23%", height: "100%", backgroundColor: 'pink', borderRadius: '30px',  display:'flex', alignItems:'center', justifyContent: 'center'  }}>
+          <h1> Curso 3</h1>
+        </div>
+        <div style={{ width: "23%", height: "100%", backgroundColor: 'pink', borderRadius: '30px', display:'flex', alignItems:'center', justifyContent: 'center' }}>
+          <h1> Curso 4</h1>
+        </div>
+
       </div>
+      <h3 style={{ color: 'black' }}>Apostilas</h3>
+      <div style={{ width: '100%', height: '10vh', display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+        <div style={{ width: "15%", height: "100%", backgroundColor: 'pink', borderRadius: '30px',  display:'flex', alignItems:'center', justifyContent: 'center'  }}>
+          <h1> AP 1</h1>
+        </div>
+        <div style={{ width: "15%", height: "100%", backgroundColor: 'pink', borderRadius: '30px',  display:'flex', alignItems:'center', justifyContent: 'center'  }}>
+          <h1> AP 2</h1>
+        </div>
+        <div style={{ width: "15%", height: "100%", backgroundColor: 'pink', borderRadius: '30px',  display:'flex', alignItems:'center', justifyContent: 'center'  }}>
+          <h1> AP 3</h1>
+        </div>
+        <div style={{ width: "15%", height: "100%", backgroundColor: 'pink', borderRadius: '30px', display:'flex', alignItems:'center', justifyContent: 'center' }}>
+          <h1> AP 4</h1>
+        </div>
+        <div style={{ width: "15%", height: "100%", backgroundColor: 'pink', borderRadius: '30px', display:'flex', alignItems:'center', justifyContent: 'center' }}>
+          <h1> AP 5</h1>
+        </div>
+
+      </div>
+      
+      <h3 style={{ color: 'black' }}>Cursos</h3>
+      <div style={{ width: '100%', height: '30vh', backgroundColor: 'pink', display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+        <iframe
+          width="30%"
+          height="100%"
+          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+          title="Vídeo de Exemplo"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="30%"
+          height="100%"
+          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+          title="Vídeo de Exemplo"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="30%"
+          height="100%"
+          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+          title="Vídeo de Exemplo"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
     </div>
   );
 }
