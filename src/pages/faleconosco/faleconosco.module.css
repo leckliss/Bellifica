@@ -6,6 +6,107 @@
     justify-content: center;
 }
 
-.teste{
+.formulariofaleconosco_corpo{
+    background: linear-gradient(to bottom, #F3B1CE, #EEB7FD);
+    width: 65%;
+    height: 72vh;
+    border-radius: 20px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.titulo_formulariofaleconosco{
+    text-align: center;
+    font-size: 7.0vh;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.input_nomefaleconosco{
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    margin-top: 10px;
+    padding-top: 40px;
+    height: 10vh;
+    width: 70%;
+    margin-left: 120px;
+    font-size: 5vh;
+    
+}
+
+.input_emailfaleconosco2{
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    margin-top: 20px;
+    padding-top: 40px;
+    height: 10vh;
+    width: 70%;
+    margin-left: 120px;
+    font-size: 5vh;
+}
+
+.input_nomefaleconosco::placeholder{
+    color: rgb(255, 255, 255);
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+
+.input_emailfaleconosco2::placeholder{
+    color: rgb(255, 255, 255);
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.input_textfaleconosco{
+    width: 70%;
+    margin-left: 120px;
+    margin-top: 50px;
+    color:black !important;
+}
+
+
+textarea{
+    color:black;
+    width:70%;
+    height: 20vh;
+    margin-top: 40px;
+    margin-left: 120px;
+    font-size: 3.5vh;
+    border-radius: 30px;
+}
+
+
+textarea::placeholder{
     color: black;
+    font-size: 3.5vh;
+    font-weight: bold;
+    padding:10px;
+}
+
+.submit_faleconosco{
+    width: 12%;
+    height: 5vh;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-left: 120px;
+    margin-top: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.send_faleconosco{
+    margin-left: 10px;
+}
+
+.AiOutlineSend{
+    width: 30px;
+    height: 3vh;
+    padding: 0px;
 }
