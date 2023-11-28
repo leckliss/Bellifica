@@ -10,7 +10,7 @@
 .politica_titulo{
     color: black;
     font-size: 5.3vh;
-    margin-top: -200px;
+    margin-top:  -30px;
     font-weight: bold;
     text-align: center;
 
@@ -19,7 +19,7 @@
 .descricoes_text{
     width: 90%;
     height: 40vh;
-    margin-bottom: -150px;
+    margin-top: -25vh;
 }
 
 .destaque_politica{
