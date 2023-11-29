@@ -2,7 +2,7 @@ import Header from '../../components/header/index';
 import Footer from '../../components/footer/index';
 import Styles from './home.module.css';
 
-import imgideia from '../../assets/imgs/home/caixaideia.png';
+import imgideia from '../../assets/video/make.gif'
 import imggestao from '../../assets/imgs/home/caixagestao.png';
 import imgcurso from '../../assets/imgs/home/caixacurso.png';
 import imgauxilio from '../../assets/imgs/home/caixaauxilio.png';
@@ -23,6 +23,7 @@ import img1coment from '../../assets/imgs/home/Ellipse 46.png';
 
 
 function Home() {
+    
 
     const [backgroundIndex, setBackgroundIndex] = useState(0);
 
@@ -119,23 +120,24 @@ function Home() {
                 <div className={Styles.Caixas}>
                     <div className={Styles.caixona1}>
                         <div className={Styles.caixaideia}>
-                            <img src={imgideia}></img>
-                            <p>Nossa ideia é que você consiga realmente aprender a enfrentar suas dificuldades em seu trabalho</p>
+                        <img src={imgideia} controls autoPlay loop muted>
+                            </img>
                         </div>
                         <div className={Styles.caixagestao}>
-                            <img src={imggestao}></img>
-                            <p>Ajudamos a precificar seus serviços, potencializando os lucros do negócio</p>
+                            <img src={imgideia} controls autoPlay loop muted></img>
+                            
                         </div>
                     </div>
 
                     <div className={Styles.caixona2}>
                         <div className={Styles.caixacurso}>
-                            <img src={imgcurso}></img>
-                            <p>Recomendamos cursos e dicas para ajudar a melhorar seu serviço e que você consiga expandir seus serviços</p>
+                        <img src={imgideia} controls autoPlay loop muted></img>
+                            
                         </div>
                         <div className={Styles.caixaauxilio}>
-                            <img src={imgauxilio}></img>
-                            <p>Auxiliamos você a como você pode deixar seu negocio mais rentável e atraente para atrair mais clientes</p>
+                            
+                            <img src={imgideia} controls autoPlay loop muted></img>
+                           
                         </div>
                     </div>
                 </div>

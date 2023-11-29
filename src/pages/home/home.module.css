@@ -80,25 +80,26 @@
 }
 
 .imagensprof{
-    margin-top: 20px;
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-top: 100px;
+    justify-content: space-between;
+    
 }
 
 .imgles{
-    width: 40%;
+    width:40%;
     height: 94vh;
     background-image: url(../../assets/imgs/home/imgprofs1.png);
     animation: imgles 15s infinite;
     transition: all 5s ease-in-out;
     background-size: cover;
-    margin-right: 180px;
-    margin-left: -30px;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 @keyframes imgles{
@@ -125,9 +126,11 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap: 5vh;
 }
 
 .imgldr h1 {
+    
     font-size: 60px;
     color: black;
 
@@ -135,7 +138,7 @@
 .imgldr p {
     font-size: 30px;
     color: black;
-    margin-top: 30px;
+    width: 95%;
 }
 
 
@@ -167,107 +170,52 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
+    
 }
 
 .Caixas .caixona1{
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 50px;
-
-}
-
-.caixaideia{
-    width: 30%;
-    height: 50vh;
-    display: flex;
     align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-    gap: 5px  5px;
-    border-radius: 15px;
-    background: linear-gradient(180deg, rgba(171, 81, 225, 0.60) 44.81%, rgba(94, 79, 206, 0.60) 97.43%);
+    flex-direction: row;
+    
 }
-
-.caixaideia p{
-    display: flex;
-    align-items: center;
-    width: 80%;
-    font-size: 25px;
-    margin-top: 15px;
-    text-align: center;
-}
-
-.caixagestao{
-    width: 30%;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-    border-radius: 15px;
-    background: linear-gradient(180deg, rgba(171, 81, 225, 0.60) 44.81%, rgba(94, 79, 206, 0.60) 97.43%);
-}
-
-.caixagestao p{
-    display: flex;
-    align-items: center;
-    width: 80%;
-    font-size: 25px;
-    margin-top: 15px;
-    text-align: center;
-}
-
-
 
 .Caixas .caixona2{
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
-    justify-content: center;
-    gap: 50px;
+    
 }
 
-.caixacurso{
-    width: 30%;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-    border-radius: 15px;
-    background: linear-gradient(180deg, rgba(171, 81, 225, 0.60) 44.81%, rgba(94, 79, 206, 0.60) 97.43%);
+.caixaauxilio img {
+    width: 100%;
+    height: 55vh;
+    
+    
 }
 
-.caixacurso p{
-    display: flex;
-    align-items: center;
-    width: 80%;
-    font-size: 25px;
-    margin-top: 15px;
-    text-align: center;
+.caixacurso img {
+    width: 100%;
+    height: 55vh;
+    
 }
 
-.caixaauxilio{
-    width: 30%;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-    border-radius: 15px;
-    background: linear-gradient(180deg, rgba(171, 81, 225, 0.60) 44.81%, rgba(94, 79, 206, 0.60) 97.43%);
+.caixagestao img {
+    width: 100%;
+    height: 55vh;
+    
 }
 
-.caixaauxilio p{
-    display: flex;
-    align-items: center;
-    width: 80%;
-    font-size: 25px;
-    margin-top: 15px;
-    text-align: center;
+.caixaideia img {
+    width: 100%;
+    height: 55vh;
+    
 }
+
+
+
 
 /* SESSÃO 4 ============================================================================*/
 
@@ -276,12 +224,16 @@
     height: auto;
     background-image: url(../../assets/imgs/home/Rectangle\ 288.png) ;
     background-size: cover;
-    margin-top: 150px;
 }
 
-.quadro{
+.sessãocurso{
     width: 100%;
     height: auto;
+    
+}
+.quadro{
+    width: 100%;
+    height: 55vh;
     display: flex;
     justify-content: center;
 }
@@ -295,7 +247,8 @@
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    background: linear-gradient(180deg, rgba(149, 21, 170, 0.36) -13.61%, rgba(103, 137, 224, 0.42) 76.3%);    
+    background: linear-gradient(180deg, rgba(149, 21, 170, 0.36) -13.61%, rgba(103, 137, 224, 0.42) 76.3%);  
+    gap: 3vh;  
 }
 
 .quadrocursos h3{
@@ -307,11 +260,10 @@
 .quadrocursos p {
     font-size: 20px;
     text-align: center;
-    margin-top: 10px;
+    
 }
 
 .carrosselcurso{
-    margin-top: 60px;
     width: auto;
 }
 
@@ -336,26 +288,19 @@
 
 .sessão5{
     width: 99%;
-    height: auto;   
+    height: 100vh;   
 }
-
-.comentarios{
-    margin-top: 50px;
-}
-
 .comentarios h1{
     font-size: 70px;
 }
 
 .blabla{
-    height: 200px;
-    display: flex;
-    justify-content: center;
+    height: 15vh;
+    
 }
 
 .blabla h1{
-    margin-top: 100px;
-    height: 50vh;
+    height: 10vh;
     color: black;
 }
 
@@ -371,22 +316,19 @@
     height: 10vh;
     background-image: url(../../assets/imgs/home/Ellipse\ 46.png);
     background-size: cover;
-    margin-top: 10px;
+    
     
 }
 
 .Caixacoment h1{
     font-size: 20px;
     color: black;
-    margin-top: 15px;
-    width: 50px;
 }
 
 .Caixacoment p{
     font-size: 20px;
     color: black;
-    margin-top: 15px;
-    width: 350px;
+    width: 50vh;
     text-align: center;
 }
 
@@ -397,17 +339,16 @@
 }
 
 .blug .Caixacoment{
-    margin-top: 20px;
     width: 20%;
     height: 50vh;
-    margin-left: 20px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: bisque;
-    z-index: -1;
+    border-left: 2vh solid;
+    gap: 2vh;
 
 }
 
@@ -422,7 +363,7 @@
 
 .sessão6{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-image: url(../../assets/imgs/home/fundoplanos.png) ;
     background-size: cover;
     background-position: center center;
@@ -443,21 +384,21 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    gap: 50px;
 }
 
 .caixagratuito{
-    width: 30%;
-    height: 50vh;
+    width: 35%;
+    height: 80vh;
     background-color: rgba(240, 229, 243, 1);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    gap: 2vh;
 }
 
 .caixagratuito li {
@@ -465,25 +406,21 @@
     color: black;
     font-size: 20px;
     text-align: left;
-    margin-top: 10px;
-    
 }
 
 .caixagratuito h2{
     color: black;
     font-size: 40px;
-    margin-top: 50px;
 }
 
 .caixagratuito h3{
     color: black;
     font-size: 50px;
-    margin-bottom: 50px;
 }
 
 .caixapremium{
-    width: 30%;
-    height: 50vh;
+    width: 35%;
+    height: 80vh;
     background-color:rgba(242, 159, 184, 1);
     border-radius: 10px;
     display: flex;
@@ -491,26 +428,23 @@
     flex-direction: column;
     align-items: center;
     box-shadow: bottom 1px rgba(0, 0, 0, 0.644);
+    gap: 2vh;
 }
 
 .caixapremium li {
     width: 80%;
     color: black;
     font-size: 20px;
-    margin-top: 10px;
-
 }
 
 .caixapremium h2{
     color: black;
     font-size: 40px;
-    margin-top: 50px;
 }
 
 .caixapremium h3{
     color: black;
     font-size: 50px;
-    margin-bottom: 50px;
 }
 
 /*Responsividade ============================================================================*/
