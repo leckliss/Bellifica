@@ -2,7 +2,7 @@ import Header from '../../components/header/index';
 import Footer from '../../components/footer/index';
 import Styles from './home.module.css';
 
-import imgideia from '../../assets/video/make.gif'
+import imgideia from '../../assets/imgs/home/caixaideia.png'
 import imggestao from '../../assets/imgs/home/caixagestao.png';
 import imgcurso from '../../assets/imgs/home/caixacurso.png';
 import imgauxilio from '../../assets/imgs/home/caixaauxilio.png';
@@ -111,8 +111,8 @@ function Home() {
 
 
             {/* Sessão3 ==================================================================== */}
-            <section className={Styles.sessão3}>
-
+            <section className= {Styles.sessão3}>
+           
                 <div className={Styles.seH1}><h1>O que oferecemos?</h1></div>
 
 
@@ -120,29 +120,29 @@ function Home() {
                 <div className={Styles.Caixas}>
                     <div className={Styles.caixona1}>
                         <div className={Styles.caixaideia}>
-                        <img src={imgideia} controls autoPlay loop muted>
-                            </img>
+                            <img src={imgideia}></img>
+                            <p>Nossa ideia é que você consiga realmente aprender a enfrentar suas dificuldades em seu trabalho</p>
                         </div>
                         <div className={Styles.caixagestao}>
-                            <img src={imgideia} controls autoPlay loop muted></img>
-                            
+                            <img src={imggestao}></img>
+                            <p>Ajudamos a precificar seus serviços, potencializando os lucros do negócio</p>
                         </div>
                     </div>
 
                     <div className={Styles.caixona2}>
                         <div className={Styles.caixacurso}>
-                        <img src={imgideia} controls autoPlay loop muted></img>
-                            
+                            <img src={imgcurso}></img>
+                            <p>Recomendamos cursos e dicas para ajudar a melhorar seu serviço e que você consiga expandir seus serviços</p>
                         </div>
                         <div className={Styles.caixaauxilio}>
-                            
-                            <img src={imgideia} controls autoPlay loop muted></img>
-                           
+                            <img src={imgauxilio}></img>
+                            <p>Auxiliamos você a como você pode deixar seu negocio mais rentável e atraente para atrair mais clientes</p>
                         </div>
                     </div>
                 </div>
 
             </section>
+
 
             {/* Sessão4 ==================================================================== */}
             <section className={Styles.sessão4}>
