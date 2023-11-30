@@ -5,6 +5,7 @@ body {
 
 .dashboard-container {
     display: flex;
+    width: auto;
     height: 100vh;
 }
 
@@ -12,8 +13,33 @@ body {
     background-color: #fa93bc;
     color: white;
     width: 250px;
+    overflow: hidden;
+    height: 100%;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 2s;
+}
+.sidebarcurta{
+    background-color: #fa93bc;
+    color: white;
+    width: 71px;
+    overflow: hidden;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 2s;
+}
+
+.sidebar ul {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
 }
 
 .sidebar h2 {
@@ -21,16 +47,18 @@ body {
     margin-bottom: 20px;
 }
 
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
 .sidebar li {
     height: auto;
     width: auto;
     display: flex;
     flex-direction: row;
+    width: 100%;
+    list-style: none;
+}
+.sidebar li:hover {
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
 }
 
 .sidebar a {
@@ -44,16 +72,12 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 5px;
+    list-style: none;
 }
 
 .sidebar li a {
     font-size: 2.2vh;
-}
-
-.sidebar a:hover {
-    color: rgba(0, 0, 0, 0.5);
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
+    list-style: none;
 }
 
 .sidebar a img:hover {
@@ -64,7 +88,61 @@ body {
     flex: 1;
     padding: 20px;
 }
+
 .logo {
     width: auto;
     transition: all 3s ease;
+}
+
+.sidebarcurta ul {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebarcurta h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.sidebarcurta li {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    list-style: none;
+}
+.sidebarcurta li:hover {
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.sidebarcurta a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+}
+
+.sidebarcurta li a {
+    font-size: 2.2vh;
+    list-style: none;
+}
+
+.sidebarcurta a img:hover {
+    color: rgba(0, 0, 0, 0.1);
 }

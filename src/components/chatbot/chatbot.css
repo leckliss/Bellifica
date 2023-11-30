@@ -53,7 +53,7 @@
   padding: 10px;
   overflow-y: auto;
   /* Para rolagem se muitas mensagens */
-  max-height: 400px;
+  max-height: 89vh;
   /* Ajuste conforme necessário */
 }
 
@@ -67,11 +67,14 @@
 .input-container {
   display: flex;
   width: 100%;
+  height: auto;
 }
 
 .input-field {
   color: black;
   flex: 1;
+  height: 7vh;
+  font-size: 20px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;

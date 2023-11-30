@@ -52,7 +52,7 @@ function Dashboard() {
 
   return (
     <div className="dashboard-container">
-      <div className="sidebar">
+      <div className={clicked ? 'sidebarcurta' : 'sidebar'} >
         <img src={logoSrc} alt="Logo" className={clicked ? 'logo2' : 'logo'} />
         <ul>
           <li><a href="#" onClick={() => handleClick2('Painel', 'Painel de Controle')}><img src={require('../../assets/imgs/dashboard/Initial.png')} /> Pagina Inicial</a></li>

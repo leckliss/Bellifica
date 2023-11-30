@@ -2,14 +2,14 @@
     font-family: 'Arial', sans-serif;
     max-width: 600px;
     margin: 40px auto;
-    background-color: #F3E8FF;
+    background-color: #fa93bc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
   }
   
   .configuracoes-container h1 {
-    background-color: #EAD6FF;
+    background-color: #fa93bc;
     margin: 0;
     padding: 20px;
     text-align: center;
@@ -25,7 +25,7 @@
   }
   
   .configuracoes-lista li {
-    background-color: #F3E8FF;
+    background-color: #fa93bc;
     padding: 15px 20px;
     border-bottom: 1px solid #ccc;
     cursor: pointer;
