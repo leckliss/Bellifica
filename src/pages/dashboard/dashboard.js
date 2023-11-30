@@ -7,6 +7,7 @@ import Painel from '../../components/painel/painel'
 import Cursos from '../../components/cursos/cursos';
 import Agenda from '../../components/agenda/agenda';
 import Configuracoes from '../../components/configuracoes/configuracoes';
+import ChatBot from '../../components/chatbot/chatbot';
 
 
 function Dashboard() {
@@ -40,6 +41,8 @@ function Dashboard() {
         return <Cursos />;
       case 'Agenda':
         return <Agenda />;
+      case 'Chatbot':
+        return <ChatBot/>;
       case 'Configuracoes':
         return <Configuracoes />;
       default:
@@ -55,9 +58,10 @@ function Dashboard() {
           <li><a href="#" onClick={() => handleClick2('Painel', 'Painel de Controle')}><img src={require('../../assets/imgs/dashboard/Initial.png')} /> Pagina Inicial</a></li>
           <li><a href="#" onClick={() => handleClick('Agenda', 'Agenda')}><img src={require('../../assets/imgs/dashboard/Calendar.png')} /> Agendamentos</a></li>
           <li><a href="#" onClick={() => handleClick('Cursos', 'Cursos')}><img src={require('../../assets/imgs/dashboard/People.png')} /> Cursos</a></li>
+          <li><a href="#" onClick={() => handleClick('Chatbot', 'Chatbot')}><img src={require('../../assets/imgs/dashboard/ChatBot.png')} /> Chat Bot</a></li>
           <li><a href="#" onClick={() => handleClick('Configuracoes', 'Configurações')}><img src={require('../../assets/imgs/dashboard/Settings.png')} /> Configurações</a></li>
-          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-          <br /><br /><br /><br /><br />
+          
+  
           <li><a href="#"><img src={require('../../assets/imgs/dashboard/Logout.png')} /> Sair</a> </li>
         </ul>
       </div>

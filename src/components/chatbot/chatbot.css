@@ -1,0 +1,94 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Isso irá empurrar o input para a parte de baixo */
+  height: 90vh;
+}
+
+.messages-container {
+  display: flex;
+  flex-direction: column-reverse;
+  /* Isso fará com que a mensagem mais recente apareça em baixo */
+  overflow-y: auto;
+  margin-bottom: 20px;
+  flex-grow: 1;
+  /* Isso fará com que o container das mensagens ocupe o espaço restante */
+}
+
+.message-group {
+  margin-bottom: 10px;
+}
+
+.message {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  max-width: 80%;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #ffb6c1;
+  border: 1px solid black;
+  text-align: right;
+  margin-left: auto;
+  /* Alinha à direita */
+  color: black;
+}
+
+.bot-message {
+  text-align: left;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  color: black;
+  margin-right: auto;
+  /* Alinha à esquerda */
+}
+
+
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow-y: auto;
+  /* Para rolagem se muitas mensagens */
+  max-height: 400px;
+  /* Ajuste conforme necessário */
+}
+
+.message-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  /* Alinha as mensagens do usuário à direita */
+  margin-bottom: 10px;
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+}
+
+.input-field {
+  color: black;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #ffb6c1;
+  border: 1px solid black;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.submit-button:hover {
+  background-color: #ff69b4;
+}
