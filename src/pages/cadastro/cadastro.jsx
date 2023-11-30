@@ -88,6 +88,11 @@ function Cadastro() {
                 />
                 <HiOutlineMail />
                 {errors.email && <p className={styles.errorMessage}>{errors.email.message}</p>}
+
+                <div className={styles.loginLink}>
+                <p>Já tem uma conta? <Link className={styles.registerLink} to="/login">Conecte-se</Link></p>
+                <p><Link className={styles.registerLink} to="/">Voltar para HOME</Link></p>
+              </div>
               </div>
 
 
@@ -126,7 +131,11 @@ function Cadastro() {
                 />
                 <RiLockPasswordLine onClick={() => setShowPassword(!showPassword)} />
                 {errors.password && <p className={styles.errorMessage}>{errors.password.message}</p>}
+
+
               </div>
+
+
 
               <div className={styles.inputBox}>
                 <input
@@ -159,11 +168,6 @@ function Cadastro() {
               <button type="submit" className={styles.buttonRegister} id='button'>
                 Cadastre-me
               </button>
-
-              <div className={styles.loginLink}>
-                <p>Já tem uma conta? <Link className={styles.registerLink} to="/login">Conecte-se</Link></p>
-                <p><Link className={styles.registerLink} to="/">Voltar para HOME</Link></p>
-              </div>
             </div>
           </div>
 
