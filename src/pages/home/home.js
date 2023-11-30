@@ -17,7 +17,13 @@ import imgcurso6 from '../../assets/imgs/home/imgcurso6.png';
 import { motion } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 
-import img1coment from '../../assets/imgs/home/Ellipse 46.png';
+
+import Carousel from 'react-bootstrap/Carousel';
+import img1 from '../../assets/imgs/home/img1.jpg';
+import img2 from '../../assets/imgs/home/img2.jpg';
+import img3 from '../../assets/imgs/home/img3.jpg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
@@ -84,17 +90,32 @@ function Home() {
 
             <Header />
 
-            <div className={Styles.espaco}>
-                <section className={Styles.sessão1} id='inicio' name='inicio' style={{ backgroundImage: backgrounds[backgroundIndex].image, backgroundSize: 'cover' }}>
-                    <div className={Styles.cobertura}>
-                        <div className={`${Styles.slide} typing-effect`}>
-                            <h1 style={{ color: backgrounds[backgroundIndex].color, width: '20%', height:'20vh' }}>
-                                {text}
-                            </h1>
-                        </div>
-                    </div>
-                </section>
-            </div>
+            <Carousel className={Styles.carrosel}>
+                <Carousel.Item interval={4000}>
+                    <img className={Styles.carrosel_img1} src={img1}/>
+                    <Carousel.Caption>
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item interval={4000}>
+                    <img className={Styles.carrosel_img2} src={img2} />
+                    <Carousel.Caption>
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item interval={4000}>
+                    <img className={Styles.carrosel_img3} src={img3}/>
+                    <Carousel.Caption>
+                        <h3>Third slide label</h3>
+                        <p>
+                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                        </p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
+
             {/* Sessão2 ==================================================================== */}
             <section className={Styles.sessão2}>
 
