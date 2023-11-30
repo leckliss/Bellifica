@@ -34,7 +34,8 @@ function Cadastro() {
                   type="text"
                   autoComplete="off"
                   {...register("nome", { required: 'Nome é obrigatório' })}
-                  style={{width: "300px",height: "50px",backgroundColor: "transparent", borderBottom: "1px solid white",color: "white", fontSize: "20px",
+                  style={{
+                    width: "300px", height: "50px", backgroundColor: "transparent", borderBottom: "1px solid white", color: "white", fontSize: "20px",
                   }}
                 />
                 {errors.nome && <p className={styles.errorMessage}>{errors.nome.message}</p>}
@@ -49,28 +50,30 @@ function Cadastro() {
                   type="text"
                   autoComplete="off"
                   {...register("sobrenome", { required: 'Sobrenome é obrigatório' })}
-                  style={{width: "300px",height: "50px",backgroundColor: "transparent", borderBottom: "1px solid white",color: "white", fontSize: "20px",
+                  style={{
+                    width: "300px", height: "50px", backgroundColor: "transparent", borderBottom: "1px solid white", color: "white", fontSize: "20px",
                   }}
                 />
                 {errors.sobrenome && <p className={styles.errorMessage}>{errors.sobrenome.message}</p>}
               </div>
 
               <div className={styles.inputBox}>
-                  <input
-                    className={errors.dataNascimento && styles.inputError}
-                    id="dataNascimento"
-                    placeholder="Data de Nascimento"
-                    name="dataNascimento"
-                    type="text"
-                    autoComplete="off"
-                    {...register("dataNascimento", { required: 'Data de nascimento é obrigatória' })}
-                    style={{width: "300px",height: "50px",backgroundColor: "transparent", borderBottom: "1px solid white",color: "white", fontSize: "20px",
+                <input
+                  className={errors.dataNascimento && styles.inputError}
+                  id="dataNascimento"
+                  placeholder="Data de Nascimento"
+                  name="dataNascimento"
+                  type="text"
+                  autoComplete="off"
+                  {...register("dataNascimento", { required: 'Data de nascimento é obrigatória' })}
+                  style={{
+                    width: "300px", height: "50px", backgroundColor: "transparent", borderBottom: "1px solid white", color: "white", fontSize: "20px",
                   }}
-                  />
-                  {errors.dataNascimento && <p className={styles.errorMessage}>{errors.dataNascimento.message}</p>}
-                </div>
+                />
+                {errors.dataNascimento && <p className={styles.errorMessage}>{errors.dataNascimento.message}</p>}
+              </div>
 
-                <div className={styles.inputBox}>
+              <div className={styles.inputBox}>
                 <input
                   className={errors.email && styles.inputError}
                   id="email"
@@ -79,7 +82,8 @@ function Cadastro() {
                   type="text"
                   autoComplete="off"
                   {...register("email", { required: 'E-mail é obrigatório' })}
-                  style={{width: "300px",height: "50px",backgroundColor: "transparent", borderBottom: "1px solid white",color: "white", fontSize: "20px",
+                  style={{
+                    width: "300px", height: "50px", backgroundColor: "transparent", borderBottom: "1px solid white", color: "white", fontSize: "20px",
                   }}
                 />
                 <HiOutlineMail />
@@ -99,14 +103,15 @@ function Cadastro() {
                   type="text"
                   autoComplete="off"
                   {...register("nomeEmpresa")}
-                  style={{width: "300px",height: "50px",backgroundColor: "transparent", borderBottom: "1px solid white",color: "white", fontSize: "20px",
+                  style={{
+                    width: "300px", height: "50px", backgroundColor: "transparent", borderBottom: "1px solid white", color: "white", fontSize: "20px",
                   }}
                 />
-                </div>
+              </div>
 
-                {/* Adicione o campo de dropdown para 'Área da Beleza' aqui */}
+              {/* Adicione o campo de dropdown para 'Área da Beleza' aqui */}
 
-                <div className={styles.inputBox}>
+              <div className={styles.inputBox}>
                 <input
                   className={errors.password && styles.inputError}
                   id="password"
@@ -115,7 +120,8 @@ function Cadastro() {
                   type={showPassword ? 'text' : 'password'}
                   autoComplete="off"
                   {...register("password", { required: 'Senha é obrigatória', minLength: { value: 6, message: 'Senha precisa ter pelo menos 6 caracteres' } })}
-                  style={{width: "300px",height: "50px",backgroundColor: "transparent", borderBottom: "1px solid white",color: "white", fontSize: "20px",
+                  style={{
+                    width: "300px", height: "50px", backgroundColor: "transparent", borderBottom: "1px solid white", color: "white", fontSize: "20px",
                   }}
                 />
                 <RiLockPasswordLine onClick={() => setShowPassword(!showPassword)} />
@@ -131,36 +137,37 @@ function Cadastro() {
                   type={showPassword ? 'text' : 'password'}
                   autoComplete="off"
                   {...register("confirmarSenha", { required: 'Confirmação de senha é obrigatória', validate: value => value === watch('password') || 'As senhas não coincidem' })}
-                  style={{width: "300px",height: "50px",backgroundColor: "transparent", borderBottom: "1px solid white",color: "white", fontSize: "20px",
+                  style={{
+                    width: "300px", height: "50px", backgroundColor: "transparent", borderBottom: "1px solid white", color: "white", fontSize: "20px",
                   }}
                 />
                 <RiLockPasswordLine onClick={() => setShowPassword(!showPassword)} />
                 {errors.confirmarSenha && <p className={styles.errorMessage}>{errors.confirmarSenha.message}</p>}
               </div>
-                <div className={styles.inputBox}>
-                  <input
-                    type="checkbox"
-                    id="termosUso"
-                    {...register("termosUso", { required: 'Você precisa concordar com os termos de uso' })}
-                  />
-                  <label htmlFor="termosUso" className={styles.checkboxLabel}>
-                    Li e concordo com os termos de uso
-                  </label>
-                  {errors.termosUso && <p className={styles.errorMessage}>{errors.termosUso.message}</p>}
-                </div>
+              <div className={styles.inputBox}>
+                <input
+                  type="checkbox"
+                  id="termosUso"
+                  {...register("termosUso", { required: 'Você precisa concordar com os termos de uso' })}
+                />
+                <label htmlFor="termosUso" className={styles.checkboxLabel}>
+                  Li e concordo com os termos de uso
+                </label>
+                {errors.termosUso && <p className={styles.errorMessage}>{errors.termosUso.message}</p>}
+              </div>
 
+              <button type="submit" className={styles.buttonRegister} id='button'>
+                Cadastre-me
+              </button>
+
+              <div className={styles.loginLink}>
+                <p>Já tem uma conta? <Link className={styles.registerLink} to="/login">Conecte-se</Link></p>
+                <p><Link className={styles.registerLink} to="/">Voltar para HOME</Link></p>
               </div>
             </div>
+          </div>
 
 
-            <button type="submit" className={styles.buttonRegister} id='button'>
-              Cadastre-me
-            </button>
-
-            <div className={styles.loginLink}>
-              <p>Já tem uma conta? <Link className={styles.registerLink} to="/login">Conecte-se</Link></p>
-              <p><Link className={styles.registerLink} to="/">Voltar para HOME</Link></p>
-            </div>
         </form>
       </div>
     </div>
