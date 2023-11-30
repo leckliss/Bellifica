@@ -21,7 +21,7 @@
 
 .overlay {
     width: 75%;
-    height: 75vh;
+    height: auto;
     background-color: #aa8bc7;
     border-radius: 10px;
     padding: 20px;
@@ -44,7 +44,7 @@
 
 .cad1 {
     width: auto;
-    height: 38vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -52,7 +52,7 @@
 
 .cad2 {
     width: auto;
-    height: 50vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -69,7 +69,6 @@
     color: white; /* Define a cor do texto do placeholder como branca */
   }
 
-
 .buttonRegister {
     color: #000;
     font-family: Raleway;
@@ -78,8 +77,20 @@
     font-weight: 400;
     line-height: normal;
     width: 70%;
-    height: 10vh;
+    height: vh;
     border-radius: 30px;
     background: #F29FB8;
+}
+
+.loginLink { 
+    margin-top: 3vh;
+}
+
+.registerLink {
+    color:#000000;
+}
+
+.loginLink p {
+    color: #000
 }
 
