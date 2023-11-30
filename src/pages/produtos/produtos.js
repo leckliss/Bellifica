@@ -16,18 +16,30 @@ function Produtos() {
                     <div className={Styles.caixaprodutos}>
                         <div className={Styles.pdttexto}><h1 className={Styles.Titulo_produtos}>Nossos Serviços</h1></div>
                         <div className={Styles.pdtcursodicas}>
-                            <div className={Styles.pdtdescrição}> <h2>Cursos e dicas</h2>
-                                <p>Auxiliamos você a entrar no caminho certo para o crescimento do seu negócio, indicamos cursos e dicas para ajudar no seu dia-a-dia.</p></div>
+                            <div className={Styles.text2}>
+                                <div className={Styles.pdtdescri}>
+                                    <h2>Cursos e dicas</h2>
+                                    <p>Auxiliamos você a entrar no caminho certo para o crescimento do seu negócio, indicamos cursos e dicas para ajudar no seu dia-a-dia.</p>
+                                </div>
+                            </div>
                             <img src={imgpdtcurso}></img>
                         </div>
 
-                        <div className={Styles.pdtagendamento}>
-                            <img src={imgpdtagenda}></img>
-                            <div className={Styles.pdtdescrição}> <h2>Agendamento</h2>
-                                <p>Com produto de agendamento  é possível automatizar a forma que seus atendimentos são agendados, trazendo benefícios para você e seus clientes.</p></div>
+                        <div className={Styles.campagendamento}>
+                            <div className={Styles.pdtagendamento}>
+
+                                <div className={Styles.pdtdescrição}>
+                                    <img src={imgpdtagenda}></img>
+                                    <div className={Styles.text1}>
+                                        <h2>Agendamento</h2>
+                                        <p>Com produto de agendamento  é possível automatizar a forma que seus atendimentos são agendados, trazendo benefícios para você e seus clientes.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
                         </div>
                     </div>
-
                 </section>
                 <Footer />
             </div>

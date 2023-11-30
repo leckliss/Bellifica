@@ -244,7 +244,7 @@ function Home() {
                 <div className={Styles.caixaplanos}>
 
                     <div className={Styles.caixagratuito}>
-                        <h3>Gratuito</h3>
+                        <h3>Pupa</h3>
 
                         <li>Para ajudar os profissionais que estão começando ou os que querem testar nossos serviços, oferecemos alguns recursos gratuitos:</li>
                         <li>Cursos</li>
@@ -255,7 +255,7 @@ function Home() {
 
                     </div>
                     <div className={Styles.caixapremium}>
-                        <h3>Premium</h3>
+                        <h3>Borboleta</h3>
 
                         <li>E para os profissionais que já estão na area ou querem mais ajuda para se organizar oferecemos melhores recursos, dentre eles:</li>
                         <li>Serviço de agendamento automatizado</li>
