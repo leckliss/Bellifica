@@ -1,12 +1,12 @@
-create database db_Bellifica;
-use db_Bellifica;
+create database db_bellifica;
+use db_bellifica;
 
-drop database db_bellifica;
 
 create table tbl_profissional(
 	pk_id_prof int primary key not null auto_increment,
     nome_prof varchar (100) not null,
-    dt_nasc_prof date not null,
+    sobrenome_prof varchar (100) not null,
+    dt_nasc_prof datetime not null,
     tele_prof varchar (20) not null,
     email_prof varchar(100)  not null,
     senha_prof varchar (10) not null,
@@ -18,7 +18,7 @@ create table tbl_profissional(
     nome_negocio_prof varchar (100),
     foto_negocio_prof varchar (255) /*Url com foto*/
 );
-drop table tbl_profissional;
+
 
 create table tbl_agendamento(
 	pk_id_agendamento int primary key not null auto_increment,
@@ -31,7 +31,6 @@ create table tbl_agendamento(
     dt_agendamento date
 );
 
-drop table tbl_agendamento;
 
 
 create table tbl_servico(
@@ -44,7 +43,6 @@ create table tbl_servico(
     fk_id_prof int
 );
 
-drop table tbl_servico;
 
 create table tbl_categoria(
 	pk_id_categoria int primary key not null auto_increment,
@@ -63,7 +61,6 @@ create table tbl_endereco(
     inativo_endereco boolean
 );
 
-drop table tbl_endereco;
 
 create table tbl_horario(
 	pk_id_horario int primary key not null auto_increment,
@@ -83,7 +80,7 @@ create table tbl_contato(
     email_comer_prof varchar (100),
     whatsapp_prof varchar (20)
 );
-drop table tbl_contato;
+
 
 create table tbl_conta_bancaria(
 	pk_id_conta int primary key not null auto_increment,
@@ -110,7 +107,6 @@ create table tbl_conteudo(
     fk_id_curso int
 );
 
-drop table tbl_conteudo;
 
 create table tbl_curso(
 	pk_id_curso int primary key not null auto_increment,
