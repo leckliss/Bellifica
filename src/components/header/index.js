@@ -48,8 +48,8 @@ function Header() {
       setScrolled(scrollTop > 50);
 
       // Altera o src da imagem com base no estado de scroll
-      setLogoSrc(scrollTop > 50 ? LogoBr : LogoRs);
-      setMenuSrc(scrollTop > 50 ? MenuBr : MenuRs);
+      setLogoSrc(scrollTop > 50 ? LogoBr : LogoBr);
+      setMenuSrc(scrollTop > 50 ? MenuBr : MenuBr);
     };
 
     // Adiciona um listener para o evento de scroll
@@ -66,10 +66,10 @@ function Header() {
     <header className={`header ${scrolled ? 'scrolled' : ''} ${isDropdownVisible ? 'active' : ''}`}>
       <ul>
         {/* Links para diferentes seções, a classe muda conforme o estado de scroll */}
-        <li><Link to='/curso' onClick={handlePlanosClick} className={scrolled ? 'text-white' : 'text-pink'}>Cursos</Link></li>
-        <li><Link to={'/produtos'} className={scrolled ? 'text-white' : 'text-pink'}>Serviços</Link></li>
+        <li><Link to='/curso' onClick={handlePlanosClick} className={scrolled ? 'text-white' : 'text-white'}>Cursos</Link></li>
+        <li><Link to={'/produtos'} className={scrolled ? 'text-white' : 'text-white'}>Serviços</Link></li>
         <li><Link to={'/#inicio'} onClick={handleInicioClick}><img src={logoSrc} alt="Logo" className={scrolled ? 'logo2' : 'logo'} /></Link></li>
-        <li><Link to={'/sobre'} className={scrolled ? 'text-white' : 'text-pink'}>Quem Somos</Link></li>
+        <li><Link to={'/sobre'} className={scrolled ? 'text-white' : 'text-white'}>Quem Somos</Link></li>
         <div className='header-login'>
           {/* Botão do menu, muda a imagem conforme o estado de scroll */}
           <button className='menu-button' onClick={handleLoginClick}>
