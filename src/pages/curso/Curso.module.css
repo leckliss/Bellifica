@@ -67,6 +67,7 @@
     width: 100%;
     max-width: 900px;
     min-height: 100vh;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,4 +93,7 @@
 .carousel {
     cursor: grab;
     overflow: hidden;
+    display: flex;
+
+
 }

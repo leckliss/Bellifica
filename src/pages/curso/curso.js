@@ -47,6 +47,7 @@ function Curso() {
             </section>
 
             <section className={Styles.senac}>
+                <img src={senac} alt='logo senac' className={Styles.logosenac} />
                 <motion.div ref={carousel} className={Styles.carousel} whileTap={{cursor: "grabbing"}}>
                     <motion.div className={Styles.interno} drag="x" dragConstraints={{right: 0, left: -width}}>
 
