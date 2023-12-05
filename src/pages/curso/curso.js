@@ -1,10 +1,29 @@
+import { motion } from 'framer-motion'
+import {useState, useEffect, useRef} from 'react'
+
 import Styles from './Curso.module.css';
 import Header from '../../components/header/index'
 import Footer from '../../components/footer/index';
 
 import blob from '../../assets/imgs/curso/mulher-estudando.png'
+import senac from '../../assets/imgs/curso/logo-senac.png'
+import financeiro from '../../assets/imgs/curso/financeiro.jpg'
+import marketing from '../../assets/imgs/curso/marketing.jpg'
+import estetica from '../../assets/imgs/curso/beleza-estetica.jpg'
+
+const images = [financeiro, marketing, estetica]
+
 
 function Curso() {
+
+    const carousel = useRef();
+    const[width, setWidth] = useState(0)
+
+    useEffect(()=>{
+        console.log(carousel.current?.scrollWidth, carousel.current?.offsetWidth)
+        setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
+    },[])
+
     return (
 
         <body className={Styles.pagcurso}>
@@ -26,10 +45,29 @@ function Curso() {
                 </div>
 
             </section>
+
+            <section className={Styles.senac}>
+                <motion.div ref={carousel} className={Styles.carousel} whileTap={{cursor: "grabbing"}}>
+                    <motion.div className={Styles.interno} drag="x" dragConstraints={{right: 0, left: -width}}>
+
+                        {images.map(image=>(
+
+                            <motion.div className={Styles.item} key={image}>
+                                <img src={image} alt='texto alt' />
+                            </motion.div>
+
+                        ))}
+
+                    </motion.div>
+                </motion.div>
+            </section>
+
+
             <Footer />
         </body>
 
     )
 }
+
 
 export default Curso;

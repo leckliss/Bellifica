@@ -181,8 +181,7 @@ function Home() {
 
                     <div className={Styles.carrosselcurso}>
                         <motion.div className={Styles.carrossel} whileTap={{ cursor: "grabbing" }}>
-                            <motion.div className={Styles.inner} drag="x"
-                                dragConstraints={{ right: 0, left: - width }}>
+                            <motion.div className={Styles.inner} drag="x" dragConstraints={{right: 0, left: -width}}>
 
                                 <img src={imgcurso1} alt="Curso 1"></img>
                                 <img src={imgcurso2} alt="Curso 2"></img>
