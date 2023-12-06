@@ -1,6 +1,7 @@
 .pagsobre{
     width: 100%;
     height: auto;
+    overflow-x: hidden;
 }
 .politica_corpo{
     width: 100%;
@@ -43,6 +44,6 @@
 
 @media screen and (max-width: 1280px) {
 
-    
+
     
 }
