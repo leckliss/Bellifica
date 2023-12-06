@@ -17,7 +17,7 @@ function ImageCarousel({ images }) {
     return (
         <div className={Styles.carouselContainer}>
         <button onClick={prevSet} disabled={startIndex === 0}>
-          Previous
+          Anterior
         </button>
         <div className={Styles.carousel}>
           {images.slice(startIndex, startIndex + 3).map((image, index) => (
@@ -32,7 +32,7 @@ function ImageCarousel({ images }) {
           ))}
         </div>
         <button onClick={nextSet} disabled={startIndex + 3 >= images.length}>
-          Next
+          Próximo
         </button>
       </div>
     );
