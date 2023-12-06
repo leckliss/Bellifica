@@ -1,0 +1,60 @@
+.carouselContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px; /* Espaço entre as imagens */
+    padding: 10px 0; /* Espaçamento interno */
+  }
+  
+  /* Esconde as imagens que não estão visíveis */
+  .hidden {
+    display: none;
+  }
+  
+  /* Exibe a imagem ativa */
+  .active {
+    width: 200px; /* Largura das imagens */
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+/* ImageCarousel.module.css */
+
+/* Estilos para os botões */
+Button {
+    background-color: #9979C1; /* Cor de fundo dos botões */
+    color: white; /* Cor do texto dos botões */
+    border: none; /* Remova a borda dos botões */
+    padding: 8px 16px; /* Espaçamento interno dos botões */
+    cursor: pointer; /* Mude o cursor ao passar por cima do botão */
+    margin: 0 5px; /* Adicione margem entre os botões */
+  }
+
+  .imageDescription {
+    height: 10vh;
+    background-color: #fa93bc;
+    font-size: 5vh; /* Tamanho da fonte */
+    color: #000000; /* Cor do texto */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .imageLink {
+    text-decoration: none; /* Remove o sublinhado padrão */
+   
+  }
+
+  .imageLink:hover {
+    text-decoration: underline; /* Adiciona sublinhado quando passa o cursor */
+    color: #9979C1; /* Define a cor do texto quando passa o cursor */
+    /* Outros estilos desejados quando o cursor passa por cima */
+  }
+
