@@ -10,8 +10,11 @@ import senac from '../../assets/imgs/curso/logo-senac.png'
 import financeiro from '../../assets/imgs/curso/financeiro.jpg'
 import marketing from '../../assets/imgs/curso/marketing.jpg'
 import estetica from '../../assets/imgs/curso/beleza-estetica.jpg'
+import cabelosenac from '../../assets/imgs/curso/cabelo-senac.png'
+import maquiadorasenac from '../../assets/imgs/curso/maquiadora.jpg'
+import manicuresenac from '../../assets/imgs/curso/maos-pes.jpg'
 
-const images = [financeiro, marketing, estetica]
+const images = [financeiro, marketing, estetica, cabelosenac, maquiadorasenac, manicuresenac]
 
 
 function Curso() {
