@@ -14,6 +14,7 @@
     margin-top: 60px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 }
 
@@ -31,7 +32,6 @@
     padding-top: 40px;
     height: 10vh;
     width: 70%;
-    margin-left: 120px;
     font-size: 5vh;
     
 }
@@ -43,7 +43,6 @@
     padding-top: 40px;
     height: 10vh;
     width: 70%;
-    margin-left: 120px;
     font-size: 5vh;
 }
 
@@ -62,7 +61,6 @@
 
 .input_textfaleconosco{
     width: 70%;
-    margin-left: 120px;
     margin-top: 50px;
     color:black !important;
 }
@@ -73,7 +71,6 @@ textarea{
     width:70%;
     height: 20vh;
     margin-top: 40px;
-    margin-left: 120px;
     font-size: 3.5vh;
     border-radius: 30px;
 }
@@ -87,13 +84,13 @@ textarea::placeholder{
 }
 
 .submit_faleconosco{
-    width: 12%;
+    width: 10%;
     height: 5vh;
     background-color: transparent;
     border: 2px solid white;
     border-radius: 20px;
-    margin-left: 120px;
     margin-top: 30px;
+    margin-right: 700px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -101,12 +98,106 @@ textarea::placeholder{
     
 }
 
-.send_faleconosco{
-    margin-left: 10px;
-}
 
 .AiOutlineSend{
     width: 30px;
     height: 3vh;
     padding: 0px;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1456px) {
+    .submit_faleconosco{
+        margin-right: 450px;
+        width: 12%;
+    }
+}
+
+@media  screen and (min-width:768px) and (max-width: 1279px){
+
+    .input_nomefaleconosco{
+        font-size: 2.99vh;
+        height: 7.9vh;
+    }
+
+    
+    .input_nomefaleconosco::placeholder{
+        font-size: 2.99vh;
+    }
+
+    
+
+    .input_emailfaleconosco2{
+        font-size: 2.99vh;
+        height: 7.9vh;
+    }
+
+    .input_emailfaleconosco2::placeholder{
+        font-size: 2.99vh;
+    }
+
+    textarea{
+        font-size: 2.99vh;
+    }
+    
+    textarea::placeholder{
+        font-size: 2.99vh;
+    }
+    
+    
+    
+    .submit_faleconosco{
+        margin-right: 230px;
+        width: 20%;
+    }    
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    
+    
+    
+    .formulariofaleconosco_corpo{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .titulo_formulariofaleconosco{
+        font-size: 5vh;
+    }
+
+    .input_nomefaleconosco{
+        font-size: 2vh;
+        height: 7.9vh;
+    }
+
+    
+    .input_nomefaleconosco::placeholder{
+        font-size: 2vh;
+    }
+
+    
+
+    .input_emailfaleconosco2{
+        font-size: 2vh;
+        height: 7.9vh;
+    }
+
+    .input_emailfaleconosco2::placeholder{
+        font-size: 2vh;
+    }
+
+    textarea{
+        font-size: 2.5vh;
+        border-radius: 10px;
+    }
+
+    textarea::placeholder{
+        font-size: 2.5vh;
+    }
+
+    .submit_faleconosco{
+        margin-right: 0px;
+        width: 33%;
+    }
+
+    
 }
