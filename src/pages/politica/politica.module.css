@@ -1,16 +1,15 @@
+.pagsobre{
+    width: 100%;
+    height: auto;
+}
 .politica_corpo{
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    height: auto;
 }
 
 .politica_titulo{
     color: black;
     font-size: 5.3vh;
-    margin-top:  -30px;
     font-weight: bold;
     text-align: center;
 
@@ -18,8 +17,7 @@
 
 .descricoes_text{
     width: 90%;
-    height: 40vh;
-    margin-top: -25vh;
+    height: auto;
 }
 
 .destaque_politica{

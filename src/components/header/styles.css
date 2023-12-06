@@ -33,10 +33,10 @@ header Link, header li{
 header.scrolled ul {
   height: 7vh;
   background-image: none;
-  background-color: #FB9CB2; /* Altera para rosa ao rolar */
+  background-color: #9979c1; /* Altera para rosa ao rolar */
 }
 header ul li:hover{
-  border-bottom: 5px solid #FB9CB2;
+  border-bottom: 5px solid #9979c1;
   border-radius: 10px;
   transition: all 0.5s;
 }
@@ -126,6 +126,18 @@ header.scrolled ul li:hover{
 }
 .text-white {
   color: white !important;
+  text-decoration: none;
+}
+.text-white2 {
+  color: white !important;
+  text-decoration: none;
+}
+.text-white:hover {
+  color: white !important;
+  text-decoration: none;
+}
+.text-white2:hover {
+  color: #9979c1 !important;
   text-decoration: none;
 }
 

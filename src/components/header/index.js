@@ -16,8 +16,8 @@ function Header() {
   // Estados para controlar a visibilidade do dropdown, o estado de scroll e os sources dos logos e menu
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [logoSrc, setLogoSrc] = useState(LogoRs);
-  const [menuSrc, setMenuSrc] = useState(MenuRs);
+  const [logoSrc, setLogoSrc] = useState(LogoBr);
+  const [menuSrc, setMenuSrc] = useState(MenuBr);
 
   const handlePlanosClick = () => {
     const element = document.getElementById('planos');
@@ -45,11 +45,11 @@ function Header() {
       const scrollTop = window.pageYOffset;
 
       // Atualiza o estado de scroll
-      setScrolled(scrollTop > 50);
+      setScrolled(scrollTop > 200);
 
       // Altera o src da imagem com base no estado de scroll
-      setLogoSrc(scrollTop > 50 ? LogoBr : LogoBr);
-      setMenuSrc(scrollTop > 50 ? MenuBr : MenuBr);
+      setLogoSrc(scrollTop > 200 ? LogoBr : LogoBr);
+      setMenuSrc(scrollTop > 200 ? MenuBr : MenuBr);
     };
 
     // Adiciona um listener para o evento de scroll
@@ -66,10 +66,10 @@ function Header() {
     <header className={`header ${scrolled ? 'scrolled' : ''} ${isDropdownVisible ? 'active' : ''}`}>
       <ul>
         {/* Links para diferentes seções, a classe muda conforme o estado de scroll */}
-        <li><Link to='/curso' onClick={handlePlanosClick} className={scrolled ? 'text-white' : 'text-white'}>Cursos</Link></li>
-        <li><Link to={'/produtos'} className={scrolled ? 'text-white' : 'text-white'}>Serviços</Link></li>
+        <li><Link to='/curso' onClick={handlePlanosClick} className={scrolled ? 'text-white' : 'text-white2'}>Cursos</Link></li>
+        <li><Link to={'/produtos'} className={scrolled ? 'text-white' : 'text-white2'}>Serviços</Link></li>
         <li><Link to={'/#inicio'} onClick={handleInicioClick}><img src={logoSrc} alt="Logo" className={scrolled ? 'logo2' : 'logo'} /></Link></li>
-        <li><Link to={'/sobre'} className={scrolled ? 'text-white' : 'text-white'}>Quem Somos</Link></li>
+        <li><Link to={'/sobre'} className={scrolled ? 'text-white' : 'text-white2'}>Quem Somos</Link></li>
         <div className='header-login'>
           {/* Botão do menu, muda a imagem conforme o estado de scroll */}
           <button className='menu-button' onClick={handleLoginClick}>

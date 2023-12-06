@@ -4,7 +4,7 @@ import Style from "./politica.module.css";
 
 function Politica() {
     return (
-        <>
+        <div className={Style.pagsobre}>
             <Header />
             <section className={Style.politica_corpo}>
                 <h1 className={Style.politica_titulo}>Política de Privacidade</h1>
@@ -24,7 +24,7 @@ function Politica() {
                 </div>
             </section>
             <Footer/>
-        </>
+        </div>
     );
 }
 

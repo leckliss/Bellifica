@@ -17,19 +17,19 @@ import imgcurso6 from '../../assets/imgs/home/imgcurso6.png';
 import { motion } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 
-
+import FundinRoxo from '../../assets/imgs/home/fundinroxo.png';
+import Prof1 from '../../assets/imgs/home/prof1.png';
+import Prof2 from '../../assets/imgs/home/prof2.png';
+import Prof3 from '../../assets/imgs/home/prof3.png';
+import Prof4 from '../../assets/imgs/home/prof4.png';
 import Carousel from 'react-bootstrap/Carousel';
 import img1 from '../../assets/imgs/home/img1.jpg';
 import img2 from '../../assets/imgs/home/img2.jpg';
 import img3 from '../../assets/imgs/home/img3.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-
-
-
 function Home() {
-    
+
 
     const [backgroundIndex, setBackgroundIndex] = useState(0);
 
@@ -90,31 +90,44 @@ function Home() {
 
             <Header />
 
-            <Carousel className={Styles.carrosel}>
-                <Carousel.Item interval={4000}>
-                    <img className={Styles.carrosel_img1} src={img1}/>
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item interval={4000}>
-                    <img className={Styles.carrosel_img2} src={img2} />
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item interval={4000}>
-                    <img className={Styles.carrosel_img3} src={img3}/>
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                        </p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
+            <div className={Styles.carrosel}>
+
+                <div className={Styles.sec11}>
+                    <div style={{ color: 'black', fontWeight: 'bolder' }}>
+                        <h1 className={Styles.typingeffect}>
+                            <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>Embelezando</span> sonhos.
+                        </h1>
+                        <h1 className={Styles.typingeffect2}>
+                            Estruturando <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>realidades.</span>
+                        </h1>
+                    </div>
+                    <h5>Com a Bellifica você torna-se uma profissional organizada</h5>
+                    <button className={Styles.buttonino}>Conhecer planos</button>
+
+                </div>
+
+                <div className={Styles.sec12}>
+
+                    <img className={Styles.fundinroxo} src={FundinRoxo} />
+
+                    <Carousel className={Styles.profsscar} >
+                        <Carousel.Item interval={2500}>
+                            <img className={Styles.profss} src={Prof1} />
+                        </Carousel.Item>
+                        <Carousel.Item interval={2500}>
+                            <img className={Styles.profss} src={Prof2} />
+                        </Carousel.Item>
+                        <Carousel.Item interval={2500}>
+                            <img className={Styles.profss} src={Prof3} />
+                        </Carousel.Item>
+                        <Carousel.Item interval={2500}>
+                            <img className={Styles.profss} src={Prof4} />
+                        </Carousel.Item>
+                    </Carousel>
+
+                </div>
+
+            </div>
 
             {/* Sessão2 ==================================================================== */}
             <section className={Styles.sessão2}>
@@ -132,8 +145,8 @@ function Home() {
 
 
             {/* Sessão3 ==================================================================== */}
-            <section className= {Styles.sessão3}>
-           
+            <section className={Styles.sessão3}>
+
                 <div className={Styles.seH1}><h1>O que oferecemos?</h1></div>
 
 
@@ -181,7 +194,7 @@ function Home() {
 
                     <div className={Styles.carrosselcurso}>
                         <motion.div className={Styles.carrossel} whileTap={{ cursor: "grabbing" }}>
-                            <motion.div className={Styles.inner} drag="x" dragConstraints={{right: 0, left: -width}}>
+                            <motion.div className={Styles.inner} drag="x" dragConstraints={{ right: 0, left: -width }}>
 
                                 <img src={imgcurso1} alt="Curso 1"></img>
                                 <img src={imgcurso2} alt="Curso 2"></img>

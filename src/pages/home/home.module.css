@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     border: 0;
     padding: 0;
@@ -6,28 +6,32 @@
 
 /* SESSÃO 1 ============================================================================*/
 
-.paghome{
+.paghome {
     width: 100%;
     height: auto;
 }
-.espaco{
+
+.espaco {
     height: 100vh;
     display: flex;
     align-items: end;
 }
-.sessão1{
+
+.sessão1 {
     width: 100%;
     height: auto;
     margin-top: 10vh;
 }
-.cobertura{
+
+.cobertura {
     width: 100%;
     height: 80vh;
 }
-.slide{
+
+.slide {
     width: 100%;
     height: 85vh;
-    
+
     animation: slide 15s infinite;
     background-size: cover;
     display: flex;
@@ -36,7 +40,7 @@
 }
 
 
-.slide h1{
+.slide h1 {
     width: 50%;
     height: 100vh;
     display: flex;
@@ -47,47 +51,167 @@
     color: black;
 }
 
-.typing-effect h1 {
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid; /* Simula o cursor de digitação */
-    width: 0;
-    animation: typing 5s steps(30, end) forwards;
-}
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-.carrosel{
+.carrosel {
     width: 100%;
     height: 90vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #fd9ba6;
+    overflow: hidden;
 }
 
-.carrosel_img1{
+.sec11 {
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+    color: #000;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.buttonino {
+    border: 2px solid #000;
+    color: #000;
+    border-radius: 5vh;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.buttonino:hover {
+    transition: all 0.5s ease;
+    border: 2px solid #9979c1;
+    text-shadow: #9979c1;
+    color: #9979c1;
+    border-radius: 5vh;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+        border-right: .10em solid black;
+    }
+
+    99.9% {
+        width: 100%;
+        border-right: .10em solid black;
+    }
+
+    100% {
+        width: 100%;
+        border-right: .10em solid transparent;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.typingeffect {
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: .10em;
+    animation:
+        typing 2.5s steps(30, end) forwards,
+        blink-caret .75s step-end infinite;
+    max-width: 58%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.typingeffect2 {
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: .10em;
+    opacity: 0;
+    border-right: .10em solid black;
+    animation:
+        typing 3.5s steps(30, end) 3.5s forwards,
+        blink-caret .75s step-end infinite 3.5s,
+        fadeInOpacity 0s ease-in 3.5s forwards;
+    max-width: 66%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.sec12 {
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    align-items: flex-end;
+    justify-items: center;
+}
+
+.fundinroxo {
+    width: auto;
+    height: auto;
+    margin-bottom: -10%;
+    z-index: 1;
+}
+.profsscar{
+    width: auto;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    right: 75%;
+}
+.profsscar span{
+    display: none !important;
+}
+.profsscar button{
+    display: none !important;
+}
+.profss {
+    width: auto;
+    height: auto;
+}
+
+
+
+.carrosel_img1 {
     width: 100%;
     background-position: center center;
 }
 
-.carrosel_img2{
+.carrosel_img2 {
     width: 100%;
     background-position: center center;
-   
+
 }
 
-.carrosel_img3{
+.carrosel_img3 {
     width: 100%;
     background-position: center center;
-    
+
 }
 
 /* SESSÃO 2 ============================================================================*/
-.sessão2{
+.sessão2 {
     width: 100%;
     height: auto;
 }
 
-.imagensprof{
+.imagensprof {
     width: 100%;
     height: auto;
     display: flex;
@@ -95,11 +219,11 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    
+
 }
 
-.imgles{
-    width:40%;
+.imgles {
+    width: 40%;
     height: 94vh;
     background-image: url(../../assets/imgs/home/imgprofs1.png);
     animation: imgles 15s infinite;
@@ -107,28 +231,30 @@
     background-size: cover;
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-@keyframes imgles{
-    25%{
+@keyframes imgles {
+    25% {
         background: url(../../assets/imgs/home/imgprofs2.png);
-        
+
         background-size: cover;
     }
-    50%{
+
+    50% {
         background: url(../../assets/imgs/home/imgprofs3.png);
-        
+
         background-size: cover;
     }
-    100%{
+
+    100% {
         background: url(../../assets/imgs/home/imgprofs1.png);
-        
+
         background-size: cover;
     }
 }
 
-.imgldr{
+.imgldr {
     width: 45%;
     height: 91vh;
     display: flex;
@@ -138,14 +264,15 @@
 }
 
 .imgldr h1 {
-   
+
     font-size: 9vh;
     color: #000;
     font-weight: bold;
 
 }
+
 .imgldr p {
-    
+
     color: #000;
     font-size: 5vh;
     width: 95%;
@@ -154,7 +281,7 @@
 
 
 /* SESSÃO 3 ============================================================================*/
-.sessão3{
+.sessão3 {
     width: 100%;
     height: auto;
     display: flex;
@@ -163,7 +290,7 @@
     align-items: center;
 }
 
-.seH1 h1{
+.seH1 h1 {
     width: 100%;
     height: 5vh;
     font-size: 60px;
@@ -173,7 +300,7 @@
     color: black;
 }
 
-.Caixas{
+.Caixas {
     width: 100%;
     height: auto;
     display: flex;
@@ -183,7 +310,7 @@
     gap: 5vh;
 }
 
-.Caixas .caixona1{
+.Caixas .caixona1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,7 +318,7 @@
 
 }
 
-.caixaideia{
+.caixaideia {
     width: 30%;
     height: 53vh;
     display: flex;
@@ -203,7 +330,7 @@
     background: linear-gradient(180deg, rgba(171, 81, 225, 0.60) 44.81%, rgba(94, 79, 206, 0.60) 97.43%);
 }
 
-.caixaideia p{
+.caixaideia p {
     display: flex;
     align-items: center;
     width: 80%;
@@ -212,9 +339,9 @@
     text-align: center;
 }
 
-.caixagestao{
+.caixagestao {
     width: 30%;
-    height:53vh ;
+    height: 53vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -224,7 +351,7 @@
     background: linear-gradient(180deg, rgba(171, 81, 225, 0.60) 44.81%, rgba(94, 79, 206, 0.60) 97.43%);
 }
 
-.caixagestao p{
+.caixagestao p {
     display: flex;
     align-items: center;
     width: 80%;
@@ -234,7 +361,7 @@
 
 
 
-.Caixas .caixona2{
+.Caixas .caixona2 {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -242,7 +369,7 @@
     gap: 50px;
 }
 
-.caixacurso{
+.caixacurso {
     width: 30%;
     height: 53vh;
     display: flex;
@@ -254,7 +381,7 @@
     background: linear-gradient(180deg, rgba(171, 81, 225, 0.60) 44.81%, rgba(94, 79, 206, 0.60) 97.43%);
 }
 
-.caixacurso p{
+.caixacurso p {
     display: flex;
     align-items: center;
     width: 80%;
@@ -262,7 +389,7 @@
     text-align: center;
 }
 
-.caixaauxilio{
+.caixaauxilio {
     width: 30%;
     height: 53vh;
     display: flex;
@@ -274,31 +401,33 @@
     background: linear-gradient(180deg, rgba(171, 81, 225, 0.60) 44.81%, rgba(94, 79, 206, 0.60) 97.43%);
 }
 
-.caixaauxilio p{
+.caixaauxilio p {
     display: flex;
     align-items: center;
     width: 80%;
     font-size: 4vh;
     text-align: center;
 }
+
 /* SESSÃO 4 ============================================================================*/
 
-.sessão4{
+.sessão4 {
     width: 99%;
     height: 150vh;
-    background-image: url(../../assets/imgs/home/Rectangle\ 288.png) ;
+    background-image: url(../../assets/imgs/home/Rectangle\ 288.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
 }
 
-.sessãocurso{
+.sessãocurso {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
 }
-.quadro{
+
+.quadro {
     width: 100%;
     height: 55vh;
     display: flex;
@@ -306,7 +435,7 @@
 }
 
 
-.quadrocursos{
+.quadrocursos {
     width: 60%;
     height: 70vh;
     display: flex;
@@ -314,14 +443,14 @@
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    background: linear-gradient(180deg, rgba(149, 21, 170, 0.36) -13.61%, rgba(103, 137, 224, 0.42) 76.3%);  
-    gap: 1vh;  
+    background: linear-gradient(180deg, rgba(149, 21, 170, 0.36) -13.61%, rgba(103, 137, 224, 0.42) 76.3%);
+    gap: 1vh;
 }
 
-.quadrocursos h3{
+.quadrocursos h3 {
     font-size: 10vh;
     font-weight: bold;
-    
+
 }
 
 .quadrocursos p {
@@ -330,27 +459,28 @@
     font-size: 4vh;
     text-align: center;
     font-weight: bold;
-    
+
 }
 
-.carrosselcurso{
+.carrosselcurso {
     width: auto;
     margin-top: 15vh;
-    
+
 }
 
-.inner{
+.inner {
     display: flex;
-    
+
 }
-.inner img{
+
+.inner img {
     width: 50%;
     height: 70vh;
     margin-left: 20px;
     border-radius: 10px;
 }
 
-.carrossel{
+.carrossel {
     cursor: grab;
     overflow: hidden;
 }
@@ -358,46 +488,47 @@
 /* SESSÃO 5 ============================================================================*/
 
 
-.sessão5{
+.sessão5 {
     width: 99%;
-    height: 100vh;   
+    height: 100vh;
 }
-.comentarios h1{
+
+.comentarios h1 {
     font-size: 70px;
 }
 
-.blabla{
+.blabla {
     height: 15vh;
-    
+
 }
 
-.blabla h1{
+.blabla h1 {
     height: 10vh;
     color: black;
 }
 
-.campocoment{
+.campocoment {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    
+
 }
 
-.Caixacoment .foto{
+.Caixacoment .foto {
     width: 17%;
     height: 10vh;
     background-image: url(../../assets/imgs/home/Ellipse\ 46.png);
     background-size: cover;
-    
-    
+
+
 }
 
-.Caixacoment h1{
+.Caixacoment h1 {
     font-size: 20px;
     color: black;
 }
 
-.Caixacoment p{
+.Caixacoment p {
     font-size: 20px;
     color: black;
     width: 50vh;
@@ -405,12 +536,12 @@
 }
 
 
-.blug{
+.blug {
     width: 150%;
     display: flex;
 }
 
-.blug .Caixacoment{
+.blug .Caixacoment {
     width: 20%;
     height: 50vh;
     border-radius: 10px;
@@ -424,7 +555,7 @@
 
 }
 
-.coment{
+.coment {
 
     cursor: grab;
     overflow: hidden;
@@ -433,16 +564,16 @@
 
 /* SESSÃO 6 ============================================================================*/
 
-.sessão6{
+.sessão6 {
     width: 100%;
     height: auto;
-    background-image: url(../../assets/imgs/home/fundoplanos.png) ;
+    background-image: url(../../assets/imgs/home/fundoplanos.png);
     background-size: cover;
     background-position: center center;
     background-clip: content-box;
 }
 
-.titulo h1{
+.titulo h1 {
     font-size: 80px;
     width: 100%;
     height: 10vh;
@@ -452,7 +583,7 @@
 
 }
 
-.caixaplanos{
+.caixaplanos {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -461,7 +592,7 @@
     align-items: center;
 }
 
-.caixagratuito{
+.caixagratuito {
     width: 35%;
     height: 80vh;
     background-color: rgba(240, 229, 243, 1);
@@ -480,20 +611,20 @@
     text-align: left;
 }
 
-.caixagratuito h2{
+.caixagratuito h2 {
     color: black;
     font-size: 6vh;
 }
 
-.caixagratuito h3{
+.caixagratuito h3 {
     color: black;
     font-size: 10vh;
 }
 
-.caixapremium{
+.caixapremium {
     width: 35%;
     height: 80vh;
-    background-color:rgba(242, 159, 184, 1);
+    background-color: rgba(242, 159, 184, 1);
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -509,35 +640,38 @@
     font-size: 3vh;
 }
 
-.caixapremium h2{
+.caixapremium h2 {
     color: black;
     font-size: 6vh;
 }
 
-.caixapremium h3{
+.caixapremium h3 {
     color: black;
     font-size: 10vh;
 }
 
 /*Responsividade ============================================================================*/
 
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1920px) {
 
-    .slide h1{
+    .slide h1 {
         width: 45%;
     }
 
-    .imgles{
+    .imgles {
         width: 43%;
         height: 92vh;
     }
 
-    .imgldr{
+    .imgldr {
         width: 40%;
         height: 91vh;
     }
 
-    .caixaideia,.caixagestao,.caixacurso,.caixaauxilio{
+    .caixaideia,
+    .caixagestao,
+    .caixacurso,
+    .caixaauxilio {
         width: 30%;
         height: 40vh;
         display: flex;
@@ -545,80 +679,81 @@
         justify-content: center;
     }
 
-    .caixaideia p{
+    .caixaideia p {
         font-size: 30px;
     }
 
-    .caixagestao p{
+    .caixagestao p {
         font-size: 30px;
     }
 
-    .caixacurso p{
+    .caixacurso p {
         font-size: 30px;
     }
 
-    .caixaauxilio p{
+    .caixaauxilio p {
         font-size: 30px;
     }
 
     .imgldr h1 {
         font-size: 70px;
         color: black;
-    
+
     }
 
     .imgldr p {
         font-size: 40px;
         color: black;
-    
+
     }
 
-    .seH1 h1{
+    .seH1 h1 {
         width: 100%;
         height: 15vh;
         font-size: 80px;
     }
 
-    .quadrocursos h3{
+    .quadrocursos h3 {
         font-size: 70px;
         font-weight: bold;
     }
 
-    .quadrocursos p{
+    .quadrocursos p {
         width: 80%;
         font-size: 30px;
     }
 
-    .Caixacoment .foto{
+    .Caixacoment .foto {
         width: 26%;
         height: 14vh;
     }
 
-    .Caixacoment h1{
+    .Caixacoment h1 {
         font-size: 30px;
     }
 
-    .Caixacoment p{
+    .Caixacoment p {
         width: 80%;
         font-size: 25px;
     }
 
-    .sessão6{
+    .sessão6 {
         width: 100%;
         height: 150vh;
     }
 
-    .caixagratuito h2{
-        
+    .caixagratuito h2 {
+
         font-size: 60px;
         margin-top: 50px;
     }
-    
-    .caixagratuito h3{
+
+    .caixagratuito h3 {
         font-size: 70px;
         margin-bottom: 50px;
     }
-    .caixapremium h3{
+
+    .caixapremium h3 {
         font-size: 70px;
         margin-bottom: 50px;
     }
@@ -627,7 +762,7 @@
         font-size: 30px;
     }
 
-    .caixagratuito li{
+    .caixagratuito li {
         font-size: 30px;
     }
 }
