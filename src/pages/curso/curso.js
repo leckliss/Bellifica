@@ -1,5 +1,4 @@
-import { motion } from 'framer-motion'
-import {useState, useEffect, useRef} from 'react'
+import React, { useState } from 'react';
 
 import Styles from './Curso.module.css';
 import Header from '../../components/header/index'
@@ -14,18 +13,31 @@ import cabelosenac from '../../assets/imgs/curso/cabelo-senac.png'
 import maquiadorasenac from '../../assets/imgs/curso/maquiadora.jpg'
 import manicuresenac from '../../assets/imgs/curso/maos-pes.jpg'
 
-const images = [financeiro, marketing, estetica, cabelosenac, maquiadorasenac, manicuresenac]
+
 
 
 function Curso() {
 
-    const carousel = useRef();
-    const[width, setWidth] = useState(0)
+    const [currentCardIndex, setCurrentCardIndex] = useState(0);
 
-    useEffect(()=>{
-        console.log(carousel.current?.scrollWidth, carousel.current?.offsetWidth)
-        setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
-    },[])
+    const cards = [
+        { image: financeiro, description: 'Curso de Finanças' },
+        { image: marketing, description: 'Curso de Marketing' },
+        { image: estetica, description: 'Curso de Beleza e Estética' },
+        { image: cabelosenac, description: 'Curso de Cabelo' },
+        { image: maquiadorasenac, description: 'Curso de Beleza e Estética' },
+        { image: manicuresenac, description: 'Curso de Beleza e Estética' },
+    ];
+
+    const nextCard = () => {
+        const newIndex = (currentCardIndex + 1) % cards.length;
+        setCurrentCardIndex(newIndex);
+    };
+
+    const prevCard = () => {
+        const newIndex = (currentCardIndex - 1 + cards.length) % cards.length;
+        setCurrentCardIndex(newIndex);
+    };
 
     return (
 
@@ -51,20 +63,19 @@ function Curso() {
 
             <section className={Styles.senac}>
                 <img src={senac} alt='logo senac' className={Styles.logosenac} />
-                <motion.div ref={carousel} className={Styles.carousel} whileTap={{cursor: "grabbing"}}>
-                    <motion.div className={Styles.interno} drag="x" dragConstraints={{right: 0, left: -width}}>
 
-                        {images.map(image=>(
+                <div className={Styles.cardCarousel}>
+                <button onClick={prevCard}>Previous</button>
+                <div className={Styles.card}>
+                    <img src={cards[currentCardIndex].image} alt={cards[currentCardIndex].description} />
+                    <p className={Styles.descri}>{cards[currentCardIndex].description}</p>
+                </div>
+                <button onClick={nextCard}>Next</button>
+            </div>
 
-                            <motion.div className={Styles.item} key={image}>
-                                <img src={image} alt='texto alt' />
-                            </motion.div>
 
-                        ))}
-
-                    </motion.div>
-                </motion.div>
             </section>
+
 
 
             <Footer />
