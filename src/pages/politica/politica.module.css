@@ -5,6 +5,7 @@
 .politica_corpo{
     width: 100%;
     height: auto;
+    margin-top: 0px;
 }
 
 .politica_titulo{
@@ -12,12 +13,14 @@
     font-size: 5.3vh;
     font-weight: bold;
     text-align: center;
+    margin-top: 150px;
 
 }
 
 .descricoes_text{
     width: 90%;
     height: auto;
+    margin-top: -150px;
 }
 
 .destaque_politica{
@@ -35,4 +38,11 @@
 .agradecimento_politica{
     color: black;
     font-size: 3vh;
+}
+
+
+@media screen and (max-width: 1280px) {
+
+    
+    
 }
