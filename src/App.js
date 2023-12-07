@@ -18,7 +18,7 @@ import Curso from './pages/curso/curso';
 import Dashboard from './pages/dashboard/dashboard';
 import Painel from './components/painel/painel';
 import Agenda from './components/agenda/agenda';
-import Configuracoes from './components/configuracoes/configuracoes';
+import Configuracoes from './components/configuracoes/meusdados';
 import Cursos from './components/cursos/cursos';
 
 
@@ -43,7 +43,7 @@ function App() {
           <Route path='/dashboard' element={<Dashboard />}></Route>
           <Route path='/painel' element={<Painel />}></Route>
           <Route path='/agenda' element={<Agenda />}></Route>
-          <Route path='/configuracoes' element={<Configuracoes />}></Route>
+          <Route path='/configuraçoes' element={<Configuracoes/>}></Route>
           <Route path='/cursos' element={<Cursos />}></Route>
         </Routes>
       </Router>
