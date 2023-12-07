@@ -7,7 +7,7 @@ function Produtos() {
     return (
 
         <>
-            <Header />
+            <Header  />
 
             <div className={Styles.pagproduto}>
 
@@ -22,7 +22,7 @@ function Produtos() {
                                     <p>Auxiliamos você a entrar no caminho certo para o crescimento do seu negócio, indicamos cursos e dicas para ajudar no seu dia-a-dia.</p>
                                 </div>
                             </div>
-                            <img src={imgpdtcurso}></img>
+                            <img className={Styles.imagem_curso} src={imgpdtcurso}></img>
                         </div>
 
                         <div className={Styles.campagendamento}>
