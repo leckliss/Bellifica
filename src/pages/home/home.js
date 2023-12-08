@@ -135,7 +135,7 @@ function Home() {
                             <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>Embelezando</span> sonhos...
                         </h1>
                         <h1 className={Styles.typingeffect2}>
-                            Estruturando <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>realidades</span>.
+                            Estruturando <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>realidades</span>
                         </h1>
                     </div>
                     <h5 style={{ fontSize: 'x-large', color: 'white' }}>Com a Bellifica você torna-se um(a) profissional organizado(a)</h5>
