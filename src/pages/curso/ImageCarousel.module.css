@@ -17,7 +17,7 @@
   
   /* Exibe a imagem ativa */
   .active {
-    width: 200px; /* Largura das imagens */
+    width: 100vh; /* Largura das imagens */
     height: auto;
     border-radius: 5px;
     cursor: pointer;
