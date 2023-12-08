@@ -96,12 +96,44 @@ Button {
     /* Outros estilos desejados para as descrições */
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .carouselContainer {
+    /* Ajuste o layout do container do carrossel */
+    padding: 0; /* Remova qualquer padding que esteja causando espaçamento extra */
+    margin: 0; /* Remova margens para melhor aproveitamento do espaço na tela */
+  }
+
+  .carousel {
+    /* Ajuste o layout do carrossel */
+    /* Por exemplo, faça os botões ocuparem a largura total */
+    display: flex;
+    flex-direction: column; /* Coloque os botões um embaixo do outro */
+    align-items: center; /* Centralize os botões verticalmente */
+  }
+
+  .carousel button {
+    /* Ajuste o estilo dos botões */
+    /* Por exemplo, aumente o tamanho e o espaçamento entre os botões */
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 8px 0;
+  }
+
+  .image {
+    /* Ajuste o tamanho das imagens */
+    /* Por exemplo, faça as imagens ocuparem a largura total */
+    width: 100%;
+    height: auto;
+  }
+
+  .imageDescription {
+    /* Ajuste o estilo das descrições */
+    /* Por exemplo, reduza o tamanho da fonte */
+    font-size: 14px;
+  }
+}
   
-    .imageDescription {
-      /* Ajuste o estilo das descrições para telas maiores */
-      /* Por exemplo, ajuste o espaçamento ou o tamanho do texto */
-      font-size: 3vh; /* Ajuste conforme necessário */
-      /* Outros estilos desejados para as descrições */
-    }
+   
   
 
