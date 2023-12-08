@@ -58,3 +58,50 @@ Button {
     /* Outros estilos desejados quando o cursor passa por cima */
   }
 
+
+ /* Media Query para telas maiores, como monitores de 1920px */
+@media screen and (min-width: 1920px) {
+  .carouselContainer {
+    /* Ajuste o layout do container do carrossel para telas maiores */
+    /* Por exemplo, defina uma largura máxima para o carrossel */
+    max-width: 1600px; /* Ajuste conforme necessário */
+    margin: 0 auto; /* Centralize horizontalmente */
+  }
+
+  .carousel {
+    /* Ajuste o layout do carrossel para telas maiores */
+    /* Por exemplo, exiba mais imagens por vez ou ajuste o espaçamento */
+    justify-content: space-between;
+  }
+  
+  Button {
+    /* Ajustes para os botões do carrossel em telas maiores */
+    /* Por exemplo, aumente o tamanho dos botões */
+    font-size: 20px;
+    padding: 12px 20px;
+  }
+
+  .image {
+    /* Ajuste o tamanho das imagens para telas maiores */
+    /* Use vh para dimensionar com base na altura da viewport */
+    width: 40vh; /* Ajuste conforme necessário */
+    height: 30vh; /* Ajuste conforme necessário */
+    /* Outros estilos desejados para as imagens */
+  }
+
+  .imageDescription {
+    /* Ajuste o estilo das descrições para telas maiores */
+    /* Por exemplo, ajuste o espaçamento ou o tamanho do texto */
+    font-size: 2vh; /* Ajuste conforme necessário */
+    /* Outros estilos desejados para as descrições */
+  }
+}
+  
+    .imageDescription {
+      /* Ajuste o estilo das descrições para telas maiores */
+      /* Por exemplo, ajuste o espaçamento ou o tamanho do texto */
+      font-size: 3vh; /* Ajuste conforme necessário */
+      /* Outros estilos desejados para as descrições */
+    }
+  
+
