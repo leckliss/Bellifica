@@ -78,14 +78,18 @@
     border-radius: 5vh;
     padding: 10px;
     width: 30%;
+    height: auto;
+    font-size: x-large;
     text-align: center;
+    background-color: transparent !important;
 }
 
 .buttonino:hover {
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
     border: 2px solid #9979c1;
     text-shadow: #9979c1;
-    color: #9979c1;
+    color: #fd9ba6;
+    background-color: #9979c1 !important;
     border-radius: 5vh;
     padding: 10px;
     width: 30%;
@@ -95,17 +99,17 @@
 @keyframes typing {
     0% {
         width: 0;
-        border-right: .10em solid black;
+        border-right: .20em solid black;
     }
 
-    99.9% {
-        width: 100%;
-        border-right: .10em solid black;
+    99% {
+        width: 99%;
+        border-right: .20em solid black;
     }
 
     100% {
         width: 100%;
-        border-right: .10em solid transparent;
+        border-right: .20em solid transparent;
     }
 }
 
@@ -118,30 +122,32 @@
 .typingeffect {
     overflow: hidden;
     white-space: nowrap;
-    letter-spacing: .10em;
+    letter-spacing: .1em;
     animation:
-        typing 2.5s steps(30, end) forwards,
+        typing 2.7s steps(30, end) forwards,
         blink-caret .75s step-end infinite;
-    max-width: 58%;
+    max-width: min-content;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 3.2rem;
 }
 
 .typingeffect2 {
     overflow: hidden;
     white-space: nowrap;
-    letter-spacing: .10em;
+    letter-spacing: .1em;
     opacity: 0;
-    border-right: .10em solid black;
+    border-right: .20em solid black;
     animation:
         typing 3.5s steps(30, end) 3.5s forwards,
         blink-caret .75s step-end infinite 3.5s,
         fadeInOpacity 0s ease-in 3.5s forwards;
-    max-width: 66%;
+    max-width: min-content;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 3.2rem;
 }
 
 @keyframes fadeInOpacity {
@@ -168,19 +174,23 @@
     margin-bottom: -10%;
     z-index: 1;
 }
-.profsscar{
+
+.profsscar {
     width: auto;
     height: auto;
     z-index: 2;
     position: absolute;
-    right: 75%;
+    right: 100%;
 }
-.profsscar span{
+
+.profsscar span {
     display: none !important;
 }
-.profsscar button{
+
+.profsscar button {
     display: none !important;
 }
+
 .profss {
     width: auto;
     height: auto;
@@ -632,6 +642,14 @@
     align-items: center;
     box-shadow: bottom 1px rgba(0, 0, 0, 0.644);
     gap: 2vh;
+}
+.caixagratuitotitulo, .caixapremiumtitulo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .caixapremium li {

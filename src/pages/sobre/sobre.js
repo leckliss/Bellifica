@@ -9,14 +9,52 @@ import etica from '../../assets/imgs/sobre/etica.png'
 import meta from '../../assets/imgs/sobre/meta.png'
 import bellogo from '../../assets/imgs/sobre/logo-sig.png'
 
+import FundinRoxo from '../../assets/imgs/home/fundinroxo.png';
+import React, { useEffect } from "react";
 function Sobre() {
+
+    useEffect(() => {
+        const section = document.getElementById('inicio-sobre');
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, []);
+
+
     return (
 
         <body className={Styles.pagsobre}>
 
             <Header />
 
-            {/*parte de quem somos*/}
+            <div className={Styles.carrosel} id='inicio-sobre' name='inicio-sobre'>
+
+                <div className={Styles.sec11}>
+                    <div style={{ color: 'black', fontWeight: 'bolder', }}>
+                        <h1 className={Styles.typingeffect}>
+                            <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>Embelezando</span> sonhos...
+                        </h1>
+                        <h1 className={Styles.typingeffect2}>
+                            Estruturando <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>realidades.</span>
+                        </h1>
+                    </div>
+                    <h5 style={{ fontSize: 'x-large', color: 'white' }}>Com a Bellifica você torna-se um(a) profissional organizado(a)</h5>
+                    <button className={Styles.buttonino} >Conhecer planos</button>
+
+                </div>
+
+                <div className={Styles.sec12}>
+
+                    <img
+                        className={Styles.fundinroxo}
+                        src={FundinRoxo}
+
+                    />
+
+
+                </div>
+
+            </div>
 
             <section className={Styles.quemsomos}>
 
@@ -47,7 +85,7 @@ function Sobre() {
 
             <section className={Styles.princi}>
                 <h1 className={Styles.titprinci}>Nossos Princípios</h1>
-                
+
                 <div className={Styles.princitudo}>
                     <div className={Styles.campenfoque}>
                         <div className={Styles.enfoque}>

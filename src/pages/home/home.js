@@ -22,10 +22,16 @@ import Prof1 from '../../assets/imgs/home/prof1.png';
 import Prof2 from '../../assets/imgs/home/prof2.png';
 import Prof3 from '../../assets/imgs/home/prof3.png';
 import Prof4 from '../../assets/imgs/home/prof4.png';
+import Prof5 from '../../assets/imgs/home/prof5.png';
+import Prof6 from '../../assets/imgs/home/prof6.png';
 import Carousel from 'react-bootstrap/Carousel';
 import img1 from '../../assets/imgs/home/img1.jpg';
 import img2 from '../../assets/imgs/home/img2.jpg';
 import img3 from '../../assets/imgs/home/img3.jpg';
+import Borbo from '../../assets/imgs/home/borbo.png';
+import Borbo2 from '../../assets/imgs/home/borbo2.png';
+import Pupa from '../../assets/imgs/home/pupa.png';
+import Pupa2 from '../../assets/imgs/home/pupa2.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Home() {
@@ -85,30 +91,65 @@ function Home() {
         setWidth(coment.current?.scrollWidth - coment.current?.offsetWidth)
     }, [])
 
+    const [scrollPosition, setScrollPosition] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const position = window.pageYOffset;
+            setScrollPosition(position);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const calculatePosition = () => {
+        const newPosition = scrollPosition * 0.3;
+        return newPosition > 150 ? 150 : newPosition;
+    };
+
+    const myRef = useRef(null);
+
+    const scrollToSection = () => {
+        myRef.current.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    useEffect(() => {
+        const section = document.getElementById('inicio');
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, []);
+
     return (
         <div className={Styles.paghome}>
 
             <Header />
 
-            <div className={Styles.carrosel}>
+            <div className={Styles.carrosel} id='inicio' name='inicio'>
 
                 <div className={Styles.sec11}>
-                    <div style={{ color: 'black', fontWeight: 'bolder' }}>
+                    <div style={{ color: 'black', fontWeight: 'bolder', }}>
                         <h1 className={Styles.typingeffect}>
-                            <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>Embelezando</span> sonhos.
+                            <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>Embelezando</span> sonhos...
                         </h1>
                         <h1 className={Styles.typingeffect2}>
                             Estruturando <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>realidades.</span>
                         </h1>
                     </div>
-                    <h5>Com a Bellifica você torna-se uma profissional organizada</h5>
-                    <button className={Styles.buttonino}>Conhecer planos</button>
+                    <h5 style={{ fontSize: 'x-large', color: 'white' }}>Com a Bellifica você torna-se um(a) profissional organizado(a)</h5>
+                    <button className={Styles.buttonino} onClick={scrollToSection}>Conhecer planos</button>
 
                 </div>
 
                 <div className={Styles.sec12}>
 
-                    <img className={Styles.fundinroxo} src={FundinRoxo} />
+                    <img
+                        className={Styles.fundinroxo}
+                        src={FundinRoxo}
+                        style={{ transform: `translateY(${calculatePosition()}px)` }}
+                    />
 
                     <Carousel className={Styles.profsscar} >
                         <Carousel.Item interval={2500}>
@@ -122,6 +163,12 @@ function Home() {
                         </Carousel.Item>
                         <Carousel.Item interval={2500}>
                             <img className={Styles.profss} src={Prof4} />
+                        </Carousel.Item>
+                        <Carousel.Item interval={2500}>
+                            <img className={Styles.profss} src={Prof5} />
+                        </Carousel.Item>
+                        <Carousel.Item interval={2500}>
+                            <img className={Styles.profss} src={Prof6} />
                         </Carousel.Item>
                     </Carousel>
 
@@ -271,32 +318,38 @@ function Home() {
 
             {/* Sessão6 ==================================================================== */}
 
-            <section className={Styles.sessão6} id='planos' name='planos'>
+            <section className={Styles.sessão6} id='planos' name='planos' ref={myRef}>
 
                 <div className={Styles.titulo}><h1>Nossos Planos</h1></div>
                 <div className={Styles.caixaplanos}>
 
                     <div className={Styles.caixagratuito}>
+                        <div className={Styles.caixagratuitotitulo}>
+                        <img src={Pupa} style={{height: 50, width: 50}} />
                         <h3>Pupa</h3>
-
-                        <li>Para ajudar os profissionais que estão começando ou os que querem testar nossos serviços, oferecemos alguns recursos gratuitos:</li>
-                        <li>Cursos</li>
-                        <li>Guia de cursos presenciais</li>
-                        <li>Consultoria para ajudar você a entrar nos trilhos e retirar todas suas duvidas para você crescer.</li>
+                        <img src={Pupa2} style={{height: 50, width: 50}} />
+                        </div>
+                        <h4 style={{color: 'black', textAlign: 'center'}}>Indicado para ajudar os profissionais que estão começando ou os que querem testar nossos serviços, oferecemos alguns recursos gratuitos:</h4>
+                        <li>Cursos gratuitos</li>
+                        <li>Dicas para seu negócio</li>
+                        <li>Recomendação de cursos</li>
 
                         <h2>R$ 0,00</h2>
+                        <h4>GRÁTIS</h4>
 
                     </div>
                     <div className={Styles.caixapremium}>
+                        <div className={Styles.caixapremiumtitulo}>
+                        <img src={Borbo}  style={{height: 50, width: 50}}/>
                         <h3>Borboleta</h3>
-
-                        <li>E para os profissionais que já estão na area ou querem mais ajuda para se organizar oferecemos melhores recursos, dentre eles:</li>
-                        <li>Serviço de agendamento automatizado</li>
+                        <img src={Borbo2}  style={{height: 50, width: 50}}/>
+                        </div>
+                        <h4 style={{color: 'black', textAlign: 'center'}}>Indicado para os profissionais que já atuam na área ou querem mais ajuda para se organizar oferecemos melhores recursos, dentre eles:</h4>
                         <li>Cursos premium</li>
-                        <li>Consultoria premium</li>
-                        <li>Recursos extra</li>
+                        <li>Chat-bot com IA</li>
+                        <li>+ Recursos Plus desbloqueados</li>
 
-                        <h2>R$ 49,99</h2>
+                        <h2>R$ 49, <span style={{ fontSize: '0.5em' }}>99</span> </h2>
 
                     </div>
 

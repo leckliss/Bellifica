@@ -19,13 +19,6 @@ function Header() {
   const [logoSrc, setLogoSrc] = useState(LogoBr);
   const [menuSrc, setMenuSrc] = useState(MenuBr);
 
-  const handlePlanosClick = () => {
-    const element = document.getElementById('planos');
-    if (element) {
-      navigate('/#planos');
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
   const handleInicioClick = () => {
     const element2 = document.getElementById('inicio');
     if (element2) {
@@ -66,7 +59,7 @@ function Header() {
     <header className={`header ${scrolled ? 'scrolled' : ''} ${isDropdownVisible ? 'active' : ''}`}>
       <ul>
         {/* Links para diferentes seções, a classe muda conforme o estado de scroll */}
-        <li><Link to='/curso' onClick={handlePlanosClick} className={scrolled ? 'text-white' : 'text-white2'}>Cursos</Link></li>
+        <li><Link to={'/curso'}  className={scrolled ? 'text-white' : 'text-white2'}>Cursos</Link></li>
         <li><Link to={'/produtos'} className={scrolled ? 'text-white' : 'text-white2'}>Serviços</Link></li>
         <li><Link to={'/#inicio'} onClick={handleInicioClick}><img src={logoSrc} alt="Logo" className={scrolled ? 'logo2' : 'logo'} /></Link></li>
         <li><Link to={'/sobre'} className={scrolled ? 'text-white' : 'text-white2'}>Quem Somos</Link></li>
