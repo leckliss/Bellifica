@@ -31,13 +31,8 @@ function Produtos() {
                                 Nossos serviços foram <span style={{ color: '#fd9ba6', fontWeight: 'bolder' }}>delineados</span> e embelezados pensando em <span style={{ color: '#fd9ba6', fontWeight: 'bolder' }}>você</span>.
                             </h1>
                         </div>
-<<<<<<< HEAD
                         <h5 style={{ fontSize: 'x-large', color: 'white' }}>Com a Bellifica você fará mais de forma mais eficiente e eficaz</h5>
                         <button className={Styles.buttonino} >Conhecer mais</button>
-=======
-                        <h5 className={Styles.descri_Bellifica} style={{  color: 'white' }}>Com a Bellifica você torna-se um(a) profissional organizado(a)</h5>
-                        <button className={Styles.buttonino} >Conhecer planos</button>
->>>>>>> 478848d8d33d39bba166366e7ac3214926104bc7
 
                     </div>
 

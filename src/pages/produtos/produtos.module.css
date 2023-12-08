@@ -2,7 +2,6 @@
     margin: 0;
     border: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 .pagproduto {
@@ -15,7 +14,7 @@
     display: flex;
     flex-direction: row;
     background-color: #7677d2;
-    overflow: hidden;
+    
 }
 
 .sec11 {
