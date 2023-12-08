@@ -28,14 +28,11 @@ function Produtos() {
                     <div className={Styles.sec11}>
                         <div style={{ color: 'black', fontWeight: 'bolder', }}>
                             <h1 className={Styles.typingeffect}>
-                                <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>Embelezando</span> sonhos...
-                            </h1>
-                            <h1 className={Styles.typingeffect2}>
-                                Estruturando <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>realidades.</span>
+                                Nossos serviços foram <span style={{ color: '#fd9ba6', fontWeight: 'bolder' }}>delineados</span> e embelezados pensando em <span style={{ color: '#fd9ba6', fontWeight: 'bolder' }}>você</span>.
                             </h1>
                         </div>
-                        <h5 style={{ fontSize: 'x-large', color: 'white' }}>Com a Bellifica você torna-se um(a) profissional organizado(a)</h5>
-                        <button className={Styles.buttonino} >Conhecer planos</button>
+                        <h5 style={{ fontSize: 'x-large', color: 'white' }}>Com a Bellifica você fará mais de forma mais eficiente e eficaz</h5>
+                        <button className={Styles.buttonino} >Conhecer mais</button>
 
                     </div>
 
