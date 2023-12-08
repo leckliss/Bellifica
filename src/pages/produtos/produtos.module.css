@@ -4,9 +4,55 @@
     padding: 0;
 }
 
-.pagproduto{
+.pagproduto {
     background-color: #fdd3;
 }
+
+.carrosel {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #fd9ba6;
+    overflow: hidden;
+}
+
+.sec11 {
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+    color: #000;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.buttonino {
+    border: 2px solid #000;
+    color: #000;
+    border-radius: 5vh;
+    padding: 10px;
+    width: 30%;
+    height: auto;
+    font-size: x-large;
+    text-align: center;
+    background-color: transparent !important;
+}
+
+.buttonino:hover {
+    transition: all 0.3s ease;
+    border: 2px solid #9979c1;
+    text-shadow: #9979c1;
+    color: #fd9ba6;
+    background-color: #9979c1 !important;
+    border-radius: 5vh;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+}
+
 
 
 .sessãopdt {
@@ -50,8 +96,9 @@
     display: flex;
     flex-direction: row;
     background-color: #fdd3e4;
-    
+
 }
+
 .pdtdescri {
     width: 100%;
     height: 50vh;
@@ -59,7 +106,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 
@@ -84,7 +131,7 @@
     display: flex;
     justify-content: end;
     align-items: end;
-    
+
 }
 
 .campagendamento {
@@ -118,7 +165,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .text1 h2 {
@@ -146,42 +193,42 @@
 
 }
 
-@media  screen and (min-width:768px) and (max-width: 1279px){
+@media screen and (min-width:768px) and (max-width: 1279px) {
     .pdtdescri h2 {
         color: black;
         font-size: 5vh;
         text-align: center;
         font-weight: bold;
     }
-    
+
     .pdtdescri p {
         width: 90%;
         color: black;
         font-size: 4vh;
         text-align: center;
-    
+
     }
-    
-    
-    
+
+
+
     .text1 h2 {
         color: black;
         font-size: 5vh;
         font-weight: bold;
-    
+
     }
 
     .text1 p {
         width: 80%;
         color: black;
         font-size: 4vh;
-    
+
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px){
-    
-    
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+
     .Titulo_produtos {
         margin-bottom: 0px;
         width: 100%;
@@ -194,8 +241,8 @@
         font-size: 6vh;
         margin-top: 200px;
         font-weight: bold;
-    
-    
+
+
     }
 
     .pdtcursodicas {
@@ -212,13 +259,13 @@
         text-align: center;
         font-weight: bold;
     }
-    
+
     .pdtdescri p {
         width: 90%;
         color: black;
         font-size: 2.5vh;
         text-align: center;
-    
+
     }
 
     .pdtcursodicas img {
@@ -230,11 +277,11 @@
         flex-direction: row;
         align-items: start;
         justify-content: start;
-    
+
     }
 
-    
-    
+
+
     .pdtagendamento {
         width: 100%;
         height: 50vh;
@@ -242,9 +289,9 @@
         flex-direction: row;
         background-color: #ff8fb2;
         justify-content: end;
-    
+
     }
-    
+
     .text1 h2 {
         color: black;
         font-size: 3.8vh;
@@ -257,7 +304,7 @@
         color: black;
         font-size: 2.5vh;
         margin-top: 0px;
-    
+
     }
 
     .pdtagendamento img {
@@ -269,7 +316,7 @@
         flex-direction: row;
         align-items: start;
         justify-content: start;
-    
+
     }
 
 }

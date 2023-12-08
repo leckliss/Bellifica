@@ -13,6 +13,52 @@
 
 }
 
+.carrosel {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #fd9ba6;
+    overflow: hidden;
+}
+
+.sec11 {
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+    color: #000;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.buttonino {
+    border: 2px solid #000;
+    color: #000;
+    border-radius: 5vh;
+    padding: 10px;
+    width: 30%;
+    height: auto;
+    font-size: x-large;
+    text-align: center;
+    background-color: transparent !important;
+}
+
+.buttonino:hover {
+    transition: all 0.3s ease;
+    border: 2px solid #9979c1;
+    text-shadow: #9979c1;
+    color: #fd9ba6;
+    background-color: #9979c1 !important;
+    border-radius: 5vh;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+
 /*quem somos*/
 
 .quemsomos {
@@ -151,7 +197,7 @@
     font-size: 10vh;
     font-weight: bold;
     margin-left: 5vh;
-    
+
 }
 
 .princitudo {
@@ -167,7 +213,7 @@
 
 }
 
-.campoetica{
+.campoetica {
     width: 100%;
 
 }
@@ -209,7 +255,7 @@
 
 }
 
- .enfo {
+.enfo {
     width: 30%;
     color: #000;
     font-weight: bold;
@@ -218,7 +264,7 @@
 
 }
 
- .textenfo {
+.textenfo {
     width: 90%;
     color: #000;
     font-size: 4vh;
@@ -322,7 +368,7 @@
 
 }
 
- .textmet {
+.textmet {
     width: 90%;
     color: #000;
     font-size: 4vh;

@@ -115,6 +115,13 @@ function Home() {
         myRef.current.scrollIntoView({ behavior: 'smooth' });
     };
 
+    useEffect(() => {
+        const section = document.getElementById('inicio');
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, []);
+
     return (
         <div className={Styles.paghome}>
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ImageCarousel from './ImageCarousel';
 
 
@@ -30,6 +30,9 @@ import makeboti from '../../assets/imgs/curso/maquiagem-boticario.png'
 import vendasboti from '../../assets/imgs/curso/vendas-boticario.png'
 import desenboti from '../../assets/imgs/curso/desenvolvimento-pessoal-boticario.png'
 import empreenboti from '../../assets/imgs/curso/mulher-empreendedora-boticario.png'
+
+import FundinRosa from '../../assets/imgs/curso/fundinrosa.png';
+import MulherCurso from '../../assets/imgs/curso/mulhercurso.png';
 
 
 
@@ -144,7 +147,12 @@ function Curso() {
 
     ];
 
-
+    useEffect(() => {
+        const section = document.getElementById('inicio-curso');
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, []);
 
     return (
 
@@ -152,21 +160,33 @@ function Curso() {
 
             <Header />
 
-            {/*parte de quem somos*/}
+            <div className={Styles.carrosel} id='inicio-curso' name='inicio-curso'>
 
-            <section className={Styles.banner}>
-
-                <div className={Styles.caixaroxa}>
-                    <div className={Styles.descricurso}>
-                        <h1 className={Styles.titcurso}>Chegou a hora de desembaraçar a sua vida</h1>
-
-                        <p className={Styles.textcurso}>Nesta seção contém cursos com parceiros que iremos oferecer para você bellificar mais ainda o seu empreendimento</p>
+                <div className={Styles.sec11}>
+                    <div style={{ color: 'black', fontWeight: 'bolder', }}>
+                        <h1 className={Styles.typingeffect}>
+                            Chegamos para <span style={{ color: '#fd9ba6', fontWeight: 'bolder' }}>desembaraçar</span> sua vida.
+                        </h1>
                     </div>
+                    <h5 style={{ fontSize: 'x-large', color: 'white' }}>Indicamos cursos com parceiros que iremos oferecer para você bellificar mais ainda o seu empreendimento</h5>
+                    <button className={Styles.buttonino} >Conhecer mais</button>
 
-                    <img src={blob} alt='mulher estudando' className={Styles.imgbanner} />
                 </div>
 
-            </section>
+                <div className={Styles.sec12}>
+
+                    <img
+                        className={Styles.fundinrosa}
+                        src={FundinRosa}
+                    />
+                    <img
+                        className={Styles.mulhercurso}
+                        src={MulherCurso}
+                    />
+
+                </div>
+
+            </div>
 
             <section className={Styles.senac}>
 
