@@ -2,6 +2,7 @@
     margin: 0;
     border: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .pagproduto {
@@ -29,6 +30,11 @@
     padding-left: 5%;
 }
 
+.descri_Bellifica{
+    font-size: 6vh;
+    margin-right: 0px;
+}
+
 .buttonino {
     border: 2px solid #000;
     color: #000;
@@ -48,8 +54,6 @@
     color: #7677d2;
     background-color:  #fd9ba6 !important;
     border-radius: 5vh;
-    padding: 10px;
-    width: 30%;
     text-align: center;
 }
 
@@ -194,6 +198,50 @@
 }
 
 @media screen and (min-width:768px) and (max-width: 1279px) {
+    .buttonino {
+        border: 2px solid #000;
+        color: #000;
+        border-radius: 5vh;
+        padding: 5px;
+        width: 80%;
+        height: auto;
+        font-size: 3.5vh;
+        text-align: center;
+        background-color: transparent !important;
+    }
+    
+
+
+    .typingeffect{
+        font-size: 5vh;
+        margin-top: 90px;
+        overflow-y: hidden !important;
+    }
+
+    .typingeffect2{
+        font-size: 5vh;
+        margin-top: 10px;
+        margin-left: 00px;
+        overflow-y: hidden !important;
+    }
+    
+    .descri_Bellifica{
+        font-size: 5vh;
+        margin-top: 0px;
+        text-align: left;
+        margin-left: 0px;
+        overflow-y: hidden;
+        
+    }
+    
+    .fundinroxo{
+        width: 80%;
+        margin-top: 100px;
+        margin-left: 120px;
+    }
+    
+    
+    
     .pdtdescri h2 {
         color: black;
         font-size: 5vh;
@@ -227,7 +275,70 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+    .buttonino {
+        border: 2px solid #000000;
+        color: #000;
+        border-radius: 5vh;
+        padding: 5px;
+        width: 80%;
+        height: auto;
+        font-size: 3.5vh;
+        text-align: center;
+        background-color: transparent !important;
+        margin-left: 25px;
+    }
+    
+    .sec11{
+      
+        width: 100%;
+    }
+    
 
+    .carrosel{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+
+    .body_effects{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .typingeffect{
+        font-size: 4vh;
+        margin-top: 90px;
+        margin-right: 0px;
+    }
+
+    .typingeffect2{
+        font-size: 4vh;
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+    
+    .descri_Bellifica{
+        font-size: 3vh;
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    .sec11{
+        position: absolute;
+        z-index: 2;
+    }
+
+    .fundinroxo{
+        display:none;
+
+    }
 
     .Titulo_produtos {
         margin-bottom: 0px;
@@ -239,7 +350,7 @@
         flex-direction: column;
         color: black;
         font-size: 6vh;
-        margin-top: 200px;
+        margin-top: 80px;
         font-weight: bold;
 
 
@@ -269,7 +380,7 @@
     }
 
     .pdtcursodicas img {
-        width: 45%;
+        width: 120%;
         height: 40vh;
         margin-top: 30px;
         position: relative;
