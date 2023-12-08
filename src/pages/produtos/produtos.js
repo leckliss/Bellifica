@@ -26,7 +26,7 @@ function Produtos() {
                 <div className={Styles.carrosel} id='inicio-produtos' name='inicio-produtos'>
 
                     <div className={Styles.sec11}>
-                        <div style={{ color: 'black', fontWeight: 'bolder', }}>
+                        <div className={Styles.body_effects} style={{ color: 'black', fontWeight: 'bolder', }}>
                             <h1 className={Styles.typingeffect}>
                                 <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>Embelezando</span> sonhos...
                             </h1>
@@ -34,7 +34,7 @@ function Produtos() {
                                 Estruturando <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>realidades.</span>
                             </h1>
                         </div>
-                        <h5 style={{ fontSize: 'x-large', color: 'white' }}>Com a Bellifica você torna-se um(a) profissional organizado(a)</h5>
+                        <h5 className={Styles.descri_Bellifica} style={{  color: 'white' }}>Com a Bellifica você torna-se um(a) profissional organizado(a)</h5>
                         <button className={Styles.buttonino} >Conhecer planos</button>
 
                     </div>
