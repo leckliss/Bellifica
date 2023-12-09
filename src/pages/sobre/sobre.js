@@ -30,21 +30,21 @@ function Sobre() {
 
             <div className={Styles.carrosel} id='inicio-sobre' name='inicio-sobre'>
 
-                <div className={Styles.sec11}>
+                <div className={Styles.sec11sobre}>
                     <div style={{ color: 'black', fontWeight: 'bolder', }}>
                         <h1 className={Styles.typingeffect}>
-                            <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>Embelezando</span> sonhos...
+                            Estamos aqui para <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>ajudar</span> você a crescer
                         </h1>
                         <h1 className={Styles.typingeffect2}>
-                            Estruturando <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>realidades.</span>
+                            e atingir seus <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>objetivos</span>.
                         </h1>
                     </div>
-                    <h5 style={{ fontSize: 'x-large', color: 'white' }}>Com a Bellifica você torna-se um(a) profissional organizado(a)</h5>
-                    <button className={Styles.buttonino} >Conhecer planos</button>
+                    <h5 style={{ fontSize: 'x-large', color: 'white' }}>Curioso para saber como a Bellifica nasceu?</h5>
+                    <button className={Styles.buttonino2} >Conheceça a Bellifica</button>
 
                 </div>
 
-                <div className={Styles.sec12}>
+                <div className={Styles.sec12sobre}>
 
                     <img className={Styles.Grupo_Bellifica} src={Grupo_Bellifica} />
                     {/*<img

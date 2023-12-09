@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ImageCarousel from './ImageCarousel';
 
 
@@ -36,6 +36,13 @@ import MulherCurso from '../../assets/imgs/curso/mulhercurso.png';
 
 
 function Curso() {
+
+    useEffect(() => {
+        const section = document.getElementById('inicio-curso');
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, []);
 
     // Array de imagens
     const images = [

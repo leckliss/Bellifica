@@ -1,13 +1,12 @@
 import React from 'react';
-import Styles from './politica.module.css';
+import Styles from './meusdados.module.css';
 
 
-function politicapvc() {
+function Meusdados() {
     return (
       <div className={Styles.configpainelstyle}>
        <div className={Styles.meudado}></div>
     </div>
     );
   }
-  export default politicapvc;
-
+  export default Meusdados;

@@ -18,12 +18,12 @@
     height: 90vh;
     display: flex;
     flex-direction: row;
-    background-color: #fd9ba6;
+    background-color: #eeb7fd;
     overflow: hidden;
     justify-content: space-around;
 }
 
-.sec11 {
+.sec11sobre {
     width: 50%;
     height: 90vh;
     display: flex;
@@ -35,19 +35,19 @@
     padding-left: 5%;
 }
 
-.buttonino {
+.buttonino2 {
     border: 2px solid #000;
     color: #000;
     border-radius: 5vh;
     padding: 10px;
-    width: 30%;
+    width: 40%;
     height: auto;
     font-size: x-large;
     text-align: center;
     background-color: transparent !important;
 }
 
-.buttonino:hover {
+.buttonino2:hover {
     transition: all 0.3s ease;
     border: 2px solid #9979c1;
     text-shadow: #9979c1;

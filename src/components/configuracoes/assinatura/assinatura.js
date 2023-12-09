@@ -1,7 +1,7 @@
 import React from 'react';
 import Styles from './assinatura.module.css'; // Certifique-se de que o nome do arquivo CSS corresponda
 
-function assinatura() {
+function Assinatura() {
   return (
     <div className={Styles.configpainelstyle}>
        <div className={Styles.assinatura}>
@@ -14,4 +14,4 @@ function assinatura() {
   );
 }
 
-export default assinatura;
+export default Assinatura;

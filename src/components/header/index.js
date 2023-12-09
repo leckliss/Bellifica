@@ -22,6 +22,27 @@ function Header() {
       element2.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  const handleCursoClick = () => {
+    const element2 = document.getElementById('inicio-curso');
+    if (element2) {
+      navigate('/#inicio-curso');
+      element2.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  const handleProdutosClick = () => {
+    const element2 = document.getElementById('inicio-produtos');
+    if (element2) {
+      navigate('/#inicio-produtos');
+      element2.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  const handleSobreClick = () => {
+    const element2 = document.getElementById('inicio-sobre');
+    if (element2) {
+      navigate('/#inicio-sobre');
+      element2.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   const handleLoginClick = () => {
     setIsDropdownVisible(!isDropdownVisible);
@@ -60,6 +81,7 @@ function Header() {
 
   return (
     <header className={`header ${scrolled ? 'scrolled' : ''} ${isDropdownVisible ? 'active' : ''}`}>
+<<<<<<< HEAD
     <ul>
       {/* Links para diferentes seções, a classe muda conforme o estado de scroll */}
       <li><Link to={'/curso'}  className={scrolled ? 'text-white' : 'text-white2'}>Cursos</Link></li>
@@ -85,6 +107,33 @@ function Header() {
       </div>
     </ul>
   </header>
+=======
+      <ul>
+        {/* Links para diferentes seções, a classe muda conforme o estado de scroll */}
+        <li><Link to={'/curso'} onClick={handleCursoClick} className={scrolled ? 'text-white' : 'text-white2'}>Cursos</Link></li>
+        <li><Link to={'/produtos'} onClick={handleProdutosClick} className={scrolled ? 'text-white' : 'text-white2'}>Serviços</Link></li>
+        <li><Link to={'/#inicio'} onClick={handleInicioClick}><img src={logoSrc} alt="Logo" className={scrolled ? 'logo2' : 'logo'} /></Link></li>
+        <li><Link to={'/sobre'} onClick={handleSobreClick} className={scrolled ? 'text-white' : 'text-white2'}>Quem Somos</Link></li>
+        <div className='header-login'>
+          {/* Botão do menu, muda a imagem conforme o estado de scroll */}
+          <button className='menu-button' onClick={handleLoginClick}>
+            <img src={menuSrc} alt="Menu" className='menu-img' />
+          </button>
+          {/* Dropdown que aparece ao clicar no botão de menu */}
+          {isDropdownVisible && (
+            <div className={scrolled ? 'dropdown-content2' : 'dropdown-content'}>
+              {/* Links dentro do dropdown, as classes mudam conforme o estado de scroll */}
+              <Link to={'/cadastro'} style={{ textDecoration: 'none' }}><p className={scrolled ? 'menu-option-white' : 'menu-option-pink'}>Cadastrar-se</p></Link>
+              <Link to={'/login'} style={{ textDecoration: 'none' }}><p className={scrolled ? 'menu-option-white' : 'menu-option-pink'}>Login</p></Link>
+              <Link to={'/#planos'} style={{ textDecoration: 'none' }}><p className={scrolled ? 'menu-option2-white' : 'menu-option2-pink'} >Planos</p></Link>
+              <Link to={'/produtos'} style={{ textDecoration: 'none' }}><p className={scrolled ? 'menu-option2-white' : 'menu-option2-pink'} >Produtos</p></Link>
+              <Link to={'/sobre'} style={{ textDecoration: 'none' }}><p className={scrolled ? 'menu-option2-white' : 'menu-option2-pink'}>Quem Somos</p></Link>
+            </div>
+          )}
+        </div>
+      </ul>
+    </header>
+>>>>>>> abaa9a2000d822fddcfec11b5303217d4c26904c
   );
 }
 
