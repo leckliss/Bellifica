@@ -27,21 +27,26 @@ header ul {
   height: 20vh;
   transition: all 0.8s ease;
 }
-header Link, header li{
+
+header Link,
+header li {
   text-decoration: none;
 }
 
 header.scrolled ul {
   height: 7vh;
   background-image: none;
-  background-color: #9979c1; /* Altera para rosa ao rolar */
+  background-color: #9979c1;
+  /* Altera para rosa ao rolar */
 }
-header ul li:hover{
+
+header ul li:hover {
   border-bottom: 5px solid #9979c1;
   border-radius: 10px;
   transition: all 0.5s;
 }
-header.scrolled ul li:hover{
+
+header.scrolled ul li:hover {
   border-bottom: 3px solid white;
   border-radius: 10px;
   transition: all 0.5s;
@@ -51,7 +56,8 @@ header.scrolled ul li:hover{
   width: 100px;
   height: 100px;
 }
-.logo2{
+
+.logo2 {
   width: 50px;
   height: 50px;
 }
@@ -71,6 +77,7 @@ header.scrolled ul li:hover{
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+
 .dropdown-content2 {
   display: none;
   position: absolute;
@@ -88,6 +95,7 @@ header.scrolled ul li:hover{
   display: block;
   text-decoration: none;
 }
+
 .header-login:hover .dropdown-content2,
 .header-login.active .dropdown-content2 {
   display: block;
@@ -110,7 +118,8 @@ header.scrolled ul li:hover{
 }
 
 .menu-option-pink {
-  color: #FB9CB2; /* ou a cor rosa desejada */
+  color: #FB9CB2;
+  /* ou a cor rosa desejada */
   text-decoration: none;
 }
 
@@ -121,22 +130,27 @@ header.scrolled ul li:hover{
 }
 
 .menu-option2-pink {
-  color: #FB9CB2; /* ou a cor rosa desejada */
+  color: #FB9CB2;
+  /* ou a cor rosa desejada */
   text-decoration: none;
   display: none;
 }
+
 .text-white {
   color: white !important;
   text-decoration: none;
 }
+
 .text-white2 {
   color: white !important;
   text-decoration: none;
 }
+
 .text-white:hover {
   color: white !important;
   text-decoration: none;
 }
+
 .text-white2:hover {
   color: #9979c1 !important;
   text-decoration: none;
@@ -149,30 +163,43 @@ header.scrolled ul li:hover{
 }
 
 @media screen and (min-width:515px) and (max-width: 673px) {
-  .logo{
+  .logo {
     width: 50px;
     height: 50px;
   }
-  
-  .text-white2{
+
+  .text-white2 {
     font-size: 4vh;
   }
 
+}
+
+@media screen and (min-width:300px) and (max-width: 514px) {
+  .logo {
+    width: 40px;
+    height: 40px;
   }
-  @media screen and (min-width:300px) and (max-width: 514px){
-    .logo{
-      width: 40px;
-      height: 40px;
-    }
 
-    .text-white2{
-      font-size: 3vh ;
-    }
-
-    .menu-button{
-      width: 50px;
-      height: 50px;
-      overflow-y: hidden;
-    }
-
+  .text-white2 {
+    font-size: 3vh;
+    display: none;
   }
+
+  .menu-button {
+    width: 50px;
+    height: 50px;
+    margin-right: 40px;
+    overflow-y: hidden;
+    overflow-x: hidden !important;
+  }
+
+  a>.text-white {
+    display: none;
+  }
+
+  /* Adicione isso ao seu CSS existente */
+  
+
+
+
+}

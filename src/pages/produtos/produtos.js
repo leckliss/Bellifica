@@ -4,6 +4,7 @@ import Styles from "../../pages/produtos/produtos.module.css"
 import imgpdtcurso from "../../assets/imgs/produto/Group 351.png"
 import imgpdtagenda from "../../assets/imgs/produto/Group 352.png"
 
+
 import FundinRoxo from '../../assets/imgs/home/fundinroxo.png';
 import React, { useEffect } from "react";
 

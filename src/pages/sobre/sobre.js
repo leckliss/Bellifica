@@ -8,6 +8,7 @@ import enfoque from '../../assets/imgs/sobre/enfoque.png'
 import etica from '../../assets/imgs/sobre/etica.png'
 import meta from '../../assets/imgs/sobre/meta.png'
 import bellogo from '../../assets/imgs/sobre/logo-sig.png'
+import Grupo_Bellifica from "../../assets/imgs/sobre/grupo_Bellifica.png"
 
 import FundinRoxo from '../../assets/imgs/home/fundinroxo.png';
 import React, { useEffect } from "react";
@@ -45,11 +46,14 @@ function Sobre() {
 
                 <div className={Styles.sec12}>
 
-                    <img
+                    <img className={Styles.Grupo_Bellifica} src={Grupo_Bellifica} />
+                    {/*<img
                         className={Styles.fundinroxo}
                         src={FundinRoxo}
 
-                    />
+    />*/}
+
+
 
 
                 </div>
