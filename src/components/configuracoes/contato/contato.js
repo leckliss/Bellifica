@@ -1,7 +1,7 @@
 import React from 'react';
-import Styles from './contatos.module.css'; // Certifique-se de que o nome do arquivo CSS corresponda
+import Styles from './contato.module.css'; // Certifique-se de que o nome do arquivo CSS corresponda
 
-function contato() {
+function Contato() {
   return (
     <div className={Styles.configpainelstyle}>
        <div className={Styles.contato}>
@@ -23,4 +23,4 @@ function contato() {
   );
 }
 
-export default contato;
+export default Contato;

@@ -18,8 +18,14 @@ import Curso from './pages/curso/curso';
 import Dashboard from './pages/dashboard/dashboard';
 import Painel from './components/painel/painel';
 import Agenda from './components/agenda/agenda';
-import Configuracoes from './components/configuracoes/meusdados';
 import Cursos from './components/cursos/cursos';
+import Configuracoes from './components/configuracoes/configuracoes';
+//Configurações:
+import Assinatura from './components/configuracoes/assinatura/assinatura';
+import Contato from './components/configuracoes/contato/contato';
+import MeusDados from './components/configuracoes/meusdados/meusdados';
+import Politicas from './components/configuracoes/politicas/politicas';
+
 
 
 function App() {
@@ -39,12 +45,18 @@ function App() {
           <Route path="/login" element={<Login />} ></Route>
           <Route path="/curso" element={<Curso />} ></Route>
 
-
+          
           <Route path='/dashboard' element={<Dashboard />}></Route>
-          <Route path='/painel' element={<Painel />}></Route>
-          <Route path='/agenda' element={<Agenda />}></Route>
-          <Route path='/configuraçoes' element={<Configuracoes/>}></Route>
-          <Route path='/cursos' element={<Cursos />}></Route>
+          <Route path='/dashboard/painel' element={<Painel />}></Route>
+          <Route path='/dashboard/agenda' element={<Agenda />}></Route>
+          <Route path='/dashboard/configuraçoes' element={<Configuracoes/>}></Route>
+          <Route path='/dashboard/cursos' element={<Cursos />}></Route>
+
+          <Route path='/configuracoes/assinatura' element={<Assinatura/>}></Route>
+          <Route path='/configuracoes/contato' element={<Contato/>}></Route>
+          <Route path='/configuracoes/meusdados' element={<MeusDados/>}></Route>
+          <Route path='/configuracoes/politicas' element={<Politicas/>}></Route>
+
         </Routes>
       </Router>
 
