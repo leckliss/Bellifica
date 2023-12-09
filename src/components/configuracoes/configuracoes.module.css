@@ -58,7 +58,7 @@
     cursor: pointer;
     }
 
-    li:hover{
+    .configuracoes li:hover{
       background-color: rgba(244, 244, 244, 0.774);
       border-radius: 5px;
     }

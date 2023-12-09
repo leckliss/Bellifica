@@ -34,17 +34,7 @@ header Link, header li{
 header.scrolled ul {
   height: 7vh;
   background-image: none;
-  background-color: #9979c1; /* Altera para rosa ao rolar */
-}
-header ul li:hover{
-  border-bottom: 5px solid #9979c1;
-  border-radius: 10px;
-  transition: all 0.5s;
-}
-header.scrolled ul li:hover{
-  border-bottom: 3px solid white;
-  border-radius: 10px;
-  transition: all 0.5s;
+  background-color: #9979c1;
 }
 
 .logo {
@@ -134,12 +124,16 @@ header.scrolled ul li:hover{
   text-decoration: none;
 }
 .text-white:hover {
-  color: white !important;
+  color: black !important;
   text-decoration: none;
+  border-bottom: 5px solid black;
+  transition: all 0.5s;
 }
 .text-white2:hover {
-  color: #9979c1 !important;
+  color: black !important;
   text-decoration: none;
+  border-bottom: 5px solid black;
+  transition: all 0.5s;
 }
 
 .text-pink {

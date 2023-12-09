@@ -26,6 +26,27 @@ function Header() {
       element2.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  const handleCursoClick = () => {
+    const element2 = document.getElementById('inicio-curso');
+    if (element2) {
+      navigate('/#inicio-curso');
+      element2.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  const handleProdutosClick = () => {
+    const element2 = document.getElementById('inicio-produtos');
+    if (element2) {
+      navigate('/#inicio-produtos');
+      element2.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  const handleSobreClick = () => {
+    const element2 = document.getElementById('inicio-sobre');
+    if (element2) {
+      navigate('/#inicio-sobre');
+      element2.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   // Função para lidar com o clique no botão de login
   const handleLoginClick = () => {
@@ -59,10 +80,10 @@ function Header() {
     <header className={`header ${scrolled ? 'scrolled' : ''} ${isDropdownVisible ? 'active' : ''}`}>
       <ul>
         {/* Links para diferentes seções, a classe muda conforme o estado de scroll */}
-        <li><Link to={'/curso'}  className={scrolled ? 'text-white' : 'text-white2'}>Cursos</Link></li>
-        <li><Link to={'/produtos'} className={scrolled ? 'text-white' : 'text-white2'}>Serviços</Link></li>
+        <li><Link to={'/curso'} onClick={handleCursoClick} className={scrolled ? 'text-white' : 'text-white2'}>Cursos</Link></li>
+        <li><Link to={'/produtos'} onClick={handleProdutosClick} className={scrolled ? 'text-white' : 'text-white2'}>Serviços</Link></li>
         <li><Link to={'/#inicio'} onClick={handleInicioClick}><img src={logoSrc} alt="Logo" className={scrolled ? 'logo2' : 'logo'} /></Link></li>
-        <li><Link to={'/sobre'} className={scrolled ? 'text-white' : 'text-white2'}>Quem Somos</Link></li>
+        <li><Link to={'/sobre'} onClick={handleSobreClick} className={scrolled ? 'text-white' : 'text-white2'}>Quem Somos</Link></li>
         <div className='header-login'>
           {/* Botão do menu, muda a imagem conforme o estado de scroll */}
           <button className='menu-button' onClick={handleLoginClick}>

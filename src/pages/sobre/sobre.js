@@ -8,6 +8,7 @@ import enfoque from '../../assets/imgs/sobre/enfoque.png'
 import etica from '../../assets/imgs/sobre/etica.png'
 import meta from '../../assets/imgs/sobre/meta.png'
 import bellogo from '../../assets/imgs/sobre/logo-sig.png'
+import equipe from '../../assets/imgs/sobre/grupobellifica.png';
 
 import FundinRoxo from '../../assets/imgs/home/fundinroxo.png';
 import React, { useEffect } from "react";
@@ -29,28 +30,28 @@ function Sobre() {
 
             <div className={Styles.carrosel} id='inicio-sobre' name='inicio-sobre'>
 
-                <div className={Styles.sec11}>
+                <div className={Styles.sec11sobre}>
                     <div style={{ color: 'black', fontWeight: 'bolder', }}>
                         <h1 className={Styles.typingeffect}>
-                            <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>Embelezando</span> sonhos...
+                            Estamos aqui para <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>ajudar</span> você a crescer
                         </h1>
                         <h1 className={Styles.typingeffect2}>
-                            Estruturando <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>realidades.</span>
+                            e atingir seus <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>objetivos</span>.
                         </h1>
                     </div>
-                    <h5 style={{ fontSize: 'x-large', color: 'white' }}>Com a Bellifica você torna-se um(a) profissional organizado(a)</h5>
-                    <button className={Styles.buttonino} >Conhecer planos</button>
+                    <h5 style={{ fontSize: 'x-large', color: 'white' }}>Curioso para saber como a Bellifica nasceu?</h5>
+                    <button className={Styles.buttonino2} >Conheceça a Bellifica</button>
 
                 </div>
 
-                <div className={Styles.sec12}>
+                <div className={Styles.sec12sobre}>
 
                     <img
                         className={Styles.fundinroxo}
                         src={FundinRoxo}
 
                     />
-
+                    <img className={Styles.equipe} src={equipe} />
 
                 </div>
 
