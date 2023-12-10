@@ -29,7 +29,7 @@
 
 .user-message {
   align-self: flex-end;
-  background-color: #ffb6c1;
+  background-color: #fd9ba6;
   border: 1px solid black;
   text-align: right;
   margin-left: auto;
@@ -83,7 +83,7 @@
 
 .submit-button {
   padding: 10px 20px;
-  background-color: #ffb6c1;
+  background-color: #fd9ba6;
   border: 1px solid black;
   color: black;
   border: none;

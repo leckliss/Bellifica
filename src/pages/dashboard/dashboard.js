@@ -12,7 +12,7 @@ import ChatBot from '../../components/chatbot/chatbot';
 
 function Dashboard() {
   const [activeComponent, setActiveComponent] = useState('Painel');
-  const [nomeComponent, setNomeComponent] = useState('Painel de Controle');
+  const [nomeComponent, setNomeComponent] = useState('Dashboard');
   const [clicked, setClicked] = useState(false);
   const [logoSrc, setLogoSrc] = useState(Bellifica);
 
@@ -55,7 +55,7 @@ function Dashboard() {
       <div className={clicked ? 'sidebarcurta' : 'sidebar'} >
         <img src={logoSrc} alt="Logo" className={clicked ? 'logo2' : 'logo'} />
         <ul>
-          <li className={clicked ? 'li-barra-curta' : 'li-texto-barra'} onClick={() => handleClick2('Painel', 'Painel de Controle')}><img src={require('../../assets/imgs/dashboard/Initial.png')} /> Pagina Inicial</li>
+          <li className={clicked ? 'li-barra-curta' : 'li-texto-barra'} onClick={() => handleClick2('Painel', 'Dashboard')}><img src={require('../../assets/imgs/dashboard/Initial.png')} /> Pagina Inicial</li>
           <li className={clicked ? 'li-barra-curta' : 'li-texto-barra'} onClick={() => handleClick('Agenda', 'Agenda')}><img src={require('../../assets/imgs/dashboard/Calendar.png')} /> Agendamentos</li>
           <li className={clicked ? 'li-barra-curta' : 'li-texto-barra'} onClick={() => handleClick('Cursos', 'Cursos')}><img src={require('../../assets/imgs/dashboard/People.png')} /> Cursos</li>
           <li className={clicked ? 'li-barra-curta' : 'li-texto-barra'}  onClick={() => handleClick('Chatbot', 'Chatbot')}><img src={require('../../assets/imgs/dashboard/ChatBot.png')} /> Chat Bot</li>
