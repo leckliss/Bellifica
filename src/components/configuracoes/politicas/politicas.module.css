@@ -1,27 +1,19 @@
-*{
-    margin: 0;
-    border: 0;
-    padding: 0;
-  }
-  
-  .configpainelstyle{
-    width: 100%;
-    height: 95vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-  }
-  
-  .meudado{
-    color: black;
-    width: 80%;
-    height: 70vh;
-    background-color:#fa93bc;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.politica{
+  margin-left: 5.5%;
+  color: black;
+  width: 85%;
+  height: 70vh;
+  background-color: #fa93bc;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}

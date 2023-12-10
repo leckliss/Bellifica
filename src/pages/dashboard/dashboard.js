@@ -55,17 +55,15 @@ function Dashboard() {
       <div className={clicked ? 'sidebarcurta' : 'sidebar'} >
         <img src={logoSrc} alt="Logo" className={clicked ? 'logo2' : 'logo'} />
         <ul>
-          <li><a href="#" onClick={() => handleClick2('Painel', 'Painel de Controle')}><img src={require('../../assets/imgs/dashboard/Initial.png')} /> Pagina Inicial</a></li>
-          <li><a href="#" onClick={() => handleClick('Agenda', 'Agenda')}><img src={require('../../assets/imgs/dashboard/Calendar.png')} /> Agendamentos</a></li>
-          <li><a href="#" onClick={() => handleClick('Cursos', 'Cursos')}><img src={require('../../assets/imgs/dashboard/People.png')} /> Cursos</a></li>
-          <li><a href="#" onClick={() => handleClick('Chatbot', 'Chatbot')}><img src={require('../../assets/imgs/dashboard/ChatBot.png')} /> Chat Bot</a></li>
-          <li><a href="#" onClick={() => handleClick('Configuracoes', 'Configurações')}><img src={require('../../assets/imgs/dashboard/Settings.png')} /> Configurações</a></li>
-          
-  
-          <li><a href="#"><img src={require('../../assets/imgs/dashboard/Logout.png')} /> Sair</a> </li>
+          <li className={clicked ? 'li-barra-curta' : 'li-texto-barra'} onClick={() => handleClick2('Painel', 'Painel de Controle')}><img src={require('../../assets/imgs/dashboard/Initial.png')} /> Pagina Inicial</li>
+          <li className={clicked ? 'li-barra-curta' : 'li-texto-barra'} onClick={() => handleClick('Agenda', 'Agenda')}><img src={require('../../assets/imgs/dashboard/Calendar.png')} /> Agendamentos</li>
+          <li className={clicked ? 'li-barra-curta' : 'li-texto-barra'} onClick={() => handleClick('Cursos', 'Cursos')}><img src={require('../../assets/imgs/dashboard/People.png')} /> Cursos</li>
+          <li className={clicked ? 'li-barra-curta' : 'li-texto-barra'}  onClick={() => handleClick('Chatbot', 'Chatbot')}><img src={require('../../assets/imgs/dashboard/ChatBot.png')} /> Chat Bot</li>
+          <li className={clicked ? 'li-barra-curta' : 'li-texto-barra'}  onClick={() => handleClick('Configuracoes', 'Configurações')}><img src={require('../../assets/imgs/dashboard/Settings.png')} /> Configurações</li>
+          <li className={clicked ? 'li-barra-curta' : 'li-texto-barra'} ><img src={require('../../assets/imgs/dashboard/Logout.png')} /> Sair </li>
         </ul>
       </div>
-      <div className="main-content">
+      <div className={clicked ? 'main-content-curta' : 'main-content'}>
         <h2 style={{color: 'black'}}>{nomeComponent}</h2>
         <div>
           {renderComponent()}

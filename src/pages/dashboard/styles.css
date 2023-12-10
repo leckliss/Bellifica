@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    padding: 0;
+    border: 0;
     font-family: 'Arial', sans-serif;
 }
 
@@ -10,24 +12,26 @@ body {
 }
 
 .sidebar {
-    background-color: #fa93bc;
+    background-color: #9979c1;
     color: white;
-    width: 250px;
+    width: 14%;
     overflow: hidden;
     height: 100%;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    transition: all 2s;
+    transition: all 1s ease;
+    position: fixed;
 }
 .sidebarcurta{
-    background-color: #fa93bc;
+    background-color: #9979c1;
     color: white;
-    width: 71px;
+    width: 4.47%;
     overflow: hidden;
     height: 100%;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    transition: all 2s;
+    transition: all 1s ease-in-out;
+    position: fixed;
 }
 
 .sidebar ul {
@@ -47,21 +51,14 @@ body {
     margin-bottom: 20px;
 }
 
-.sidebar li {
+.li-texto-barra {
     height: auto;
     width: auto;
     display: flex;
     flex-direction: row;
     width: 100%;
     list-style: none;
-}
-.sidebar li:hover {
-    color: rgba(0, 0, 0, 0.5);
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-}
-
-.sidebar a {
+    padding: 2%;
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
@@ -73,25 +70,48 @@ body {
     align-items: center;
     gap: 5px;
     list-style: none;
-}
-
-.sidebar li a {
     font-size: 2.2vh;
     list-style: none;
+    overflow-x: hidden;
+    transition: all 0.2s linear;
+}
+.li-texto-barra:hover {
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 2%;
+}
+.li-barra-curta{
+    width: 100%;
+    overflow-x: hidden;
+    transition: all 0.2s linear;
+    font-size: 0;
 }
 
-.sidebar a img:hover {
+.sidebar li img:hover {
     color: rgba(0, 0, 0, 0.1);
 }
 
 .main-content {
     flex: 1;
-    padding: 20px;
+    overflow-x: hidden;
+    margin-left: 15%;
+    transition: all 1s ease;
+}
+.main-content-curta {
+    flex: 1;
+    overflow-x: hidden;
+    margin-left: 5.6%;
+    transition: all 1s ease-in-out;
 }
 
 .logo {
     width: auto;
-    transition: all 3s ease;
+    transition: all 1s ease;
+}
+.logo2 {
+    width: auto;
+    transition: all 0.3s ease-in-out;
 }
 
 .sidebarcurta ul {
@@ -121,6 +141,7 @@ body {
 .sidebarcurta li:hover {
     color: rgba(0, 0, 0, 0.5);
     background-color: rgba(255, 255, 255, 0.5);
+    background-size: contain;
     border-radius: 10px;
 }
 
@@ -145,4 +166,9 @@ body {
 
 .sidebarcurta a img:hover {
     color: rgba(0, 0, 0, 0.1);
+}
+
+.texto-barra-curta{
+    display: none;
+    transition: all 1s ease;
 }

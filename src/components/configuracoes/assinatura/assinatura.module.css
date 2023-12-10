@@ -1,42 +1,33 @@
-*{
-    margin: 0;
-    border: 0;
-    padding: 0;
-  }
-  
-  .configpainelstyle{
-    width: 100%;
-    height: 95vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-  }
-  
-  .assinatura  {
-    color: black;
-    width: 80%;
-    height: 70vh;
-    background-color:#fa93bc;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    gap: 5vh;
-  }
-  
-  .assinatura  h2{
-    width: 90%;
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  .assinatura  button{
-    width: 30%;
-    height: 10vh;
-    color: #fff;
-    background-color: black;
-    border-radius: 2vh;
-  }
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.assinatura {
+  margin-left: 5.5%;
+  color: black;
+  width: 85%;
+  height: 70vh;
+  background-color: #fa93bc;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.assinatura h2 {
+  width: 90%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.assinatura button {
+  width: 30%;
+  height: 10vh;
+  color: #fff;
+  background-color: black;
+  border-radius: 2vh;
+}

@@ -1,64 +1,78 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  border:0;
+  border: 0;
 }
 
 .configuracoes-container {
-    font-family: 'Arial', sans-serif;
-    max-width: 600px;
-    margin: 40px auto;
-    background-color: #fa93bc;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
+  font-family: 'Arial', sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #fa93bc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
 
-  .configpainelstyle{
-    width: 100%;
-    height: 89vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .configpainel{
-    width: 100%;
-    height: 95vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-  }
+.configpainelstyle {
+  width: 100%;
+  height: 89vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    .configuracoes{
-      color: black;
-      width: 80%;
-      height: 70vh;
-      background-color:#fa93bc;
-      border-radius: 30px;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      padding: 0;
-    }
+.configpainel {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.configuracoes {
+  color: black;
+  width: 80%;
+  height: 70vh;
+  background-color: #fa93bc;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
 
-    .configuracoes li{
-    color: black; 
-    list-style: none; 
-    height: 15vh;
-    width: 100%;
-    text-align:center;
-    font-size: 5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    }
+.configuracoes li {
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  height: 15vh;
+  width: 100%;
+  text-align: center;
+  font-size: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.configuracoes li a{
+  text-decoration: none;
+  color: black;
+}
 
-    .configuracoes li:hover{
-      background-color: rgba(244, 244, 244, 0.774);
-      border-radius: 5px;
-    }
+.configuracoes li:hover {
+  background-color: rgba(244, 244, 244, 0.774);
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.fullWidth {
+  width: 100%;
+}

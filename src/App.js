@@ -52,10 +52,10 @@ function App() {
           <Route path='/dashboard/configuraçoes' element={<Configuracoes/>}></Route>
           <Route path='/dashboard/cursos' element={<Cursos />}></Route>
 
-          <Route path='/configuracoes/assinatura' element={<Assinatura/>}></Route>
-          <Route path='/configuracoes/contato' element={<Contato/>}></Route>
-          <Route path='/configuracoes/meusdados' element={<MeusDados/>}></Route>
-          <Route path='/configuracoes/politicas' element={<Politicas/>}></Route>
+          <Route path='/dashboard/configuracoes/assinatura' element={<Assinatura/>}></Route>
+          <Route path='/dashboard/configuracoes/contato' element={<Contato/>}></Route>
+          <Route path='/dashboard/configuracoes/meusdados' element={<MeusDados/>}></Route>
+          <Route path='/dashboard/configuracoes/politicas' element={<Politicas/>}></Route>
 
         </Routes>
       </Router>
