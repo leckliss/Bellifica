@@ -39,19 +39,15 @@ function Sobre() {
                             e atingir seus <span style={{ color: '#9979c1', fontWeight: 'bolder' }}>objetivos</span>.
                         </h1>
                     </div>
-                    <h5 style={{ fontSize: 'x-large', color: 'white' }}>Curioso para saber como a Bellifica nasceu?</h5>
+                    <h5 className={Styles.descri_sobre_Bellifica} style={{ color: 'white' }}>Curioso para saber como a Bellifica nasceu?</h5>
                     <button className={Styles.buttonino2} >Conheceça a Bellifica</button>
 
                 </div>
 
-                <div className={Styles.sec12sobre}>
+                <div className={Styles.sec12}>
 
                     <img className={Styles.Grupo_Bellifica} src={Grupo_Bellifica} />
-                    {/*<img
-                        className={Styles.fundinroxo}
-                        src={FundinRoxo}
-
-    />*/}
+                    
 
 
 
