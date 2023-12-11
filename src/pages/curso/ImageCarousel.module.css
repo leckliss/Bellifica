@@ -35,10 +35,19 @@ Button {
     margin: 0 5px; /* Adicione margem entre os botões */
   }
 
+  .image {
+    /* Ajuste o tamanho das imagens para telas maiores */
+    /* Use vh para dimensionar com base na altura da viewport */
+    width: 300px; /* Ajuste conforme necessário */
+    height: 300px; /* Ajuste conforme necessário */
+    /* Outros estilos desejados para as imagens */
+  }
+
   .imageDescription {
     height: 10vh;
     background-color: #fa93bc;
-    font-size: 5vh; /* Tamanho da fonte */
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: bold;
     color: #000000; /* Cor do texto */
     text-align: center;
     display: flex;
@@ -84,15 +93,15 @@ Button {
   .image {
     /* Ajuste o tamanho das imagens para telas maiores */
     /* Use vh para dimensionar com base na altura da viewport */
-    width: 40vh; /* Ajuste conforme necessário */
-    height: 30vh; /* Ajuste conforme necessário */
+    width: 420px; /* Ajuste conforme necessário */
+    height: 420px; /* Ajuste conforme necessário */
     /* Outros estilos desejados para as imagens */
   }
 
   .imageDescription {
     /* Ajuste o estilo das descrições para telas maiores */
     /* Por exemplo, ajuste o espaçamento ou o tamanho do texto */
-    font-size: 2vh; /* Ajuste conforme necessário */
+    font-size: 30px; /* Ajuste conforme necessário */
     /* Outros estilos desejados para as descrições */
   }
 }
