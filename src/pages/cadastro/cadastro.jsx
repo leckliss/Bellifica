@@ -23,6 +23,7 @@ function Cadastro() {
     const profissionalInfo = {
       nome: formData.nome,
       sobrenome: formData.sobrenome,
+      nomeNegocio: formData.nomeNegocio,
       dataNascimento: dataNascimentoISO,
       telefone: formData.telefone,
       email: formData.email,
@@ -170,9 +171,9 @@ function Cadastro() {
 
                 <div className={styles.inputBox}>
                   <input className=''
-                    id="nomeEmpresa"
+                    id="nomeNegocio"
                     placeholder="Nome da empresa / Negócio"
-                    name="nomeEmpresa"
+                    name="nomeNegocio"
                     type="text"
                     autoComplete="off"
                     {...register("nomeNegocio")}

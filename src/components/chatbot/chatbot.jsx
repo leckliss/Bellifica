@@ -63,14 +63,24 @@ function ChatBot() {
   const renderMessages = () => {
     return messages.map((message) => (
       <div key={message.id} className="message-group">
-        {/* Sempre exibir prompt como mensagem do usuário */}
+
         <div className="message user-message">{message.prompt}</div>
-        {/* Checar se existe resposta e exibir como mensagem do bot */}
+
         {message.resposta && <div className="message bot-message">{message.resposta}</div>}
       </div>
     ));
   };
 
+  const [nome, setNome] = useState('');
+  const [msg, setMsg] = useState('');
+
+  useEffect(() => {
+    const storedNome = localStorage.getItem('nome');
+
+    setNome(storedNome);
+    setMsg(`Olá ${nome}, precisa de ajuda?`);
+
+  }, []);
 
   return (
     <div className="chat">
@@ -81,6 +91,7 @@ function ChatBot() {
           value={inputValue}
           onChange={handleInputChange}
           className="input-field"
+          placeholder={msg}
         />
         <button type="submit" className="submit-button">Enviar</button>
       </form>

@@ -27,16 +27,23 @@ function Login() {
 
       if (response.ok) {
         const responseData = await response.json();
-        // Supondo que o token e os detalhes do usuário estejam nas chaves 'token', 'nome' e 'nomeNegocio'
-        const { token, nome, nomeNegocio } = responseData;
 
-        // Armazenar o token e os detalhes do usuário
+        const { token, nome, sobrenome, profissao, nomeNegocio, id, email, dataNascimento, iniciante, senha } = responseData;
+
+        
         localStorage.setItem('token', token);
-        localStorage.setItem('userName', nome);
+        localStorage.setItem('nome', nome);
+        localStorage.setItem('sobrenome', sobrenome);
+        localStorage.setItem('profissao', profissao);
         localStorage.setItem('nomeNegocio', nomeNegocio);
+        localStorage.setItem('id', id);
+        localStorage.setItem('email', email);
+        localStorage.setItem('dataNascimento', dataNascimento);
+        localStorage.setItem('iniciante', iniciante);
+        localStorage.setItem('senha', senha);
 
-        if (!nomeNegocio) {
-          toast.success(`Olá novamente, ${nome}!`, {
+        if (nomeNegocio === null) {
+          toast.success(`Login efetuado, ${nome} ${id}!`, {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -47,8 +54,7 @@ function Login() {
             theme: "colored",
           });
         } else {
-          // Exibir notificação de boas-vindas com o nome e o nome do negócio
-          toast.success(`Olá novamente, ${nome} do ${nomeNegocio}!`, {
+          toast.success(`Login efetuado, ${nome} do(a) ${nomeNegocio}  ${id}!`, {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -59,10 +65,8 @@ function Login() {
             theme: "colored",
           });
         }
-        // Navegue para a página do dashboard após o login
         navigate('/dashboard');
       } else {
-        // Se a resposta não for bem-sucedida, exiba a mensagem de erro
         throw new Error(`Erro no login: ${response.status}`);
       }
     } catch (error) {

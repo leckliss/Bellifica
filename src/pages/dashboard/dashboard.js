@@ -16,6 +16,8 @@ function Dashboard() {
   const [clicked, setClicked] = useState(false);
   const [logoSrc, setLogoSrc] = useState(Bellifica);
 
+  var nome = localStorage.getItem('userName');
+
   const handleClick = (component, nome) => {
     setActiveComponent(component);
     setNomeComponent(nome);
