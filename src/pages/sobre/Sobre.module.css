@@ -41,7 +41,6 @@
     border-radius: 5vh;
     padding: 10px;
     width: 40%;
-    height: auto;
     font-size: x-large;
     text-align: center;
     background-color: transparent !important;
@@ -53,10 +52,6 @@
     text-shadow: #9979c1;
     color: #fd9ba6;
     background-color: #9979c1 !important;
-    border-radius: 5vh;
-    padding: 5px;
-    text-align: center;
-
 }
 
 

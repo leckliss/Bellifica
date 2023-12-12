@@ -194,12 +194,15 @@ function Home() {
             {/* Sessão3 ==================================================================== */}
             <section className={Styles.sessão3}>
 
+                <div>
+                    <iframe src="../../assets/video/make.mp4" frameborder="0"></iframe>
+                </div>
+
                 <div className={Styles.seH1}><h1>O que oferecemos?</h1></div>
 
 
 
                 <div className={Styles.Caixas}>
-                    <iframe src="../../assets/video/pedicure.mp4" />
                     <div className={Styles.caixona1}>
                         <div className={Styles.caixaideia}>
                             <img src={imgideia}></img>
@@ -321,7 +324,7 @@ function Home() {
 
             <section className={Styles.sessão6} id='planos' name='planos' ref={myRef}>
 
-                <div className={Styles.titulo}><h1>Nossos Planos</h1></div>
+                <h1 className={Styles.titulo}>Nossos Planos</h1>
                 <div className={Styles.caixaplanos}>
 
                     <div className={Styles.caixagratuito}>
@@ -330,7 +333,7 @@ function Home() {
                             <h3>Pupa</h3>
                             <img src={Pupa2} style={{ height: 50, width: 50 }} />
                         </div>
-                        <h4 style={{ color: 'black', textAlign: 'center' }}>Indicado para ajudar os profissionais que estão começando ou os que querem testar nossos serviços, oferecemos alguns recursos gratuitos:</h4>
+                        <h4 style={{ color: 'black', textAlign: 'center', width: '80%' }}>Indicado para ajudar os profissionais que estão começando ou os que querem testar nossos serviços, oferecemos alguns recursos gratuitos:</h4>
                         <li>Cursos gratuitos</li>
                         <li>Dicas para seu negócio</li>
                         <li>Recomendação de cursos</li>
@@ -345,10 +348,10 @@ function Home() {
                             <h3>Borboleta</h3>
                             <img src={Borbo2} style={{ height: 50, width: 50 }} />
                         </div>
-                        <h4 style={{ color: 'black', textAlign: 'center' }}>Indicado para os profissionais que já atuam na área ou querem mais ajuda para se organizar oferecemos melhores recursos, dentre eles:</h4>
+                        <h4 style={{ color: 'black', textAlign: 'center', width: '80%' }}>Indicado para os profissionais que já atuam na área ou querem mais ajuda para se organizar oferecemos melhores recursos, dentre eles:</h4>
                         <li>Cursos premium</li>
                         <li>Chat-bot com IA</li>
-                        <li>+ Recursos Plus desbloqueados</li>
+                        <li>Recursos Plus desbloqueados</li>
 
                         <h2 style={{textDecoration: 'line-through', fontSize: '3vh'}}>R$ 69,90</h2>
                         <h2 style={{fontSize: '5vh'}}>R$ 49,<span style={{ fontSize: '0.5em', color: 'black' }}>90</span>/ mês</h2>

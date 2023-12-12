@@ -11,7 +11,7 @@ import bellogo from '../../assets/imgs/sobre/logo-sig.png'
 import Grupo_Bellifica from "../../assets/imgs/sobre/grupo_Bellifica.png"
 
 import FundinRoxo from '../../assets/imgs/home/fundinroxo.png';
-import React, { useEffect } from "react";
+import React, { useEffect, useRef} from "react";
 function Sobre() {
 
     useEffect(() => {
@@ -21,6 +21,11 @@ function Sobre() {
         }
     }, []);
 
+    const myRef = useRef(null);
+
+    const scrollToSection = () => {
+        myRef.current.scrollIntoView({ behavior: 'smooth' });
+    };
 
     return (
 
@@ -40,7 +45,7 @@ function Sobre() {
                         </h1>
                     </div>
                     <h5 className={Styles.descri_sobre_Bellifica} style={{ color: 'white' }}>Curioso para saber como a Bellifica nasceu?</h5>
-                    <button className={Styles.buttonino2} >Conheceça a Bellifica</button>
+                    <button className={Styles.buttonino2} onClick={scrollToSection} >Conhecer a Bellifica</button>
 
                 </div>
 
@@ -64,7 +69,7 @@ function Sobre() {
 
                         <div className={Styles.texto1}>
                             <h1 className={Styles.qmsomos}>Quem somos</h1>
-                            <p className={Styles.textsomos}>Somos um grupo de estudantes de programação que se reuniu em Agosto de 2023, com o objetivo de desenvolver uma ferramenta capaz de auxiliar profissionais autônomos.</p>
+                            <p className={Styles.textsomos} ref={myRef}>Somos um grupo de estudantes de programação que se reuniu em Agosto de 2023, com o objetivo de desenvolver uma ferramenta capaz de auxiliar profissionais autônomos.</p>
                         </div>
                     </div>
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import ImageCarousel from './ImageCarousel';
 
 
@@ -40,9 +40,9 @@ function Curso() {
     useEffect(() => {
         const section = document.getElementById('inicio-curso');
         if (section) {
-          section.scrollIntoView({ behavior: 'smooth' });
+            section.scrollIntoView({ behavior: 'smooth' });
         }
-      }, []);
+    }, []);
 
     // Array de imagens
     const images = [
@@ -152,7 +152,11 @@ function Curso() {
 
     ];
 
+    const myRef = useRef(null);
 
+    const scrollToSection = () => {
+        myRef.current.scrollIntoView({ behavior: 'smooth' });
+    };
 
     return (
 
@@ -160,7 +164,7 @@ function Curso() {
 
             <Header />
 
-            <div className={Styles.carrosel} id='inicio-curso' name='inicio-curso'>
+            <div className={Styles.carrosel} id='inicio-curso' name='inicio-curso' >
 
                 <div className={Styles.sec11}>
                     <div style={{ color: 'black', fontWeight: 'bolder', }}>
@@ -169,7 +173,7 @@ function Curso() {
                         </h1>
                     </div>
                     <h5 style={{ fontSize: 'x-large', color: 'white' }}>Indicamos cursos com parceiros que iremos oferecer para você bellificar mais ainda o seu empreendimento</h5>
-                    <button className={Styles.buttonino} >Conhecer mais</button>
+                    <button className={Styles.buttonino} onClick={scrollToSection} >Conhecer cursos</button>
 
                 </div>
 
@@ -188,7 +192,7 @@ function Curso() {
 
             </div>
 
-            <section className={Styles.senac}>
+            <section className={Styles.senac} ref={myRef}>
 
                 <div className={Styles.camplogosenac}>
                     <img src={senac} alt='logo senac' className={Styles.logosenac} />
