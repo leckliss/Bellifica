@@ -118,9 +118,9 @@ function Home() {
     useEffect(() => {
         const section = document.getElementById('inicio');
         if (section) {
-          section.scrollIntoView({ behavior: 'smooth' });
+            section.scrollIntoView({ behavior: 'smooth' });
         }
-      }, []);
+    }, []);
 
     return (
         <div className={Styles.paghome}>
@@ -199,6 +199,7 @@ function Home() {
 
 
                 <div className={Styles.Caixas}>
+                    <iframe src="../../assets/video/pedicure.mp4" />
                     <div className={Styles.caixona1}>
                         <div className={Styles.caixaideia}>
                             <img src={imgideia}></img>
@@ -325,31 +326,32 @@ function Home() {
 
                     <div className={Styles.caixagratuito}>
                         <div className={Styles.caixagratuitotitulo}>
-                        <img src={Pupa} style={{height: 50, width: 50}} />
-                        <h3>Pupa</h3>
-                        <img src={Pupa2} style={{height: 50, width: 50}} />
+                            <img src={Pupa} style={{ height: 50, width: 50 }} />
+                            <h3>Pupa</h3>
+                            <img src={Pupa2} style={{ height: 50, width: 50 }} />
                         </div>
-                        <h4 style={{color: 'black', textAlign: 'center'}}>Indicado para ajudar os profissionais que estão começando ou os que querem testar nossos serviços, oferecemos alguns recursos gratuitos:</h4>
+                        <h4 style={{ color: 'black', textAlign: 'center' }}>Indicado para ajudar os profissionais que estão começando ou os que querem testar nossos serviços, oferecemos alguns recursos gratuitos:</h4>
                         <li>Cursos gratuitos</li>
                         <li>Dicas para seu negócio</li>
                         <li>Recomendação de cursos</li>
 
-                        <h2>R$ 0,00</h2>
-                        <h4>GRÁTIS</h4>
+                        <h2 style={{textDecoration: 'line-through', fontSize: '3vh' }}>R$ 19,90</h2>
+                        <h4 style={{color: '#673e99', fontSize: '5vh' }}>GRÁTIS</h4>
 
                     </div>
                     <div className={Styles.caixapremium}>
                         <div className={Styles.caixapremiumtitulo}>
-                        <img src={Borbo}  style={{height: 50, width: 50}}/>
-                        <h3>Borboleta</h3>
-                        <img src={Borbo2}  style={{height: 50, width: 50}}/>
+                            <img src={Borbo} style={{ height: 50, width: 50 }} />
+                            <h3>Borboleta</h3>
+                            <img src={Borbo2} style={{ height: 50, width: 50 }} />
                         </div>
-                        <h4 style={{color: 'black', textAlign: 'center'}}>Indicado para os profissionais que já atuam na área ou querem mais ajuda para se organizar oferecemos melhores recursos, dentre eles:</h4>
+                        <h4 style={{ color: 'black', textAlign: 'center' }}>Indicado para os profissionais que já atuam na área ou querem mais ajuda para se organizar oferecemos melhores recursos, dentre eles:</h4>
                         <li>Cursos premium</li>
                         <li>Chat-bot com IA</li>
                         <li>+ Recursos Plus desbloqueados</li>
 
-                        <h2>R$ 49, <span style={{ fontSize: '0.5em' }}>99</span> </h2>
+                        <h2 style={{textDecoration: 'line-through', fontSize: '3vh'}}>R$ 69,90</h2>
+                        <h2 style={{fontSize: '5vh'}}>R$ 49,<span style={{ fontSize: '0.5em', color: 'black' }}>90</span>/ mês</h2>
 
                     </div>
 

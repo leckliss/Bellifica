@@ -40,17 +40,6 @@ header.scrolled ul {
   /* Altera para rosa ao rolar */
 }
 
-header ul li:hover {
-  border-bottom: 5px solid #9979c1;
-  border-radius: 10px;
-  transition: all 0.5s;
-}
-
-header.scrolled ul li:hover {
-  border-bottom: 3px solid white;
-  border-radius: 10px;
-  transition: all 0.5s;
-}
 
 .logo {
   width: 100px;
@@ -83,7 +72,7 @@ header.scrolled ul li:hover {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #fb9cb2;
+  background-color: #9979c1;
   font-size: x-large;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
