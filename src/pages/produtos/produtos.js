@@ -112,6 +112,20 @@ function Produtos() {
                             <img className={Styles.imagem_curso} src={imgpdtcurso}></img>
                         </div>
 
+                        <div className={Styles.campagendamento}>
+                            <div className={Styles.pdtagendamento} style={{ backgroundColor: '#7677d2' }}>
+
+                                <div className={Styles.pdtdescrição}>
+                                    <img src={imgpdtagenda}></img>
+                                    <div className={Styles.text1}>
+                                        <h2>Chatbot IA</h2>
+                                        <p>Com a assinatura Borboleta, você terá acesso ao nosso chatbot personalizado para atender você que quer ter um atendimento rápido e individual</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
                 </section>
                 <Footer />

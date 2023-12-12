@@ -13,7 +13,7 @@ import imgcurso3 from '../../assets/imgs/home/imgcurso3.png';
 import imgcurso4 from '../../assets/imgs/home/imgcurso4.png';
 import imgcurso5 from '../../assets/imgs/home/imgcurso5.png';
 import imgcurso6 from '../../assets/imgs/home/imgcurso6.png';
-
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 
@@ -34,8 +34,16 @@ import Pupa from '../../assets/imgs/home/pupa.png';
 import Pupa2 from '../../assets/imgs/home/pupa2.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Home() {
+import videomake from '../../assets/video/make.mp4'
 
+import { useGesture } from 'react-use-gesture';
+import { useSpring, animated } from 'react-spring';
+
+function Home() {
+    const navigate = useNavigate();
+    const handleNavigateToCurso = () => {
+        navigate('/curso');
+    };
 
     const [backgroundIndex, setBackgroundIndex] = useState(0);
 
@@ -75,6 +83,40 @@ function Home() {
     }, []);
 
 
+    const [carouselProps, setCarouselProps] = useSpring(() => ({
+        x: 0,
+        config: { friction: 50, tension: 200 },
+    }));
+
+    const bind = useGesture({
+        onDrag: ({ active, movement: [x] }) => {
+            if (active) {
+                setCarouselProps({ x });
+            }
+        },
+        onDragEnd: () => {
+            // Add logic here to snap the carousel to the nearest position if needed.
+        },
+    });
+
+    const [scrollX, setScrollX] = useState(0);
+    const carouselRef = useRef(null);
+
+    const scrollLeft = () => {
+        if (carouselRef.current) {
+            const newScrollX = scrollX - 1;
+            setScrollX(newScrollX);
+            carouselRef.current.style.transform = `translateX(${newScrollX * 20}%)`; // 20% é a largura de cada item
+        }
+    };
+
+    const scrollRight = () => {
+        if (carouselRef.current) {
+            const newScrollX = scrollX + 1;
+            setScrollX(newScrollX);
+            carouselRef.current.style.transform = `translateX(${newScrollX * 20}%)`; // 20% é a largura de cada item
+        }
+    };
 
     const carrossel = useRef();
     const [width, setWidth] = useState(0)
@@ -121,6 +163,9 @@ function Home() {
             section.scrollIntoView({ behavior: 'smooth' });
         }
     }, []);
+
+
+
 
     return (
         <div className={Styles.paghome}>
@@ -194,11 +239,15 @@ function Home() {
             {/* Sessão3 ==================================================================== */}
             <section className={Styles.sessão3}>
 
-                <div>
-                    <iframe src="../../assets/video/make.mp4" frameborder="0"></iframe>
-                </div>
 
-                <div className={Styles.seH1}><h1>O que oferecemos?</h1></div>
+
+                <video autoPlay muted loop width="30%" height="auto">
+                    <source src={videomake} type='video/mp4' />
+                    Seu navegador não suporta a reprodução de vídeo.
+                </video>
+
+
+                <div className={Styles.seH1}><h1>O que fazemos?</h1></div>
 
 
 
@@ -240,24 +289,9 @@ function Home() {
                             <p>Daremos uma breve introdução sobre a área que você deseja incluir em seus serviços ou migrar
                             </p>
                             <p><br></br>Encaminharemos você à cursos de seu interesse para que você possa se especializar e colocar seus conhecimentos em prática.</p>
+
+                            <button className={Styles.buttonino} onClick={handleNavigateToCurso} >Conhecer cursos</button>
                         </div>
-                    </div>
-
-                    <div className={Styles.carrosselcurso}>
-                        <motion.div className={Styles.carrossel} whileTap={{ cursor: "grabbing" }}>
-                            <motion.div className={Styles.inner} drag="x" dragConstraints={{ right: 0, left: -width }}>
-
-                                <img src={imgcurso1} alt="Curso 1"></img>
-                                <img src={imgcurso2} alt="Curso 2"></img>
-                                <img src={imgcurso3} alt="Curso 3"></img>
-                                <img src={imgcurso4} alt="Curso 4"></img>
-                                <img src={imgcurso5} alt="Curso 5"></img>
-                                <img src={imgcurso6} alt="Curso 6"></img>
-
-
-                            </motion.div>
-
-                        </motion.div>
 
                     </div>
 
@@ -274,11 +308,9 @@ function Home() {
                 </div>
 
                 <div className={Styles.campocoment}>
-                    <motion.div className={Styles.coment} whileTap={{ cursor: "grabbing" }}>
-                        <motion.div className={Styles.blug} drag="x"
-                            dragConstraints={{ right: 1, left: -width }}>
-
-
+                    <button onClick={scrollLeft}>Anterior</button>
+                    <div className={Styles.coment}>
+                        <div className={Styles.blug} ref={carouselRef} style={{ transform: `translateX(${scrollX * 20}%)` }}>
                             <div className={Styles.Caixacoment}>
                                 <div className={Styles.foto}></div>
                                 <h1>ANA</h1>
@@ -310,19 +342,17 @@ function Home() {
                                 <h1>ANA</h1>
                                 <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
                             </div>
-
-                        </motion.div>
-
-                    </motion.div>
+                        </div>
+                    </div>
+                    <button onClick={scrollRight}>Próximo</button>
                 </div>
 
-
-            </section>
+            </section >
 
 
             {/* Sessão6 ==================================================================== */}
 
-            <section className={Styles.sessão6} id='planos' name='planos' ref={myRef}>
+            < section className={Styles.sessão6} id='planos' name='planos' ref={myRef} >
 
                 <h1 className={Styles.titulo}>Nossos Planos</h1>
                 <div className={Styles.caixaplanos}>
@@ -338,8 +368,8 @@ function Home() {
                         <li>Dicas para seu negócio</li>
                         <li>Recomendação de cursos</li>
 
-                        <h2 style={{textDecoration: 'line-through', fontSize: '3vh' }}>R$ 19,90</h2>
-                        <h4 style={{color: '#673e99', fontSize: '5vh' }}>GRÁTIS</h4>
+                        <h2 style={{ textDecoration: 'line-through', fontSize: '3vh' }}>R$ 19,90</h2>
+                        <h4 style={{ color: '#673e99', fontSize: '5vh' }}>GRÁTIS</h4>
 
                     </div>
                     <div className={Styles.caixapremium}>
@@ -353,8 +383,8 @@ function Home() {
                         <li>Chat-bot com IA</li>
                         <li>Recursos Plus desbloqueados</li>
 
-                        <h2 style={{textDecoration: 'line-through', fontSize: '3vh'}}>R$ 69,90</h2>
-                        <h2 style={{fontSize: '5vh'}}>R$ 49,<span style={{ fontSize: '0.5em', color: 'black' }}>90</span>/ mês</h2>
+                        <h2 style={{ textDecoration: 'line-through', fontSize: '3vh' }}>R$ 69,90</h2>
+                        <h2 style={{ fontSize: '5vh' }}>R$ 49,<span style={{ fontSize: '0.5em', color: 'black' }}>90</span>/ mês</h2>
 
                     </div>
 
@@ -362,10 +392,10 @@ function Home() {
 
                 </div>
 
-            </section>
+            </section >
 
             <Footer />
-        </div>
+        </div >
     )
 
 
