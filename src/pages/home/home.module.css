@@ -584,7 +584,7 @@
 
 .sessão6 {
     width: 100%;
-    height: auto;
+    height: 150vh;
     background-image: url(../../assets/imgs/home/Rectangle\ 288.png);
     background-size: cover;
     background-position: center center;
@@ -592,10 +592,10 @@
 }
 
 .titulo {
-    margin-top: 10vh;
-    font-size: 6vh;
+    margin-bottom: 50px;
+    font-size: 8vh;
     width: 100%;
-    height: auto;
+    height: 15vh;
     display: flex;
     justify-content: center;
     color: black;
@@ -637,7 +637,7 @@
 
 .caixagratuito h3 {
     color: black;
-    font-size: 10vh;
+    font-size: 8vh;
 }
 
 .caixapremium {
@@ -676,7 +676,7 @@
 
 .caixapremium h3 {
     color: black;
-    font-size: 10vh;
+    font-size: 8vh;
 }
 
 /*Responsividade ============================================================================*/
