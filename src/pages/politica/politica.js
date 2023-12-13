@@ -7,10 +7,11 @@ function Politica() {
         <div className={Style.pagsobre}>
             <Header />
             <section className={Style.politica_corpo}>
-                <h1 className={Style.politica_titulo}>Política de Privacidade</h1>
+            <div className={Style.divnavbar}></div>
                 <br />
                 <br />
                 <div className={Style.descricoes_text}>
+                    <div className={Style.politica_titulo}><h1>Política de Privacidade</h1></div>
                     <p className={Style.coleta_info}><span className={Style.destaque_politica}>Coleta de Informações Pessoais:</span> Em determinadas circunstâncias, a Equipe Bellifica pode coletar informações pessoais dos usuários, como nome, endereço de e-mail, país e data de nascimento. Esses dados são coletados com o intuito de aprimorar nossos serviços e proporcionar uma experiência personalizada para cada usuário.</p>
                     <br />
                     <p className={Style.coleta_info}><span className={Style.destaque_politica}>Utilização de Cookies:</span> Nossa plataforma utiliza cookies para melhorar a navegação e personalizar o conteúdo apresentado aos usuários. Esses cookies são automaticamente coletados durante a navegação, porém é possível desativá-los nas configurações do navegador.</p>
