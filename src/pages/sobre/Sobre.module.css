@@ -413,11 +413,11 @@
     }
 
     .objetivo {
-        font-size: 80px;
+        font-size: 70px;
     }
 
     .textobjetivo {
-        font-size: 50px;
+        font-size: 40px;
         margin-left: 20px;
     }
 
@@ -429,7 +429,7 @@
     .princi {
         width: 100%;
         height: auto;
-        margin-top: -45vh;
+        margin-top: -25vh;
     
         display: flex;
         align-items: flex-start;
