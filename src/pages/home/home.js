@@ -39,7 +39,15 @@ import videomake from '../../assets/video/make.mp4'
 import { useGesture } from 'react-use-gesture';
 import { useSpring, animated } from 'react-spring';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function Home() {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     const navigate = useNavigate();
     const handleNavigateToCurso = () => {
         navigate('/curso');
@@ -227,7 +235,7 @@ function Home() {
 
                 <div className={Styles.imagensprof}>
                     <div data-aos="fade-right" className={Styles.imgles}></div>
-                    <div data-aos="fade-left" className={Styles.imgldr}>
+                    <div className={Styles.imgldr}>
                         <h1>O que é a Bellifica?</h1>
                         <p>Somos uma startup dedicada a auxiliar microempreendedores no ramo da beleza a realizar seus sonhos de gerenciar seu próprio negócio e alcançar o crescimento desejado.</p>
                     </div>
@@ -241,10 +249,10 @@ function Home() {
 
 
 
-                <video autoPlay muted loop width="30%" height="auto">
+             {/*<video autoPlay muted loop width="30%" height="auto">
                     <source src={videomake} type='video/mp4' />
                     Seu navegador não suporta a reprodução de vídeo.
-                </video>
+                </video>*/}
 
 
                 <div className={Styles.seH1}><h1>O que fazemos?</h1></div>
@@ -253,22 +261,22 @@ function Home() {
 
                 <div className={Styles.Caixas}>
                     <div className={Styles.caixona1}>
-                        <div className={Styles.caixaideia}>
+                        <div data-aos="fade-right" className={Styles.caixaideia}>
                             <img src={imgideia}></img>
                             <p>Nossa ideia é que você consiga realmente aprender a enfrentar suas dificuldades em seu trabalho</p>
                         </div>
-                        <div className={Styles.caixagestao}>
+                        <div data-aos="fade-left" className={Styles.caixagestao}>
                             <img src={imggestao}></img>
                             <p>Ajudamos a precificar seus serviços, potencializando os lucros do negócio</p>
                         </div>
                     </div>
 
                     <div className={Styles.caixona2}>
-                        <div className={Styles.caixacurso}>
+                        <div data-aos="fade-right" className={Styles.caixacurso}>
                             <img src={imgcurso}></img>
                             <p>Recomendamos cursos e dicas para ajudar a melhorar seu serviço e que você consiga expandir seus serviços</p>
                         </div>
-                        <div className={Styles.caixaauxilio}>
+                        <div data-aos="fade-left" className={Styles.caixaauxilio}>
                             <img src={imgauxilio}></img>
                             <p>Auxiliamos você a como você pode deixar seu negocio mais rentável e atraente para atrair mais clientes</p>
                         </div>
@@ -308,7 +316,13 @@ function Home() {
                 </div>
 
                 <div className={Styles.campocoment}>
-                    <button onClick={scrollLeft}>Anterior</button>
+
+                    <button className={Styles.setaes} onClick={scrollLeft}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="#000" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                        </svg>
+                    </button>
+
                     <div className={Styles.coment}>
                         <div className={Styles.blug} ref={carouselRef} style={{ transform: `translateX(${scrollX * 20}%)` }}>
                             <div className={Styles.Caixacoment}>
@@ -344,7 +358,13 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <button onClick={scrollRight}>Próximo</button>
+
+                    <button className= {Styles.setadr} onClick={scrollRight}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                        </svg>
+                    </button>
+
                 </div>
 
             </section >

@@ -5,7 +5,7 @@ import imgpdtcurso from "../../assets/imgs/produto/Group 351.png"
 import imgpdtagenda from "../../assets/imgs/produto/Group 352.png"
 
 
-import FundinRoxo from '../../assets/imgs/home/fundinroxo.png';
+import FundinRoxo from '../../assets/imgs/produto/Group 361.png';
 import React, { useEffect, useRef } from "react";
 
 function Produtos() {

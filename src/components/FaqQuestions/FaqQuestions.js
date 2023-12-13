@@ -13,12 +13,14 @@ function FaqQuestions() {
 
   return (
     <section>
+      <div className={Styles.divnavbar}></div>
       <h1>Dúvidas Frequentes</h1>
       <div className={Styles.pergunta} onClick={myFunction}>
         <img src={poligono} className={Styles.poligono}></img>
         <div className={Styles.text}>
           <h3>Como posso me cadastrar na plataforma Bellifica?</h3>
-          <ol className={`Styles.${clicado ? 'visible' : 'invisible'}`}>
+          <ol className={Styles[clicado ? 'visible' : 'invisible']}>
+
             <li>
               No site da Bellifica, procure o botão Login como oque está acima.
             </li>
@@ -46,51 +48,171 @@ function FaqQuestions() {
         </div>
       </div>
 
-      <div className={Styles.pergunta}>
+      <div className={Styles.pergunta} onClick={myFunction}>
         <img src={poligono} className={Styles.poligono}></img>
         <div className={Styles.text}>
-          <h3>
-            Quais são as principais funcionalidades oferecidas pela Bellifica?
-          </h3>
+          <h3>Quais são as principais funcionalidades oferecidas pela Bellifica?</h3>
+          <ol className={Styles[clicado ? 'visible' : 'invisible']}>
+
+            <li>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </li>
+            <li>
+              Na tela de login procure e clique na opção "Cadastre-se" ou "Criar
+              Conta".
+            </li>
+            <li>
+              Preencha o formulário de cadastro com suas informações pessoais,
+              como nome, endereço de e-mail, país e data de nascimento.
+            </li>
+            <li>
+              Crie um nome de usuário e uma senha segura para acessar a
+              plataforma.
+            </li>
+            <li>
+              Após preencher o formulário, clique em "Cadastrar" ou no botão
+              equivalente.
+            </li>
+            <li>
+              Verifique seu e-mail para confirmar o cadastro, seguindo as
+              instruções fornecidas.
+            </li>
+          </ol>
         </div>
       </div>
 
-      <div className={Styles.pergunta}>
-        <img src={poligono} alt="Polígono" className={Styles.poligono}></img>
+      <div className={Styles.pergunta} onClick={myFunction}>
+        <img src={poligono} className={Styles.poligono}></img>
         <div className={Styles.text}>
           <h3>Como posso recuperar minha senha se eu esquecer?</h3>
+          <ol className={Styles[clicado ? 'visible' : 'invisible']}>
+
+            <li>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </li>
+            <li>
+              Na tela de login procure e clique na opção "Cadastre-se" ou "Criar
+              Conta".
+            </li>
+            <li>
+              Preencha o formulário de cadastro com suas informações pessoais,
+              como nome, endereço de e-mail, país e data de nascimento.
+            </li>
+            <li>
+              Crie um nome de usuário e uma senha segura para acessar a
+              plataforma.
+            </li>
+            <li>
+              Após preencher o formulário, clique em "Cadastrar" ou no botão
+              equivalente.
+            </li>
+            <li>
+              Verifique seu e-mail para confirmar o cadastro, seguindo as
+              instruções fornecidas.
+            </li>
+          </ol>
         </div>
       </div>
 
-      <div className={Styles.pergunta}>
+      <div className={Styles.pergunta} onClick={myFunction}>
         <img src={poligono} className={Styles.poligono}></img>
         <div className={Styles.text}>
-          <h3>
-            A Bellifica compartilha minhas informações pessoais com terceiros?
-          </h3>
+          <h3>A Bellifica compartilha minhas informações pessoais com terceiros?</h3>
+          <ol className={Styles[clicado ? 'visible' : 'invisible']}>
+
+            <li>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </li>
+            <li>
+              Na tela de login procure e clique na opção "Cadastre-se" ou "Criar
+              Conta".
+            </li>
+            <li>
+              Preencha o formulário de cadastro com suas informações pessoais,
+              como nome, endereço de e-mail, país e data de nascimento.
+            </li>
+            <li>
+              Crie um nome de usuário e uma senha segura para acessar a
+              plataforma.
+            </li>
+            <li>
+              Após preencher o formulário, clique em "Cadastrar" ou no botão
+              equivalente.
+            </li>
+            <li>
+              Verifique seu e-mail para confirmar o cadastro, seguindo as
+              instruções fornecidas.
+            </li>
+          </ol>
         </div>
       </div>
 
-      <div className={Styles.pergunta}>
+      <div className={Styles.pergunta} onClick={myFunction}>
         <img src={poligono} className={Styles.poligono}></img>
         <div className={Styles.text}>
           <h3>Existe um custo para usar a plataforma Bellifica?</h3>
-          <ul>
-            Não! Oferecemos alguns recursos gratuitos para usuários que querem
-            testar a plataforma, como: -Cursos -Guia de cursos presenciais
-            -Consultoria para ajudar você a entrar nos trilhos e retirar todas
-            suas duvidas para você crescer.
+          <ol className={Styles[clicado ? 'visible' : 'invisible']}>
 
-          </ul>
+            <li>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </li>
+            <li>
+              Na tela de login procure e clique na opção "Cadastre-se" ou "Criar
+              Conta".
+            </li>
+            <li>
+              Preencha o formulário de cadastro com suas informações pessoais,
+              como nome, endereço de e-mail, país e data de nascimento.
+            </li>
+            <li>
+              Crie um nome de usuário e uma senha segura para acessar a
+              plataforma.
+            </li>
+            <li>
+              Após preencher o formulário, clique em "Cadastrar" ou no botão
+              equivalente.
+            </li>
+            <li>
+              Verifique seu e-mail para confirmar o cadastro, seguindo as
+              instruções fornecidas.
+            </li>
+          </ol>
         </div>
       </div>
 
-      <div className={Styles.pergunta}>
+      <div className={Styles.pergunta} onClick={myFunction}>
         <img src={poligono} className={Styles.poligono}></img>
         <div className={Styles.text}>
           <h3>Posso agendar serviços diretamente pela plataforma?</h3>
+          <ol className={Styles[clicado ? 'visible' : 'invisible']}>
+
+            <li>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </li>
+            <li>
+              Na tela de login procure e clique na opção "Cadastre-se" ou "Criar
+              Conta".
+            </li>
+            <li>
+              Preencha o formulário de cadastro com suas informações pessoais,
+              como nome, endereço de e-mail, país e data de nascimento.
+            </li>
+            <li>
+              Crie um nome de usuário e uma senha segura para acessar a
+              plataforma.
+            </li>
+            <li>
+              Após preencher o formulário, clique em "Cadastrar" ou no botão
+              equivalente.
+            </li>
+            <li>
+              Verifique seu e-mail para confirmar o cadastro, seguindo as
+              instruções fornecidas.
+            </li>
+          </ol>
         </div>
       </div>
+
     </section>
   );
 }
