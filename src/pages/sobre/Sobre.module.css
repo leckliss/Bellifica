@@ -758,7 +758,7 @@
     }
 
     .grupo1 {
-        margin-top: -36vh;
+        margin-top: -34vh;
     }
 
     .imagem1 {
@@ -776,6 +776,11 @@
     }
 
     .grupo2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
         margin-top: -540px;
     }
 
@@ -793,7 +798,7 @@
     }
 
     .texto2 {
-        margin-bottom: 100px;
+        margin-bottom: 200px;
     }
     
     .fundao{
