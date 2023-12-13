@@ -98,7 +98,9 @@
     height: 50vh;
     display: flex;
     flex-direction: row;
-    background-color: #fdd3e4;
+    background-color: #ff8fb2;
+    border-top-right-radius: 26vh;
+    border-bottom-right-radius: 26vh;
 
 }
 
@@ -148,8 +150,10 @@
     height: 50vh;
     display: flex;
     flex-direction: row;
-    background-color: #ff8fb2;
+    background-color: #fdd3e4;
     justify-content: end;
+    border-top-left-radius: 26vh;
+    border-bottom-left-radius: 26vh;
 
 }
 
@@ -182,6 +186,7 @@
     width: 80%;
     color: black;
     font-size: 5vh;
+    text-align: center;
 
 }
 
