@@ -38,7 +38,7 @@ function FaqQuestions() {
   return (
     <section>
       <div className={Styles.divnavbar}></div>
-      <h1>Dúvidas Frequentes</h1>
+      <div className={Styles.titulofaq}> <h1>Dúvidas Frequentes</h1></div>
       <div className={Styles.pergunta} onClick={handleClick1}>
         <img src={poligono} className={Styles.poligono}></img>
         <div className={Styles.text}>

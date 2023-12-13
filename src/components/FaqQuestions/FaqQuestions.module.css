@@ -27,7 +27,7 @@ section{
    /* Cor de fundo semelhante ao da imagem */
 }
 
-section h1{
+.titulofaq h1{
     width: 100%;
     display: flex;
     align-items: center;
