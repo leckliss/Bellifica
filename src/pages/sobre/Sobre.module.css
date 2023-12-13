@@ -765,14 +765,26 @@
         height: 200px;
     }
 
+    .texto1 {
+        width: 35%;
+        height: 80vh;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0vh;
+    
+    }
+
     .qmsomos{
         margin-top: 30px;
-        font-size: 25px;
+        font-size: 20px;
         
     }
 
     .textsomos{
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .grupo2 {
@@ -788,18 +800,30 @@
         height: 200px;
     }
 
+    .texto2 {
+        width: 35%;
+        height: 80vh;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0vh;
+
+        margin-bottom: 150px;
+    
+    }
+
     .objetivo{
         font-size: 20px;
         
     }
 
     .textobjetivo{
-        font-size: 8px;
+        font-size: 10px;
     }
 
-    .texto2 {
-        margin-bottom: 200px;
-    }
+
     
     .fundao{
         width: 100%;
