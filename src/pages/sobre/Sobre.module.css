@@ -757,26 +757,44 @@
         display: none;
     }
 
+    .grupo1 {
+        margin-top: -150px;
+    }
+
+    .imagem1 {
+        height: 200px;
+    }
+
     .qmsomos{
-        font-size: 5vh;
+        margin-top: 30px;
+        font-size: 25px;
         
     }
 
     .textsomos{
-        font-size: 2.5vh;
+        font-size: 10px;
+    }
+
+    .imagem2 {
+        height: 200px;
     }
 
     .objetivo{
-        font-size: 5vh;
+        font-size: 25px;
         
     }
 
     .textobjetivo{
-        font-size: 2.5vh;
+        font-size: 10px;
+    }
+
+    .texto2 {
+        margin-bottom: 100px;
     }
     
     .fundao{
-        background-image: none;
+        width: 100%;
+        background-image: url(../../assets/imgs/sobre/bobpequeno.png);
     }
     
     .quemsomos{
@@ -889,8 +907,6 @@
         margin-bottom: 150px;
     }
 
-    
 
-    
 
 }
