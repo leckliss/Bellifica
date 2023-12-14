@@ -799,6 +799,7 @@
     }
 
     .textsomos{
+        text-align: center;
         font-size: 13px;
     }
 
@@ -839,6 +840,7 @@
     }
 
     .textobjetivo{
+        text-align: center;
         font-size: 13px;
     }
 
