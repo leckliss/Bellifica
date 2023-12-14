@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
 section{ 
     position: relative;
     width: 100%;
@@ -8,9 +14,26 @@ section{
     align-items: center;
     text-align: left;
     background-color: #FFF6F4;
-    gap: 100px;
+    gap: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.divnavbar{
+    width: 100%;
+    height: 20vh;
+    background-color: #9979c1;
+    margin-top: -10vh;
+   /* Cor de fundo semelhante ao da imagem */
+}
+
+.titulofaq h1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: black;
+    justify-content: center;
+    font-size: 10vh;
 }
 
 .pergunta{
@@ -44,8 +67,12 @@ section{
     margin-left: 5%;
 }
 
-.text h3{color: black;
+.text h3{
+    color: black;
     padding: 15px;
+}
+.text li{
+    color: black;
 }
 
 .invisible{

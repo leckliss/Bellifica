@@ -1,11 +1,14 @@
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import Styles from "../../pages/produtos/produtos.module.css"
-import imgpdtcurso from "../../assets/imgs/produto/Group 351.png"
-import imgpdtagenda from "../../assets/imgs/produto/Group 352.png"
+import imgpdtpremium from "../../assets/imgs/produto/Group 368.png"
+import imgpdtgratuito from "../../assets/imgs/produto/Group 370.png"
+import imgpdtagendamento from "../../assets/imgs/produto/Group 369.png"
+import imgpdtdicas from "../../assets/imgs/produto/Group 372.png"
+import imgpdtchat from "../../assets/imgs/produto/Group 371.png"
 
 
-import FundinRoxo from '../../assets/imgs/home/fundinroxo.png';
+import FundinRoxo from '../../assets/imgs/produto/Group 361.png';
 import React, { useEffect, useRef } from "react";
 
 function Produtos() {
@@ -66,7 +69,7 @@ function Produtos() {
                             <div className={Styles.pdtagendamento}>
 
                                 <div className={Styles.pdtdescrição}>
-                                    <img src={imgpdtagenda}></img>
+                                    <img src={imgpdtgratuito}></img>
                                     <div className={Styles.text1}>
                                         <h2>Cursos Gratuitos</h2>
                                         <p>Nós recomendamos e oferecemos cursos de parceiros para que você possa se capacitar gratuitamente ou pagando se preferir</p>
@@ -84,14 +87,14 @@ function Produtos() {
                                     <p>Assinando nosso plano Borboleta, você terá acesso a cursos pagos que estarão inclusos com sua assinatura, além também de receber conteúdo antecipadamente</p>
                                 </div>
                             </div>
-                            <img className={Styles.imagem_curso} src={imgpdtcurso}></img>
+                            <img className={Styles.imagem_curso} src={imgpdtpremium}></img>
                         </div>
 
                         <div className={Styles.campagendamento}>
                             <div className={Styles.pdtagendamento} style={{ backgroundColor: '#7677d2' }}>
 
                                 <div className={Styles.pdtdescrição}>
-                                    <img src={imgpdtagenda}></img>
+                                    <img src={imgpdtagendamento}></img>
                                     <div className={Styles.text1}>
                                         <h2>Agendamento</h2>
                                         <p>Com produto de agendamento  é possível automatizar a forma que seus atendimentos são agendados, trazendo benefícios para você e seus clientes.</p>
@@ -109,14 +112,14 @@ function Produtos() {
                                     <p>Recomendamos dicas práticas que irão lhe ajudar no seu dia-a-dia.</p>
                                 </div>
                             </div>
-                            <img className={Styles.imagem_curso} src={imgpdtcurso}></img>
+                            <img className={Styles.imagem_curso} src={imgpdtdicas}></img>
                         </div>
 
                         <div className={Styles.campagendamento}>
                             <div className={Styles.pdtagendamento} style={{ backgroundColor: '#7677d2' }}>
 
                                 <div className={Styles.pdtdescrição}>
-                                    <img src={imgpdtagenda}></img>
+                                    <img src={imgpdtchat}></img>
                                     <div className={Styles.text1}>
                                         <h2>Chatbot IA</h2>
                                         <p>Com a assinatura Borboleta, você terá acesso ao nosso chatbot personalizado para atender você que quer ter um atendimento rápido e individual</p>

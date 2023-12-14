@@ -38,7 +38,7 @@
   color: #000;
   border-radius: 5vh;
   padding: 10px;
-  width: 30%;
+  width: 40%;
   height: auto;
   font-size: x-large;
   text-align: center;
@@ -53,7 +53,7 @@
   background-color: #fd9ba6 !important;
   border-radius: 5vh;
   padding: 10px;
-  width: 30%;
+  width: 40%;
   text-align: center;
 }
 
@@ -73,6 +73,7 @@
 
 .mulhercurso {
   z-index: 2;
+  margin-left: -600px;
 }
 
 .banner {
@@ -177,4 +178,35 @@
 .logoembelleze {
   width: 35%;
   height: 15vh;
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  
+  .carrosel {
+    width: 100%;
+  }
+
+  .buttonino {
+    width: 40vh;
+  }
+
+  .sec11{
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      height: 90vh;
+  }
+
+  .sec11{
+      position: absolute;
+      z-index: 2;
+  }
+
+  .sec12{   
+      display: none;
+  }
+
+  .logoembelleze {
+    width: 300px;
+  }
 }

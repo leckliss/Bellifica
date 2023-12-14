@@ -40,7 +40,7 @@
     color: #000;
     border-radius: 5vh;
     padding: 10px;
-    width: 40%;
+    width: 60%;
     font-size: x-large;
     text-align: center;
     background-color: transparent !important;
@@ -58,7 +58,7 @@
 .sec12{
     display: flex;   
     justify-content: center;
-    background-image: url(../../assets/imgs/home/fundinroxo.png);
+    background-image: url(../../assets/imgs/sobre/Group\ 361\ \(1\).png);
     background-size: contain;
     background-repeat: no-repeat;
     height: 80vh;
@@ -67,7 +67,8 @@
 }
 
 .Grupo_Bellifica{
-    width: 600px;
+    width: 900px;
+    margin-right: 65px;
 }
 
 /*quem somos*/
@@ -171,7 +172,7 @@
     justify-content: center;
     align-items: center;
     gap: 4vh;
-
+    margin-top: 185px;
 
 }
 
@@ -181,6 +182,7 @@
     font-size: 50px;
     font-weight: bold;
     text-align: left;
+
 
 }
 
@@ -195,8 +197,7 @@
 .princi {
     width: 100%;
     height: auto;
-    margin-top: -45vh;
-    z-index: 1;
+    margin-top: -25vh;
 
     display: flex;
     align-items: flex-start;
@@ -394,7 +395,47 @@
         background-image: url(../../assets/imgs/sobre/fundo-bubble.png);
 
     }
+    
+    .qmsomos {
+        font-size: 80px;
+        margin-right: 10vh;
+    }
 
+    .textsomos {
+        width: 600px;
+        margin-right: 20vh;
+    }
+
+    .grupo2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .objetivo {
+        font-size: 70px;
+    }
+
+    .textobjetivo {
+        font-size: 40px;
+        margin-left: 20px;
+    }
+
+    .imagem2 {
+        margin-bottom: 50px;
+        margin-right: 300px;
+    }
+
+    .princi {
+        width: 100%;
+        height: auto;
+        margin-top: -25vh;
+    
+        display: flex;
+        align-items: flex-start;
+    
+    }
 
 }
 
@@ -612,7 +653,7 @@
     
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 360px) and (max-width: 767px) {
     .buttonino2 {
         border: 2px solid #000000;
         color: #000;
@@ -717,30 +758,97 @@
         display: none;
     }
 
+    .quemsomos {
+        width:100% ;
+        height: auto;
+    }
+
+    .grupo1 {
+        width: 100%;
+        height: 40vh;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .imagem1 {
+        width: 80%;
+        height: 280px;
+
+
+    }
+
+    .texto1 {
+        width: 100%;
+        height: 20vh;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0vh;
+
+    }
+
     .qmsomos{
-        font-size: 5vh;
+        text-align: center;
+        font-size: 20px;
         
     }
 
     .textsomos{
-        font-size: 2.5vh;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .grupo2 {
+        width: 100;
+        height: 30vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    .imagem2 {
+        width: 80%;
+        height: 400px;
+    }
+
+    .texto2 {
+        width: 100%;
+        height: 20vh;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0vh;
+
+        margin-top: 500px;
+    
     }
 
     .objetivo{
-        font-size: 5vh;
+        text-align: center;
+        font-size: 20px;
         
     }
 
     .textobjetivo{
-        font-size: 2.5vh;
+        text-align: center;
+        font-size: 13px;
     }
+
+
     
     .fundao{
-        background-image: none;
-    }
-    
-    .quemsomos{
-        margin-top: -50px;
+        width: 100%;
+        background-image:none;
     }
     
     .grupo2{
@@ -750,20 +858,16 @@
     .grupo1{
         gap: 40px;
     }
-
-    .imagem1{
-        width: 150px;
-    }
     
-    .imagem2{
-        width: 150px;
+    .princi {
+      width: 100%;
+      height: 20vh;
     }
 
     .titprinci{
         font-size: 6vh;
         text-align: center;
         margin-right: 20px;
-        margin-top: -100px;
     }
 
     .enfo{
@@ -849,8 +953,6 @@
         margin-bottom: 150px;
     }
 
-    
 
-    
 
 }
