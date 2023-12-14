@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Bellifica from '../../assets/imgs/dashboard/bellifica.png';
 import BellificaB from '../../assets/imgs/dashboard/B.png';
 import './styles.css';
@@ -34,6 +35,12 @@ function Dashboard() {
       setLogoSrc(Bellifica); // Muda a imagem para Bellifica
     }
   };
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    localStorage.removeItem('userName');
+    localStorage.removeItem('authToken');
+    navigate('/');
+  };
 
   const renderComponent = () => {
     switch (activeComponent) {
@@ -44,7 +51,7 @@ function Dashboard() {
       case 'Agenda':
         return <Agenda />;
       case 'Chatbot':
-        return <ChatBot/>;
+        return <ChatBot />;
       case 'Configuracoes':
         return <Configuracoes />;
       default:
@@ -60,13 +67,13 @@ function Dashboard() {
           <li className={clicked ? 'li-barra-curta' : 'li-texto-barra'} onClick={() => handleClick2('Painel', 'Dashboard')}><img src={require('../../assets/imgs/dashboard/Initial.png')} /> Pagina Inicial</li>
           <li className={clicked ? 'li-barra-curta' : 'li-texto-barra'} onClick={() => handleClick('Agenda', 'Agenda')}><img src={require('../../assets/imgs/dashboard/Calendar.png')} /> Agendamentos</li>
           <li className={clicked ? 'li-barra-curta' : 'li-texto-barra'} onClick={() => handleClick('Cursos', 'Cursos')}><img src={require('../../assets/imgs/dashboard/People.png')} /> Cursos</li>
-          <li className={clicked ? 'li-barra-curta' : 'li-texto-barra'}  onClick={() => handleClick('Chatbot', 'Chatbot')}><img src={require('../../assets/imgs/dashboard/ChatBot.png')} /> Chat Bot</li>
-          <li className={clicked ? 'li-barra-curta' : 'li-texto-barra'}  onClick={() => handleClick('Configuracoes', 'Configurações')}><img src={require('../../assets/imgs/dashboard/Settings.png')} /> Configurações</li>
-          <li className={clicked ? 'li-barra-curta' : 'li-texto-barra'} ><img src={require('../../assets/imgs/dashboard/Logout.png')} /> Sair </li>
+          <li className={clicked ? 'li-barra-curta' : 'li-texto-barra'} onClick={() => handleClick('Chatbot', 'Chatbot')}><img src={require('../../assets/imgs/dashboard/ChatBot.png')} /> Chat Bot</li>
+          <li className={clicked ? 'li-barra-curta' : 'li-texto-barra'} onClick={() => handleClick('Configuracoes', 'Configurações')}><img src={require('../../assets/imgs/dashboard/Settings.png')} /> Configurações</li>
+          <li className={clicked ? 'li-barra-curta' : 'li-texto-barra'} onClick={handleLogout}><img src={require('../../assets/imgs/dashboard/Logout.png')} /> Sair </li>
         </ul>
       </div>
       <div className={clicked ? 'main-content-curta' : 'main-content'}>
-        <h2 style={{color: 'black'}}>{nomeComponent}</h2>
+        <h2 style={{ color: 'black' }}>{nomeComponent}</h2>
         <div>
           {renderComponent()}
         </div>
