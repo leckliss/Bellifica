@@ -39,7 +39,16 @@ import videomake from '../../assets/video/make.mp4'
 import { useGesture } from 'react-use-gesture';
 import { useSpring, animated } from 'react-spring';
 
+//animações
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function Home() {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     const navigate = useNavigate();
     const handleNavigateToCurso = () => {
         navigate('/curso');

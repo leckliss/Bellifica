@@ -219,6 +219,7 @@
 .sessão2 {
     width: 100%;
     height: auto;
+    overflow-x: hidden;
 }
 
 .imagensprof {
