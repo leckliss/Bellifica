@@ -110,19 +110,23 @@ function Home() {
     const [scrollX, setScrollX] = useState(0);
     const carouselRef = useRef(null);
 
+    const totalComentarios = 5;
+    const maxScroll = totalComentarios - 1;
+
     const scrollLeft = () => {
-        if (carouselRef.current) {
-            const newScrollX = scrollX - 1;
+        if (scrollX < 0) {
+            const newScrollX = scrollX + 1;
             setScrollX(newScrollX);
-            carouselRef.current.style.transform = `translateX(${newScrollX * 20}%)`; // 20% é a largura de cada item
+            carouselRef.current.style.transform = `translateX(${newScrollX * 20}%)`;
         }
     };
 
     const scrollRight = () => {
-        if (carouselRef.current) {
-            const newScrollX = scrollX + 1;
+
+        if (scrollX > -maxScroll) {
+            const newScrollX = scrollX - 1;
             setScrollX(newScrollX);
-            carouselRef.current.style.transform = `translateX(${newScrollX * 20}%)`; // 20% é a largura de cada item
+            carouselRef.current.style.transform = `translateX(${newScrollX * 20}%)`;
         }
     };
 
@@ -249,7 +253,7 @@ function Home() {
 
 
 
-             {/*<video autoPlay muted loop width="30%" height="auto">
+                {/*<video autoPlay muted loop width="30%" height="auto">
                     <source src={videomake} type='video/mp4' />
                     Seu navegador não suporta a reprodução de vídeo.
                 </video>*/}
@@ -298,7 +302,7 @@ function Home() {
                             </p>
                             <p><br></br>Encaminharemos você à cursos de seu interesse para que você possa se especializar e colocar seus conhecimentos em prática.</p>
 
-                            <button className={Styles.buttonino} onClick={handleNavigateToCurso} >Conhecer cursos</button>
+                            <button className={Styles.buttoninocursos} onClick={handleNavigateToCurso} >Conhecer cursos</button>
                         </div>
 
                     </div>
@@ -319,7 +323,7 @@ function Home() {
 
                     <button className={Styles.setaes} onClick={scrollLeft}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="#000" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
                         </svg>
                     </button>
 
@@ -334,34 +338,34 @@ function Home() {
 
                             <div className={Styles.Caixacoment}>
                                 <div className={Styles.foto}></div>
-                                <h1>ANA</h1>
+                                <h1>JOSÉ</h1>
                                 <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
                             </div>
 
                             <div className={Styles.Caixacoment}>
                                 <div className={Styles.foto}></div>
-                                <h1>ANA</h1>
+                                <h1>MARIA</h1>
                                 <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
 
                             </div>
 
                             <div className={Styles.Caixacoment}>
                                 <div className={Styles.foto}></div>
-                                <h1>ANA</h1>
+                                <h1>SUELEN</h1>
                                 <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
                             </div>
 
                             <div className={Styles.Caixacoment}>
                                 <div className={Styles.foto}></div>
-                                <h1>ANA</h1>
+                                <h1>MATHIAS</h1>
                                 <p>A plataforma me ajudou a ver minha empresa com outros olhos, hoje consigo me planejar com futuros serviços.</p>
                             </div>
                         </div>
                     </div>
 
-                    <button className= {Styles.setadr} onClick={scrollRight}>
+                    <button className={Styles.setadr} onClick={scrollRight}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
                         </svg>
                     </button>
 
@@ -377,7 +381,7 @@ function Home() {
                 <h1 className={Styles.titulo}>Nossos Planos</h1>
                 <div className={Styles.caixaplanos}>
 
-                    <div className={Styles.caixagratuito}>
+                    <div className={Styles.caixagratuito} data-aos="fade-up">
                         <div className={Styles.caixagratuitotitulo}>
                             <img src={Pupa} style={{ height: 50, width: 50 }} />
                             <h3>Pupa</h3>
@@ -392,7 +396,7 @@ function Home() {
                         <h4 style={{ color: '#673e99', fontSize: '5vh' }}>GRÁTIS</h4>
 
                     </div>
-                    <div className={Styles.caixapremium}>
+                    <div className={Styles.caixapremium} data-aos="fade-up">
                         <div className={Styles.caixapremiumtitulo}>
                             <img src={Borbo} style={{ height: 50, width: 50 }} />
                             <h3>Borboleta</h3>

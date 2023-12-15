@@ -28,6 +28,13 @@
     text-align: left;
     padding-left: 5%;
 }
+.sec12{
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    align-items: flex-end;
+
+}
 
 .descri_Bellifica{
     font-size: 6vh;

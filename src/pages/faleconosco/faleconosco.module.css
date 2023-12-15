@@ -1,4 +1,4 @@
-.faleconosco_corpo{
+.faleconosco_corpo {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -6,7 +6,7 @@
     justify-content: center;
 }
 
-.formulariofaleconosco_corpo{
+.formulariofaleconosco_corpo {
     background: linear-gradient(to bottom, #F3B1CE, #EEB7FD);
     width: 65%;
     height: 72vh;
@@ -15,17 +15,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
-.titulo_formulariofaleconosco{
+.divnavbar {
+    width: 100%;
+    height: 20vh;
+    background-color: #9979c1;
+}
+
+.titulo_formulariofaleconosco {
     text-align: center;
     font-size: 7.0vh;
     margin-top: 20px;
     font-weight: bold;
 }
 
-.input_nomefaleconosco{
+.input_nomefaleconosco {
     background-color: transparent;
     border-bottom: 2px solid white;
     margin-top: 10px;
@@ -33,10 +39,10 @@
     height: 10vh;
     width: 70%;
     font-size: 5vh;
-    
+
 }
 
-.input_emailfaleconosco2{
+.input_emailfaleconosco2 {
     background-color: transparent;
     border-bottom: 2px solid white;
     margin-top: 20px;
@@ -46,29 +52,29 @@
     font-size: 5vh;
 }
 
-.input_nomefaleconosco::placeholder{
+.input_nomefaleconosco::placeholder {
     color: rgb(255, 255, 255);
     font-size: 5vh;
     font-weight: bold;
 }
 
 
-.input_emailfaleconosco2::placeholder{
+.input_emailfaleconosco2::placeholder {
     color: rgb(255, 255, 255);
     font-size: 5vh;
     font-weight: bold;
 }
 
-.input_textfaleconosco{
+.input_textfaleconosco {
     width: 70%;
     margin-top: 50px;
-    color:black !important;
+    color: black !important;
 }
 
 
-textarea{
-    color:black;
-    width:70%;
+textarea {
+    color: black;
+    width: 70%;
     height: 20vh;
     margin-top: 40px;
     font-size: 3.5vh;
@@ -76,14 +82,14 @@ textarea{
 }
 
 
-textarea::placeholder{
+textarea::placeholder {
     color: black;
     font-size: 3.5vh;
     font-weight: bold;
-    padding:10px;
+    padding: 10px;
 }
 
-.submit_faleconosco{
+.submit_faleconosco {
     width: 10%;
     height: 5vh;
     background-color: transparent;
@@ -95,109 +101,109 @@ textarea::placeholder{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
+
 }
 
 
-.AiOutlineSend{
+.AiOutlineSend {
     width: 30px;
     height: 3vh;
     padding: 0px;
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1456px) {
-    .submit_faleconosco{
+    .submit_faleconosco {
         margin-right: 450px;
         width: 12%;
     }
 }
 
-@media  screen and (min-width:768px) and (max-width: 1279px){
+@media screen and (min-width:768px) and (max-width: 1279px) {
 
-    .input_nomefaleconosco{
+    .input_nomefaleconosco {
         font-size: 2.99vh;
         height: 7.9vh;
     }
 
-    
-    .input_nomefaleconosco::placeholder{
+
+    .input_nomefaleconosco::placeholder {
         font-size: 2.99vh;
     }
 
-    
 
-    .input_emailfaleconosco2{
+
+    .input_emailfaleconosco2 {
         font-size: 2.99vh;
         height: 7.9vh;
     }
 
-    .input_emailfaleconosco2::placeholder{
+    .input_emailfaleconosco2::placeholder {
         font-size: 2.99vh;
     }
 
-    textarea{
+    textarea {
         font-size: 2.99vh;
     }
-    
-    textarea::placeholder{
+
+    textarea::placeholder {
         font-size: 2.99vh;
     }
-    
-    
-    
-    .submit_faleconosco{
+
+
+
+    .submit_faleconosco {
         margin-right: 230px;
         width: 20%;
-    }    
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-    
-    
-    
-    .formulariofaleconosco_corpo{
+
+
+
+    .formulariofaleconosco_corpo {
         width: 100%;
         border-radius: 0;
     }
 
-    .titulo_formulariofaleconosco{
+    .titulo_formulariofaleconosco {
         font-size: 5vh;
     }
 
-    .input_nomefaleconosco{
+    .input_nomefaleconosco {
         font-size: 2vh;
         height: 7.9vh;
     }
 
-    
-    .input_nomefaleconosco::placeholder{
+
+    .input_nomefaleconosco::placeholder {
         font-size: 2vh;
     }
 
-    
 
-    .input_emailfaleconosco2{
+
+    .input_emailfaleconosco2 {
         font-size: 2vh;
         height: 7.9vh;
     }
 
-    .input_emailfaleconosco2::placeholder{
+    .input_emailfaleconosco2::placeholder {
         font-size: 2vh;
     }
 
-    textarea{
+    textarea {
         font-size: 2.5vh;
         border-radius: 10px;
     }
 
-    textarea::placeholder{
+    textarea::placeholder {
         font-size: 2.5vh;
     }
 
-    .submit_faleconosco{
+    .submit_faleconosco {
         margin-right: 0px;
         width: 33%;
     }
 
-    
+
 }
