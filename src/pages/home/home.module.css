@@ -92,7 +92,6 @@
     background-color: #9979c1 !important;
     border-radius: 5vh;
     padding: 10px;
-    width: 40%;
     text-align: center;
 }
 
@@ -795,4 +794,492 @@
     .caixagratuito li {
         font-size: 30px;
     }
+}
+
+@media screen and (min-width:1280px) and (max-width: 1710px){
+    
+    
+    
+
+
+   
+    .imgles{
+        margin-left: -100px;
+    }
+  
+    
+    .fundinroxo{
+        width: 80%;
+        margin-top: 00px;
+        margin-left: 00px;
+        margin-bottom: 0px;
+        
+    }
+
+
+    .profss{
+        width: 600px;
+        
+    }
+
+    .profsscar{
+        margin-left: 200px;
+        margin-bottom: 80px;
+       
+    }
+
+    .imgldr{
+        margin-right: 100px;
+    }
+
+    
+    .caixona1{
+        margin-top: 80px;
+    }
+    
+
+}
+
+@media screen and (min-width:1021px) and (max-width: 1279px){
+    .buttonino {
+        border: 2px solid #000;
+        color: #000;
+        border-radius: 5vh;
+        padding: 5px;
+        width: 80%;
+        height: auto;
+        font-size: 3.5vh;
+        text-align: center;
+        background-color: transparent !important;
+    }
+    
+
+
+    .typingeffect{
+        font-size: 3.5vh;
+        margin-top: 90px;
+        overflow-y: hidden !important;
+    }
+
+    .typingeffect2{
+        font-size: 3.5vh;
+        margin-top: 10px;
+        margin-left: 00px;
+        overflow-y: hidden !important;
+    }
+    
+    .descri_Bellifica{
+        font-size: 4vh;
+        margin-top: 0px;
+        text-align: left;
+        margin-left: 0px;
+        overflow-y: hidden;
+        
+    }
+    
+    .fundinroxo{
+        width: 108%;
+        margin-top: 00px;
+        margin-left: 00px;
+        margin-bottom: 100px;
+        
+    }
+
+
+    .profss{
+        width: 400px;
+        
+    }
+
+    .profsscar{
+        margin-left: 20px;
+        margin-bottom: 200px;
+       
+    }
+
+    .imgles{
+        scale: 0.799;
+        width: 100%;
+        margin-left: -120px;
+    }
+
+    .imgldr h1 {
+
+        font-size: 4.66vh;
+        color: #000;
+        font-weight: bold;
+    
+    }
+    
+    .imgldr p {
+    
+        color: #000;
+        font-size: 4vh;
+        width: 95%;
+    }
+
+
+    .seH1 h1{
+        font-size: 7vh;
+        margin-bottom: 100px;
+    }
+
+    .caixaideia{
+        width: 43%;
+    }
+
+    .caixaideia p{
+        font-size: 3.55vh;
+    }
+
+    
+
+    .caixaauxilio{
+        width: 43%;
+    }
+
+    .caixaauxilio p{
+        font-size: 3.55vh;
+    }
+
+    .caixagestao{
+        width: 43%;
+    }
+
+    .caixagestao p{
+        font-size: 3.55vh;
+    }
+
+    .caixacurso{
+        width: 43%;
+    }
+
+    .caixacurso p{
+        font-size: 3.55vh;
+    }
+
+    .quadrocursos{
+        width: 90%;
+        margin-top: -40px;
+    }
+
+    .quadrocursos h3{
+        font-size: 7vh;
+    }
+
+    .quadrocursos p{
+        font-size: 3.8vh;
+    }
+
+    .titulo{
+        margin-top: -100px;
+    }
+
+    .caixagratuito{
+        width: 45%;
+        height: 530px;
+    }
+
+    .caixapremium{
+        width: 45%;
+    }
+}
+
+@media screen and (min-width:895px) and (max-width: 1020px){
+
+
+    .buttonino {
+        border: 2px solid #000;
+        color: #000;
+        border-radius: 5vh;
+        padding: 5px;
+        width: 80%;
+        height: auto;
+        font-size: 3.5vh;
+        text-align: center;
+        background-color: transparent !important;
+    }
+    
+
+
+    .typingeffect{
+        font-size: 3.5vh;
+        margin-top: 90px;
+        overflow-y: hidden !important;
+    }
+
+    .typingeffect2{
+        font-size: 3.5vh;
+        margin-top: 10px;
+        margin-left: 00px;
+        overflow-y: hidden !important;
+    }
+    
+    .descri_Bellifica{
+        font-size: 4vh;
+        margin-top: 0px;
+        text-align: left;
+        margin-left: 0px;
+        overflow-y: hidden;
+        
+    }
+    
+    .fundinroxo{
+        width: 108%;
+        margin-top: 100px;
+        margin-left: 00px;
+        margin-bottom: 150px;
+        
+    }
+
+
+    .profss{
+        width: 300px;
+        
+    }
+
+    .profsscar{
+        margin-left: 20px;
+        margin-bottom: 220px;
+       
+    }
+
+    .imgles{
+        scale: 0.799;
+        width: 100%;
+        margin-left: -120px;
+    }
+
+    .imgldr h1 {
+
+        font-size: 4.66vh;
+        color: #000;
+        font-weight: bold;
+    
+    }
+    
+    .imgldr p {
+    
+        color: #000;
+        font-size: 4vh;
+        width: 95%;
+    }
+
+
+    .seH1 h1{
+        font-size: 7vh;
+        margin-bottom: 100px;
+    }
+
+    .caixaideia{
+        width: 43%;
+    }
+
+    .caixaideia p{
+        font-size: 3.55vh;
+    }
+
+    
+
+    .caixaauxilio{
+        width: 43%;
+    }
+
+    .caixaauxilio p{
+        font-size: 3.55vh;
+    }
+
+    .caixagestao{
+        width: 43%;
+    }
+
+    .caixagestao p{
+        font-size: 3.55vh;
+    }
+
+    .caixacurso{
+        width: 43%;
+    }
+
+    .caixacurso p{
+        font-size: 3.55vh;
+    }
+
+    .quadrocursos{
+        width: 90%;
+        margin-top: -40px;
+    }
+
+    .quadrocursos h3{
+        font-size: 7vh;
+    }
+
+    .quadrocursos p{
+        font-size: 3.8vh;
+    }
+
+    .titulo{
+        margin-top: -100px;
+    }
+
+    .caixagratuito{
+        width: 45%;
+        height: 530px;
+    }
+
+    .caixapremium{
+        width: 45%;
+    }
+}
+
+
+
+@media screen and (min-width:768px) and (max-width: 894px){
+    .buttonino {
+        border: 2px solid #000;
+        color: #000;
+        border-radius: 5vh;
+        padding: 5px;
+        width: 80%;
+        height: auto;
+        font-size: 3.5vh;
+        text-align: center;
+        background-color: transparent !important;
+    }
+    
+
+
+    .typingeffect{
+        font-size: 3.5vh;
+        margin-top: 90px;
+        overflow-y: hidden !important;
+    }
+
+    .typingeffect2{
+        font-size: 3.5vh;
+        margin-top: 10px;
+        margin-left: 00px;
+        overflow-y: hidden !important;
+    }
+    
+    .descri_Bellifica{
+        font-size: 4vh;
+        margin-top: 0px;
+        text-align: left;
+        margin-left: 0px;
+        overflow-y: hidden;
+        
+    }
+    
+    .fundinroxo{
+        width: 108%;
+        margin-top: 100px;
+        margin-left: 00px;
+        margin-bottom: 150px;
+        
+    }
+
+
+    .profss{
+        width: 300px;
+        
+    }
+
+    .profsscar{
+        margin-left: 20px;
+        margin-bottom: 220px;
+       
+    }
+
+    .imgles{
+        scale: 0.799;
+        width: 100%;
+        margin-left: -120px;
+    }
+
+    .imgldr h1 {
+
+        font-size: 4.66vh;
+        color: #000;
+        font-weight: bold;
+    
+    }
+    
+    .imgldr p {
+    
+        color: #000;
+        font-size: 4vh;
+        width: 95%;
+    }
+
+
+    .seH1 h1{
+        font-size: 7vh;
+        margin-bottom: 100px;
+    }
+
+    .caixaideia{
+        width: 43%;
+    }
+
+    .caixaideia p{
+        font-size: 3.55vh;
+    }
+
+    
+
+    .caixaauxilio{
+        width: 43%;
+    }
+
+    .caixaauxilio p{
+        font-size: 3.55vh;
+    }
+
+    .caixagestao{
+        width: 43%;
+    }
+
+    .caixagestao p{
+        font-size: 3.55vh;
+    }
+
+    .caixacurso{
+        width: 43%;
+    }
+
+    .caixacurso p{
+        font-size: 3.55vh;
+    }
+
+    .quadrocursos{
+        width: 90%;
+        margin-top: -40px;
+    }
+
+    .quadrocursos h3{
+        font-size: 7vh;
+    }
+
+    .quadrocursos p{
+        font-size: 3.8vh;
+    }
+
+    .titulo{
+        margin-top: -100px;
+    }
+
+    .caixagratuito{
+        width: 45%;
+        height: 530px;
+    }
+
+    .caixapremium{
+        width: 45%;
+    }
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+
 }
