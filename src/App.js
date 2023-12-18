@@ -26,6 +26,7 @@ import Contato from './components/configuracoes/contato/contato';
 import MeusDados from './components/configuracoes/meusdados/meusdados';
 import Politicas from './components/configuracoes/politicas/politicas';
 
+import ProtectedRoute from './ProtectedRoute';
 
 
 function App() {
@@ -45,22 +46,22 @@ function App() {
           <Route path="/login" element={<Login />} ></Route>
           <Route path="/curso" element={<Curso />} ></Route>
 
-          
-          <Route path='/dashboard' element={<Dashboard />}></Route>
-          <Route path='/dashboard/painel' element={<Painel />}></Route>
-          <Route path='/dashboard/agenda' element={<Agenda />}></Route>
-          <Route path='/dashboard/configuraçoes' element={<Configuracoes/>}></Route>
-          <Route path='/dashboard/cursos' element={<Cursos />}></Route>
 
-          <Route path='/dashboard/configuracoes/assinatura' element={<Assinatura/>}></Route>
-          <Route path='/dashboard/configuracoes/contato' element={<Contato/>}></Route>
-          <Route path='/dashboard/configuracoes/meusdados' element={<MeusDados/>}></Route>
-          <Route path='/dashboard/configuracoes/politicas' element={<Politicas/>}></Route>
+          <ProtectedRoute path='/dashboard' component={Dashboard} />
+          <ProtectedRoute path='/dashboard' component={Dashboard} />
+          <ProtectedRoute path='/dashboard/painel' component={Painel} />
+          <ProtectedRoute path='/dashboard/agenda' component={Agenda} />
+          <ProtectedRoute path='/dashboard/configuraçoes' component={Configuracoes} />
+          <ProtectedRoute path='/dashboard/cursos' component={Cursos} />
+          <ProtectedRoute path='/dashboard/configuracoes/assinatura' component={Assinatura} />
+          <ProtectedRoute path='/dashboard/configuracoes/contato' component={Contato} />
+          <ProtectedRoute path='/dashboard/configuracoes/meusdados' component={MeusDados} />
+          <ProtectedRoute path='/dashboard/configuracoes/politicas' component={Politicas} />
 
         </Routes>
       </Router>
 
-      <ToastContainer/>
+      <ToastContainer />
     </div>
 
   );
