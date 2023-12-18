@@ -15,7 +15,7 @@ function Login() {
 
   const onSubmit = async (data) => {
     try {
-      const response = await fetch('http://localhost:8080/users/login', {
+      const response = await fetch('bellifica-back-end-production.up.railway.app/users/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

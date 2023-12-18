@@ -64,7 +64,7 @@ function Agenda() {
       };
       console.log(agendamentoInfo);
 
-      const response = await fetch('http://localhost:8080/agendamentos', {
+      const response = await fetch('bellifica-back-end-production.up.railway.app/agendamentos', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

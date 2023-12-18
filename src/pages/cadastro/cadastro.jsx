@@ -34,7 +34,7 @@ function Cadastro() {
     };
 
     try {
-      const response = await fetch('http://localhost:8080/users/cadastro', {
+      const response = await fetch('bellifica-back-end-production.up.railway.app/users/cadastro', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(profissionalInfo),
