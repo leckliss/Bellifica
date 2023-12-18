@@ -47,7 +47,9 @@ function App() {
           <Route path="/curso" element={<Curso />} ></Route>
 
 
-          <ProtectedRoute path='/dashboard' component={Dashboard} />
+          <Route path='/dashboard' element={
+            <ProtectedRoute element={<Dashboard />} />
+          } />
 
         </Routes>
       </Router>
