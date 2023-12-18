@@ -48,15 +48,6 @@ function App() {
 
 
           <ProtectedRoute path='/dashboard' component={Dashboard} />
-          <ProtectedRoute path='/dashboard' component={Dashboard} />
-          <ProtectedRoute path='/dashboard/painel' component={Painel} />
-          <ProtectedRoute path='/dashboard/agenda' component={Agenda} />
-          <ProtectedRoute path='/dashboard/configuraçoes' component={Configuracoes} />
-          <ProtectedRoute path='/dashboard/cursos' component={Cursos} />
-          <ProtectedRoute path='/dashboard/configuracoes/assinatura' component={Assinatura} />
-          <ProtectedRoute path='/dashboard/configuracoes/contato' component={Contato} />
-          <ProtectedRoute path='/dashboard/configuracoes/meusdados' component={MeusDados} />
-          <ProtectedRoute path='/dashboard/configuracoes/politicas' component={Politicas} />
 
         </Routes>
       </Router>
