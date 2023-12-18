@@ -43,7 +43,7 @@ function Login() {
         localStorage.setItem('senha', senha);
 
         if (nomeNegocio === null) {
-          toast.success(`Login efetuado, ${nome} ${id}!`, {
+          toast.success(`Login efetuado, ${nome}!`, {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -54,7 +54,7 @@ function Login() {
             theme: "colored",
           });
         } else {
-          toast.success(`Login efetuado, ${nome} do(a) ${nomeNegocio}  ${id}!`, {
+          toast.success(`Login efetuado, ${nome} do(a) ${nomeNegocio}!`, {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
