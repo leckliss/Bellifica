@@ -9,6 +9,7 @@
 .paghome {
     width: 100%;
     height: auto;
+    overflow-x: hidden;
 }
 
 .espaco {
@@ -1332,6 +1333,34 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .sec11{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .typingeffect{
+        font-size: x-large;
+    }
+    .typingeffect2{
+        font-size: x-large;
+    }
+    .sec12{
+        width: 100%;
+    }
+    .profsscar{
+        right: 0;
+        left: 0;
+        width: 90%;
+        height: 50vh;
+    }
+    .profss{
+        width: 90%;
+        height: 50vh;
+    }
+    .carrosel{
+        height: auto;
+        flex-direction: column;
+    }
 
     .sessão2 {
         display: flex;
