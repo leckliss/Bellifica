@@ -320,7 +320,7 @@
     gap: 5vh;
 }
 
-.Caixas .caixona1 {
+.caixona1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -369,9 +369,7 @@
     text-align: center;
 }
 
-
-
-.Caixas .caixona2 {
+.caixona2 {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -423,7 +421,7 @@
 
 .sessão4 {
     width: 100%;
-    height: 90vh;
+    height: auto !important;
     background-image: url(../../assets/imgs/home/Rectangle\ 288.png);
     background-size: cover;
     display: flex;
@@ -441,12 +439,13 @@
     border: 2px solid #FFF;
     color: #FFF;
     border-radius: 5vh;
-    padding: 10px;
-    width: 40%;
+    padding: 2vh;
+    width: auto;
     height: auto;
     font-size: x-large;
     text-align: center;
     background-color: transparent !important;
+    margin-bottom: 5vh;
 }
 
 .buttoninocursos:hover {
@@ -456,13 +455,13 @@
     color: #7677d2;
     background-color: #FFF !important;
     border-radius: 5vh;
-    padding: 10px;
+    padding: 2vh;
     text-align: center;
 }
 
 .quadro {
     width: 100%;
-    height: 55vh;
+    height: auto !important;
     display: flex;
     justify-content: center;
 }
@@ -470,7 +469,7 @@
 
 .quadrocursos {
     width: 60%;
-    height: 70vh;
+    height: auto !important;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -621,7 +620,7 @@
     display: flex;
     justify-content: center;
     color: black;
-
+    text-align: center;
 }
 
 .caixaplanos {
@@ -1335,6 +1334,41 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
+    .Caixas{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caixona1 {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caixona2 {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caixaideia,
+    .caixagestao {
+        height: auto;
+        width: 90%;
+    }
+
+    .caixaauxilio,
+    .caixacurso{
+        width: 90%;
+    }
+
+    .quadrocursos {
+        width: 90%;
+    }
 
     .sessão6 {
         height: auto;
