@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
 * {
     margin: 0;
-    border: 0;
     padding: 0;
+    border: 0;
 }
 
 .pagproduto {
-    background-color: #fdd3;
+    width: 100%;
+    height: auto;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 .carrosel {
@@ -14,7 +19,8 @@
     display: flex;
     flex-direction: row;
     background-color: #7677d2;
-    
+    overflow: hidden;
+    justify-content: space-around;
 }
 
 .sec11 {
@@ -28,7 +34,8 @@
     text-align: left;
     padding-left: 5%;
 }
-.sec12{
+
+.sec12 {
     width: 50%;
     height: 90vh;
     display: flex;
@@ -36,7 +43,7 @@
 
 }
 
-.descri_Bellifica{
+.descri_Bellifica {
     font-size: 6vh;
     margin-right: 0px;
 }
@@ -55,10 +62,10 @@
 
 .buttonino:hover {
     transition: all 0.3s ease;
-    border: 2px solid  #fd9ba6;
-    text-shadow:  #fd9ba6;
+    border: 2px solid #fd9ba6;
+    text-shadow: #fd9ba6;
     color: #7677d2;
-    background-color:  #fd9ba6 !important;
+    background-color: #fd9ba6 !important;
     border-radius: 5vh;
     text-align: center;
 }
@@ -220,39 +227,39 @@
         text-align: center;
         background-color: transparent !important;
     }
-    
 
 
-    .typingeffect{
+
+    .typingeffect {
         font-size: 5vh;
         margin-top: 90px;
         overflow-y: hidden !important;
     }
 
-    .typingeffect2{
+    .typingeffect2 {
         font-size: 5vh;
         margin-top: 10px;
         margin-left: 00px;
         overflow-y: hidden !important;
     }
-    
-    .descri_Bellifica{
+
+    .descri_Bellifica {
         font-size: 5vh;
         margin-top: 0px;
         text-align: left;
         margin-left: 0px;
         overflow-y: hidden;
-        
+
     }
-    
-    .fundinroxo{
+
+    .fundinroxo {
         width: 80%;
         margin-top: 100px;
         margin-left: 120px;
     }
-    
-    
-    
+
+
+
     .pdtdescri h2 {
         color: black;
         font-size: 5vh;
@@ -298,23 +305,23 @@
         background-color: transparent !important;
         margin-left: 25px;
     }
-    
-    .sec11{
-      
+
+    .sec11 {
+
         width: 100%;
     }
-    
 
-    .carrosel{
+
+    .carrosel {
         display: flex;
         width: 100%;
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
-        
+
     }
 
-    .body_effects{
+    .body_effects {
         width: 100%;
         justify-content: center;
         display: flex;
@@ -323,31 +330,31 @@
     }
 
 
-    .typingeffect{
+    .typingeffect {
         font-size: 4vh;
         margin-top: 90px;
         margin-right: 0px;
     }
 
-    .typingeffect2{
+    .typingeffect2 {
         font-size: 4vh;
         margin-top: 10px;
         margin-right: 0px;
     }
-    
-    .descri_Bellifica{
+
+    .descri_Bellifica {
         font-size: 3vh;
         margin-right: 0px;
         text-align: center;
     }
 
-    .sec11{
+    .sec11 {
         position: absolute;
         z-index: 2;
     }
 
-    .fundinroxo{
-        display:none;
+    .fundinroxo {
+        display: none;
 
     }
 

@@ -155,6 +155,23 @@ header.scrolled ul {
   font-size: 5vh;
 }
 
+.header-logo-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.header-logo-menu .header-login {
+  margin-left: 10px;
+
+}
+
+
+
+
+@media screen and (max-width: 767px) {}
+
 @media screen and (min-width:515px) and (max-width: 673px) {
   .logo {
     width: 50px;
@@ -190,9 +207,23 @@ header.scrolled ul {
     display: none;
   }
 
-  /* Adicione isso ao seu CSS existente */
-  
+}
 
+@media screen and (max-width: 767px) {
 
+  .header-login .dropdown-content,
+  .header-login .dropdown-content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .header ul {
+    justify-content: flex-end;
+  }
+
+  .header-logo-menu {
+    justify-content: space-between;
+    padding: 0 10px;
+  }
 }
