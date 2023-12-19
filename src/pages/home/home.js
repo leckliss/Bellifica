@@ -252,14 +252,7 @@ function Home() {
             <section className={Styles.sessão3}>
 
 
-
-                {/*<video autoPlay muted loop width="30%" height="auto">
-                    <source src={videomake} type='video/mp4' />
-                    Seu navegador não suporta a reprodução de vídeo.
-                </video>*/}
-
-
-                <div className={Styles.seH1}><h1>O que fazemos?</h1></div>
+                <h1 style={{color: 'black'}}>O que fazemos?</h1>
 
 
 
