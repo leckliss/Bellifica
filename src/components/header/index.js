@@ -54,9 +54,9 @@ function Header() {
 
       {isMobile && (
         <>
-          <Link to={'/#planos'} style={{ textDecoration: 'none' }}><p className={scrolled ? 'menu-option-pink' : 'menu-option-pink'} >Planos</p></Link>
-          <Link to={'/produtos'} style={{ textDecoration: 'none' }}><p className={scrolled ? 'menu-option-pink' : 'menu-option-pink'} >Produtos</p></Link>
-          <Link to={'/sobre'} style={{ textDecoration: 'none' }}><p className={scrolled ? 'menu-option-pink' : 'menu-option-pink'}>Quem Somos</p></Link>
+          <Link to={'/curso'} onClick={handleCursoClick} style={{ textDecoration: 'none' }}><p className={scrolled ? 'menu-option-pink' : 'menu-option-pink'} >Cursos</p></Link>
+          <Link to={'/produtos'} onClick={handleProdutosClick} style={{ textDecoration: 'none' }}><p className={scrolled ? 'menu-option-pink' : 'menu-option-pink'} >Produtos</p></Link>
+          <Link to={'/sobre'} onClick={handleSobreClick} style={{ textDecoration: 'none' }}><p className={scrolled ? 'menu-option-pink' : 'menu-option-pink'}>Quem Somos</p></Link>
         </>
       )}
     </>
