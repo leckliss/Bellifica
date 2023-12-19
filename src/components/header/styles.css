@@ -19,12 +19,12 @@ header {
 }
 
 header ul {
+  width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px;
-  height: 20vh;
+  height: 22vh;
   transition: all 0.8s ease;
 }
 
@@ -40,6 +40,9 @@ header.scrolled ul {
   /* Altera para rosa ao rolar */
 }
 
+.scrolled .title {
+  display: none;
+}
 
 .logo {
   width: 100px;
@@ -210,6 +213,21 @@ header.scrolled ul {
 }
 
 @media screen and (max-width: 767px) {
+
+  header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  header ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
   .header-login .dropdown-content,
   .header-login .dropdown-content2 {

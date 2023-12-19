@@ -1346,6 +1346,7 @@
     }
     .sec12{
         width: 100%;
+        display: none;
     }
     .profsscar{
         right: 0;

@@ -238,8 +238,8 @@ function Home() {
 
 
                 <div className={Styles.imagensprof}>
-                    <div data-aos="fade-right" className={Styles.imgles}></div>
-                    <div className={Styles.imgldr}>
+                    <div className={Styles.imgles}></div>
+                    <div data-aos="fade-left" className={Styles.imgldr}>
                         <h1>O que é a Bellifica?</h1>
                         <p>Somos uma startup dedicada a auxiliar microempreendedores no ramo da beleza a realizar seus sonhos de gerenciar seu próprio negócio e alcançar o crescimento desejado.</p>
                     </div>
